@@ -4,8 +4,6 @@
 	const baseColor = props.baseColor;
 	const hoverColor = props.hoverColor;
 
-	console.log(baseColor);
-
 	let mouseX = $state(0);
 	let mouseY = $state(0);
 	let hovered = $state(false);
