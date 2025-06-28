@@ -5,9 +5,6 @@ import wasm from 'vite-plugin-wasm';
 import topLevelAwait from 'vite-plugin-top-level-await';
 
 export default defineConfig({
-  server: {
-    compress: true,
-  },
 	plugins: [wasm(), topLevelAwait(), tailwindcss(), sveltekit()],
 	optimizeDeps: {
 		exclude: ['$lib/lectio-pkg/lectio_wasm.js']
