@@ -13,10 +13,10 @@
 	onMount(async () => {
 		if (browser) {
 			try {
-        await initWasm();
-				// await init({
-				// 	module_or_path: '/lectio_wasm_bg.wasm'
-				// });
+        // await initWasm();
+				await init({
+					module_or_path: '/lectio_wasm_bg.wasm'
+				});
         // const importObject = {
         //   my_namespace: { imported_func: (arg) => console.log(arg) },
         // };
