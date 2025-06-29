@@ -14,8 +14,8 @@
 	/>
 </svelte:head>
 
-<div class="mx-1 flex flex-col">
-	<div class="m-4 mx-10 flex h-24 items-center gap-5 border-b-2 border-amber-100 p-5">
+<div class="mx-10 flex flex-col">
+	<div class="m-4 flex h-16 items-center gap-5 border-b-2 border-amber-100 p-5">
 		<a href="/">
 			<Logo svgClass="w-32" baseColor="amber-500" hoverColor="amber-400" />
 		</a>
