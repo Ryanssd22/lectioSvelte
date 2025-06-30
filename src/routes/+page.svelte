@@ -1,6 +1,7 @@
 <script>
 	import MaterialSymbolsArrowLeftAltRounded from '~icons/material-symbols/arrow-left-alt-rounded';
   import MaterialSymbolsArrowRightAltRounded from '~icons/material-symbols/arrow-right-alt-rounded';
+  import SvgSpinners270RingWithBg from '~icons/svg-spinners/270-ring-with-bg';
 
   import { fly } from 'svelte/transition';
 
@@ -16,7 +17,10 @@
 	let liturgy = $state(null);
 	let parsedLiturgy = $derived(liturgy ? JSON.parse(liturgy) : null);
 	let multipleReadings = $derived(parsedLiturgy?.length > 1 ? true : false);
+  let mounted = $state(false);
+  let loaded = $derived(mounted && parsedLiturgy);
 	onMount(async () => {
+    mounted = true;
 		if (browser) {
 			try {
 				// await initWasm();
@@ -103,11 +107,14 @@
 		let year = date.getFullYear();
 		return `${day} ${month} ${year}`;
 	}
+  let titleFly = $state(5);
 	function datePrev() {
+    titleFly = -5;
 		date.setDate(date.getDate() - 1);
 		updateLiturgy();
 	}
 	function dateNext() {
+    titleFly = 5;
 		date.setDate(date.getDate() + 1);
 		updateLiturgy();
 	}
@@ -137,44 +144,45 @@
 	});
 </script>
 
-<!-- Reading Heading -->
-<div class="rounded-lg bg-amber-100 flex h-20 w-full flex-row items-center justify-between sm:w-5/6">
-	<button
-		onclick={datePrev}
-		class="arrowButton group"
-	>
-		<MaterialSymbolsArrowLeftAltRounded class="arrowIcon group-active:scale-90" />
-	</button>
-	<div>
-    <div class="h-10 flex items-center justify-center">
-      {#key title}
-        <h1 in:fly={{ duration: 100, delay: 100, y: -2 }} out:fly={{ duration: 100, y: 2}} class="absolute text-3xl font-semibold">{title}</h1>
-      {/key}
+{#if !loaded}
+  <div out:fly={{ duration:200 }} class="absolute text-xl">
+    <SvgSpinners270RingWithBg class="my-10 size-10 text-amber-300"/>
+  </div>
+{:else}
+  <div in:fly={{ delay: 200 }} class="flex flex-col justify-center items-center w-full">
+    <!-- Reading Heading -->
+    <div class="rounded-lg bg-amber-100 flex h-20 w-full flex-row items-center justify-between sm:w-5/6">
+      <button
+        onclick={datePrev}
+        class="arrowButton group"
+      >
+        <MaterialSymbolsArrowLeftAltRounded class="arrowIcon group-active:scale-90" />
+      </button>
+      <div>
+        <div class="h-10 flex items-center justify-center">
+          {#key title}
+            <h1 in:fly={{ duration: 100, delay: 100, y: titleFly }} out:fly={{ duration: 100, y: -titleFly}} class="absolute text-3xl font-semibold">{title}</h1>
+          {/key}
+        </div>
+        <p>{formattedDate}</p>
+      </div>
+      <button onclick={dateNext} class="arrowButton group">
+        <MaterialSymbolsArrowRightAltRounded class="arrowIcon group-active:scale-90"/>
+      </button>
     </div>
-		<p>{formattedDate}</p>
-	</div>
-	<button onclick={dateNext} class="arrowButton group">
-    <MaterialSymbolsArrowRightAltRounded class="arrowIcon group-active:scale-90"/>
-  </button>
-</div>
 
-<div>
-	{#if multipleReadings}
-		<p>Multiple Readings</p>
-	{/if}
-	{#if firstReading != ''}
-		<h2 class="text-xl font-semibold">First Reading</h2>
-		<p>{firstReading.rawReading}</p>
-		{#each firstReading.reading[0].verses as verse}
-			<p>{verse.chapter}:{verse.verse}</p>
-			<p>{verse.translation}</p>
-		{/each}
-	{/if}
-</div>
-<!-- <p>{JSON.stringify(firstReading.reading)}</p> -->
-
-<!-- {#await liturgyPromise} -->
-<!-- 	<p>Loading...</p> -->
-<!-- {:then liturgy} -->
-<!-- 	<p>{liturgy}</p> -->
-<!-- {/await} -->
+    <div>
+      {#if multipleReadings}
+        <p>Multiple Readings</p>
+      {/if}
+      {#if firstReading != ''}
+        <h2 class="text-xl font-semibold">First Reading</h2>
+        <p>{firstReading.rawReading}</p>
+        {#each firstReading.reading[0].verses as verse}
+          <p>{verse.chapter}:{verse.verse}</p>
+          <p>{verse.translation}</p>
+        {/each}
+      {/if}
+    </div>
+  </div>
+{/if}
