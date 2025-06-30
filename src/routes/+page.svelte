@@ -1,5 +1,9 @@
 <script>
-	import MaterialSymbolsArrowBackRounded from '~icons/material-symbols/arrow-back-rounded';
+	import MaterialSymbolsArrowLeftAltRounded from '~icons/material-symbols/arrow-left-alt-rounded';
+  import MaterialSymbolsArrowRightAltRounded from '~icons/material-symbols/arrow-right-alt-rounded';
+
+  import { fly } from 'svelte/transition';
+
 	import { browser } from '$app/environment';
 	import init, { wasm_generate_liturgy } from '$lib/lectio-pkg/lectio_wasm';
 	import { onMount } from 'svelte';
@@ -134,18 +138,24 @@
 </script>
 
 <!-- Reading Heading -->
-<div class="mx-20 flex h-20 flex-row items-center justify-between bg-blue-500">
+<div class="rounded-lg bg-amber-100 flex h-20 w-full flex-row items-center justify-between sm:w-5/6">
 	<button
 		onclick={datePrev}
-		class="flex h-full w-10 items-center justify-center bg-red-500 hover:cursor-pointer"
+		class="arrowButton group"
 	>
-		<MaterialSymbolsArrowBackRounded class="size-8" />
+		<MaterialSymbolsArrowLeftAltRounded class="arrowIcon group-active:scale-90" />
 	</button>
 	<div>
-		<h1 class="text-3xl font-semibold">{title}</h1>
+    <div class="h-10 flex items-center justify-center">
+      {#key title}
+        <h1 in:fly={{ duration: 100, delay: 100, y: -2 }} out:fly={{ duration: 100, y: 2}} class="absolute text-3xl font-semibold">{title}</h1>
+      {/key}
+    </div>
 		<p>{formattedDate}</p>
 	</div>
-	<button onclick={dateNext}>button</button>
+	<button onclick={dateNext} class="arrowButton group">
+    <MaterialSymbolsArrowRightAltRounded class="arrowIcon group-active:scale-90"/>
+  </button>
 </div>
 
 <div>

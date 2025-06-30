@@ -6,3 +6,11 @@
 		font-family: 'Lora', 'Inter';
 	}
 }
+
+.arrowButton {
+	@apply flex h-full w-15 cursor-pointer items-center justify-center rounded-lg transition-colors duration-200 hover:bg-amber-200 active:bg-amber-300;
+}
+
+.arrowIcon {
+	@apply size-10 transition;
+}

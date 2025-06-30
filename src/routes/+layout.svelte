@@ -14,7 +14,7 @@
 	/>
 </svelte:head>
 
-<div class="mx-10 flex flex-col">
+<div class="mx-2 flex flex-col sm:mx-10">
 	<div class="m-4 flex h-16 items-center gap-5 border-b-2 border-amber-100 p-5">
 		<a href="/">
 			<Logo svgClass="w-32" baseColor="amber-500" hoverColor="amber-400" />
@@ -23,7 +23,7 @@
 		<a href="/"> More Links </a>
 	</div>
 
-	<div class="items-center text-center">
+	<div class="flex flex-col items-center text-center">
 		{@render children()}
 	</div>
 </div>
