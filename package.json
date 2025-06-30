@@ -44,7 +44,6 @@
 	},
 	"dependencies": {
 		"@internationalized/date": "^3.8.1",
-		"bits-ui": "^2.8.10",
-		"lectio": "file:static/lectio-pkg"
+		"bits-ui": "^2.8.10"
 	}
 }
