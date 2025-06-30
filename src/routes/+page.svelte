@@ -151,26 +151,27 @@
 {:else}
   <div in:fly={{ delay: 200 }} class="flex flex-col justify-center items-center w-full">
     <!-- Reading Heading -->
-    <div class="rounded-lg bg-amber-100 flex h-20 w-full flex-row items-center justify-between sm:w-5/6">
+    <div class="rounded-lg bg-amber-100 flex w-full flex-row items-center justify-between md:w-5/6">
       <button
         onclick={datePrev}
         class="arrowButton group"
       >
         <MaterialSymbolsArrowLeftAltRounded class="arrowIcon group-active:scale-90" />
       </button>
-      <div>
-        <div class="h-10 flex items-center justify-center">
+      <div class="w-full mx-1 flex flex-col items-center">
+        <div class="w-full relative min-h-10 flex items-end justify-end py-2 overflow-hidden">
+          <h1 class="text-3xl font-semibold text-end px-2 leading-tight opacity-0 pointer-events-none" aria-hidden="true">{title}</h1>
           {#key title}
-            <h1 in:fly={{ duration: 100, delay: 100, y: titleFly }} out:fly={{ duration: 100, y: -titleFly}} class="absolute text-3xl font-semibold">{title}</h1>
+            <h1 in:fly={{ duration: 100, delay: 100, y: titleFly }} out:fly={{ duration: 100, y: -titleFly}} 
+              class="absolute inset-0 flex items-end justify-center text-3xl font-semibold text-center px-2 leading-tight">{title}</h1>
           {/key}
         </div>
-        <p>{formattedDate}</p>
+        <p class="py-1">{formattedDate}</p>
       </div>
       <button onclick={dateNext} class="arrowButton group">
         <MaterialSymbolsArrowRightAltRounded class="arrowIcon group-active:scale-90"/>
       </button>
-    </div>
-
+    </div>    
     <div>
       {#if multipleReadings}
         <p>Multiple Readings</p>
