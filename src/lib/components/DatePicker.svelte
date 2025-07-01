@@ -3,6 +3,7 @@
 	import MaterialSymbolsArrowRightAltRounded from '~icons/material-symbols/arrow-right-alt-rounded';
 	import MaterialSymbolsInfoOutlineRounded from '~icons/material-symbols/info-outline-rounded';
 	import MaterialSymbolsBookRibbonOutlineRounded from '~icons/material-symbols/book-ribbon-outline-rounded';
+	import MaterialSymbolsFormatLineSpacingRounded from '~icons/material-symbols/format-line-spacing-rounded';
 
 	import { DropdownMenu } from 'bits-ui';
 
@@ -14,6 +15,7 @@
 		date = $bindable(),
 		liturgy = $bindable(),
 		readingIndex = $bindable(),
+		comfortSpacing = $bindable(),
 		multipleReadings,
 		season
 	} = $props();
@@ -141,8 +143,20 @@
 		</button>
 	</div>
 
-	<div class="mx-3 flex w-full items-center justify-start">
-		<MaterialSymbolsBookRibbonOutlineRounded class="relative top-[1px] mr-1" />
-		<p class="font-medium">{season}</p>
+	<div class="mx-3 my-1 flex w-full items-center justify-start gap-10">
+		<div class="flex items-center">
+			<MaterialSymbolsBookRibbonOutlineRounded class="relative mr-1 size-5" />
+			<p class="text-md font-medium">{season}</p>
+		</div>
+
+		<button
+			class:bg-amber-200={comfortSpacing}
+			class="cursor-pointer rounded-sm p-[2px] transition-all hover:bg-amber-300 active:scale-95"
+			onclick={() => {
+				comfortSpacing = !comfortSpacing;
+			}}
+		>
+			<MaterialSymbolsFormatLineSpacingRounded class="size-5" />
+		</button>
 	</div>
 </div>

@@ -1,7 +1,7 @@
 <script>
 	import { fly } from 'svelte/transition';
 
-	let { title, reading } = $props();
+	let { title, reading, comfortSpacing } = $props();
 
 	function formatText(str) {
 		return str?.replace(/\*(.*?)\*/g, '<strong>$1</strong>');
@@ -14,12 +14,14 @@
 </div>
 <div class="mx-10 my-2 flex items-start text-start font-[Lexend]">
 	{#if reading.reading.length != 0}
-		<p class="indent-8 text-lg font-light">
+		<div class="indent-8 text-lg font-light">
 			{#each reading.reading[0].verses as verse (verse)}
-				<span class="relative -ml-1 text-sm opacity-50"><sup>{verse.verse}</sup></span>
-				<span class="-ml-1">{@html formatText(verse.translation)}&nbsp;</span>
+				<div class:inline={!comfortSpacing} class="mb-2">
+					<span class="relative -ml-1 text-sm opacity-50"><sup>{verse.verse}</sup></span>
+					<span class="-ml-1">{@html formatText(verse.translation)}&nbsp;</span>
+				</div>
 			{/each}
-		</p>
+		</div>
 	{:else}
 		<p class="indent-8 text-lg opacity-50">Reading not found</p>
 	{/if}

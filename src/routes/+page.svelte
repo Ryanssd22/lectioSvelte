@@ -60,6 +60,7 @@
 		return `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`;
 	}
 
+	let comfortSpacing = $state(false);
 	let firstReading = $derived.by(() => {
 		if (liturgy) {
 			return liturgy[readingIndex].first;
@@ -92,7 +93,14 @@
 {:else}
 	<div in:fly={{ delay: 200 }} class="flex w-full flex-col items-center justify-center">
 		<!-- Reading Heading -->
-		<DatePicker bind:date {season} {liturgy} bind:readingIndex {multipleReadings} />
+		<DatePicker
+			bind:date
+			bind:comfortSpacing
+			{season}
+			{liturgy}
+			bind:readingIndex
+			{multipleReadings}
+		/>
 
 		<!-- Readings -->
 		{#key liturgy}
@@ -102,15 +110,15 @@
 				class="w-full md:w-2/3"
 			>
 				{#if firstReading}
-					<ReadingDisplay title="First Reading" reading={firstReading} />
+					<ReadingDisplay title="First Reading" reading={firstReading} {comfortSpacing} />
 				{/if}
 
 				{#if secondReading}
-					<ReadingDisplay title="Second Reading" reading={secondReading} />
+					<ReadingDisplay title="Second Reading" reading={secondReading} {comfortSpacing} />
 				{/if}
 
 				{#if gospel}
-					<ReadingDisplay title="Gospel" reading={gospel} />
+					<ReadingDisplay title="Gospel" reading={gospel} {comfortSpacing} />
 				{/if}
 			</div>
 		{/key}
