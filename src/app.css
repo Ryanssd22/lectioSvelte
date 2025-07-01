@@ -1,5 +1,9 @@
 @import 'tailwindcss';
 
+html {
+	scrollbar-gutter: stable;
+}
+
 @layer base {
 	body {
 		@apply bg-amber-50;
@@ -8,7 +12,7 @@
 }
 
 .arrowButton {
-	@apply self-stretch px-2 cursor-pointer items-center justify-center rounded-lg transition-colors duration-200 hover:bg-amber-200 active:bg-amber-300;
+	@apply cursor-pointer items-center justify-center self-stretch rounded-lg px-2 transition-colors duration-200 hover:bg-amber-200 active:bg-amber-300;
 }
 
 .arrowIcon {
