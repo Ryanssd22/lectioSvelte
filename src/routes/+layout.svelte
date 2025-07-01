@@ -21,6 +21,7 @@
 		</a>
 		<a href="/"> Links </a>
 		<a href="/"> More Links </a>
+		<a href="/themes"> Themes </a>
 	</div>
 
 	<div class="flex flex-col items-center text-center">
