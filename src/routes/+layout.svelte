@@ -19,9 +19,9 @@
 		<a href="/">
 			<Logo svgClass="w-32" baseColor="amber-500" hoverColor="amber-400" />
 		</a>
-		<a href="/"> Links </a>
-		<a href="/"> More Links </a>
-		<a href="/themes"> Themes </a>
+		<a href="/" class="hover:text-amber-300"> Links </a>
+		<a href="/" class="hover:text-amber-300"> More Links </a>
+		<a href="/themes" class="hover:text-amber-300"> Themes </a>
 	</div>
 
 	<div class="flex flex-col items-center text-center">

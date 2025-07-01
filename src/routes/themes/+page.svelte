@@ -1,9 +1,3 @@
-<!-- <div class="themes">
-    <div class="theme1"> </div>
-    <div class="theme2"> </div>
-    <div class="theme3 w-24 h-24 bg-red-500"> word </div>
-</div> -->
-
 <!-- make it so that the user can either input in a raw hex code, rgb, or the name of a color even to seed the scheme generator-->
 
 <script>
@@ -11,7 +5,7 @@
 import { onMount } from "svelte";
 
 
-onMount( async () => {
+/* onMount( async () => {
     fetch("https://www.thecolorapi.com/scheme?")
   .then(response => response.json())
   .then(data => {
@@ -21,7 +15,7 @@ onMount( async () => {
     console.log(error);
     return [];
   });
-});
+}); */
 
 
 let themes = [];
@@ -67,12 +61,18 @@ function chooseTheme(theme) {
 
 <div class="grid">
     {#each themes as theme, i}
-	<div class="themeButton hover:scale-105 active:scale-100 transition-all" 
-	    onclick = {() => {chooseTheme(theme)}} 
-	    style="background-color: {theme.primary}; 
-	    color: white" 
-	>
+	<div class="themeButton hover:scale-105 active:scale-100 transition-all select-none flex"
+	    on:click = {() => {chooseTheme(theme)}}
+	    style="background-color: {theme.primary};
+	    color: white">
+
 	    {theme.title}
+
+	    <div class="flex gap-2 mt-2">
+		<div class="w-4 h-4 rounded-full" style="background-color: {theme.secondary}"> </div>
+		<div class="w-4 h-4 rounded-full" style="background-color: {theme.tertiary}"> </div>
+	    </div>
+
 	</div>
     {/each}
 </div>
