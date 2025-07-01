@@ -11,22 +11,29 @@
 	import init, { wasm_generate_liturgy } from '$lib/lectio-pkg/lectio_wasm';
 	import { onMount } from 'svelte';
 
-	let date = $state(new SvelteDate(Date.now()));
+	let date = new SvelteDate(Date.now());
 	let translation = $state('NABRE');
 	let readingIndex = $state(0);
 
 	let mounted = $state(false);
-	let liturgy = $derived.by(() => {
+	let season = $derived.by(() => {
 		date;
 		if (mounted) {
-			return wasm_generate_liturgy(formatDateForLiturgy(), translation);
+			return JSON.parse(wasm_generate_liturgy(formatDateForLiturgy(), translation)).season;
 		} else {
 			return null;
 		}
 	});
-	let parsedLiturgy = $derived(liturgy ? JSON.parse(liturgy) : null);
-	let multipleReadings = $derived(parsedLiturgy?.length > 1 ? true : false);
-	let loaded = $derived(mounted && parsedLiturgy);
+	let liturgy = $derived.by(() => {
+		date;
+		if (mounted) {
+			return JSON.parse(wasm_generate_liturgy(formatDateForLiturgy(), translation)).liturgy;
+		} else {
+			return null;
+		}
+	});
+	let multipleReadings = $derived(liturgy?.length > 1 ? true : false);
+	let loaded = $derived(mounted && liturgy);
 	onMount(async () => {
 		if (browser) {
 			try {
@@ -34,47 +41,17 @@
 					module_or_path: '/lectio_wasm_bg.wasm'
 				});
 				mounted = true;
-				liturgy = wasm_generate_liturgy(formatDateForLiturgy(), translation);
+				let generatedLiturgy = JSON.parse(
+					wasm_generate_liturgy(formatDateForLiturgy(), translation)
+				);
+				liturgy = generatedLiturgy.liturgy;
+				season = generatedLiturgy.season;
 			} catch (error) {
 				console.log('Failed to initialize WASM module:', error);
 			}
 		}
 	});
-
-	async function initWasm() {
-		try {
-			const cache = await caches.open('wasm-cache');
-			let response = await cache.match('/lectio_wasm_bg.wasm');
-
-			if (!response) {
-				console.log('WASM not in cache, fetching...');
-				response = await fetch('/lectio_wasm_bg.wasm');
-
-				// Check if fetch was successful
-				if (!response.ok) {
-					throw new Error(`HTTP error! status: ${response.status}`);
-				}
-
-				await cache.put('/lectio_wasm_bg.wasm', response.clone());
-				console.log('WASM fetched and cached');
-			} else {
-				console.log('WASM successfully loaded from cache');
-			}
-
-			const wasmBytes = await response.arrayBuffer();
-			await init({ module: wasmBytes });
-			console.log('WASM initialized successfully');
-		} catch (error) {
-			console.log('WASM cache failed: ', error);
-			try {
-				await init();
-				console.log('WASM initialized with fallback method');
-			} catch (fallbackError) {
-				console.error('Both WASM initialization methods failed:', fallbackError);
-				throw fallbackError;
-			}
-		}
-	}
+	$inspect(liturgy);
 
 	function formatDateForLiturgy() {
 		let year = date.getFullYear();
@@ -85,7 +62,7 @@
 
 	let firstReading = $derived.by(() => {
 		if (liturgy) {
-			return parsedLiturgy[readingIndex].first;
+			return liturgy[readingIndex].first;
 		} else {
 			return null;
 		}
@@ -93,7 +70,7 @@
 
 	let secondReading = $derived.by(() => {
 		if (liturgy) {
-			return parsedLiturgy[readingIndex].second;
+			return liturgy[readingIndex].second;
 		} else {
 			return null;
 		}
@@ -101,7 +78,7 @@
 
 	let gospel = $derived.by(() => {
 		if (liturgy) {
-			return parsedLiturgy[readingIndex].gospel;
+			return liturgy[readingIndex].gospel;
 		} else {
 			return null;
 		}
@@ -115,21 +92,27 @@
 {:else}
 	<div in:fly={{ delay: 200 }} class="flex w-full flex-col items-center justify-center">
 		<!-- Reading Heading -->
-		<DatePicker bind:date {parsedLiturgy} {readingIndex} {multipleReadings} />
+		<DatePicker bind:date {season} {liturgy} bind:readingIndex {multipleReadings} />
 
 		<!-- Readings -->
-		<div class="w-full md:w-2/3">
-			{#if firstReading}
-				<ReadingDisplay title="First Reading" reading={firstReading} />
-			{/if}
+		{#key liturgy}
+			<div
+				in:fly={{ duration: 100, delay: 100, y: 10 }}
+				out:fly={{ duration: 100, y: -10 }}
+				class="w-full md:w-2/3"
+			>
+				{#if firstReading}
+					<ReadingDisplay title="First Reading" reading={firstReading} />
+				{/if}
 
-			{#if secondReading}
-				<ReadingDisplay title="Second Reading" reading={secondReading} />
-			{/if}
+				{#if secondReading}
+					<ReadingDisplay title="Second Reading" reading={secondReading} />
+				{/if}
 
-			{#if gospel}
-				<ReadingDisplay title="Gospel" reading={gospel} />
-			{/if}
-		</div>
+				{#if gospel}
+					<ReadingDisplay title="Gospel" reading={gospel} />
+				{/if}
+			</div>
+		{/key}
 	</div>
 {/if}
