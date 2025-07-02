@@ -19,7 +19,8 @@
 		readingIndex = $bindable(),
 		comfortSpacing = $bindable(),
 		multipleReadings,
-		currentSeason
+		currentSeason,
+		seasons
 	} = $props();
 	let formattedDate = $state(formatDate());
 	let onToday = $state(true);
@@ -33,6 +34,8 @@
 	let calendarDate = $state(
 		new CalendarDate(date.getFullYear(), date.getMonth() + 1, date.getDate())
 	);
+
+	console.log(seasons);
 
 	let title = $derived.by(() => {
 		if (liturgy) {
@@ -241,9 +244,15 @@
 																<DatePicker.Day
 																	class="data-selected:text-background group relative inline-flex size-13 cursor-pointer items-center justify-center rounded-lg border border-transparent p-0 text-base font-light font-normal whitespace-nowrap transition-all hover:bg-amber-200 data-disabled:pointer-events-none data-outside-month:pointer-events-none data-outside-month:text-black/40 data-selected:bg-amber-400 data-selected:font-medium data-unavailable:line-through data-unavailable:opacity-50"
 																>
-																	<div
-																		class="absolute top-[5px] size-2 rounded-full bg-black opacity-40 transition-all group-data-selected:bg-amber-200 group-data-today:block"
-																	></div>
+																	{#if seasons[date] == 'Ordinary'}
+																		<div class="dateDot bg-green-600"></div>
+																	{/if}
+																	{#if seasons[date] == 'Advent' || seasons[date] == 'Lent'}
+																		<div class="dateDot bg-purple-600"></div>
+																	{/if}
+																	{#if seasons[date] == 'Christmas' || seasons[date] == 'Easter'}
+																		<div class="dateDot bg-yellow-500"></div>
+																	{/if}
 																	{date.day}
 																</DatePicker.Day>
 															</DatePicker.Cell>
