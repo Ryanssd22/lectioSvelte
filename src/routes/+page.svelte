@@ -17,9 +17,16 @@
 
 	let mounted = $state(false);
 	let season = $derived.by(() => {
-		date;
 		if (mounted) {
 			return JSON.parse(wasm_generate_liturgy(formatDateForLiturgy(), translation)).season;
+		} else {
+			return null;
+		}
+	});
+	let currentSeason = $derived.by(() => {
+		date;
+		if (season) {
+			return season[formatDateForLiturgy()];
 		} else {
 			return null;
 		}
@@ -97,7 +104,7 @@
 		<DatePicker
 			bind:date
 			bind:comfortSpacing
-			{season}
+			{currentSeason}
 			{liturgy}
 			bind:readingIndex
 			{multipleReadings}

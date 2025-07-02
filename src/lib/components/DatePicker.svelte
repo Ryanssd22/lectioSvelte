@@ -19,7 +19,7 @@
 		readingIndex = $bindable(),
 		comfortSpacing = $bindable(),
 		multipleReadings,
-		season
+		currentSeason
 	} = $props();
 	let formattedDate = $state(formatDate());
 	let onToday = $state(true);
@@ -271,7 +271,7 @@
 	>
 		<div class="flex items-center">
 			<MaterialSymbolsBookRibbonOutlineRounded class="relative mr-1 size-5" />
-			<p class="text-md font-medium">{season}</p>
+			<p class="text-md font-medium">{currentSeason}</p>
 		</div>
 
 		<button
