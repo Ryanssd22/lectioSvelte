@@ -61,7 +61,7 @@ function chooseTheme(theme) {
 
 <div class="grid">
     {#each themes as theme, i}
-	<div class="themeButton hover:scale-105 active:scale-100 transition-all select-none flex"
+	<div class="themeButton hover:scale-105 active:scale-100 transition-all select-none flex flex-col"
 	    on:click = {() => {chooseTheme(theme)}}
 	    style="background-color: {theme.primary};
 	    color: white">
