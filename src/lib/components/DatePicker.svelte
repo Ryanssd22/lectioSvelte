@@ -4,13 +4,13 @@
 	import MaterialSymbolsInfoOutlineRounded from '~icons/material-symbols/info-outline-rounded';
 	import MaterialSymbolsBookRibbonOutlineRounded from '~icons/material-symbols/book-ribbon-outline-rounded';
 	import MaterialSymbolsFormatLineSpacingRounded from '~icons/material-symbols/format-line-spacing-rounded';
+	import MaterialSymbolsRefreshRounded from '~icons/material-symbols/refresh-rounded';
 
 	import { DropdownMenu } from 'bits-ui';
 
 	import { fly } from 'svelte/transition';
+	import { SvelteDate } from 'svelte/reactivity';
 
-	let selected = $state(0);
-	$inspect(selected);
 	let {
 		date = $bindable(),
 		liturgy = $bindable(),
@@ -20,6 +20,14 @@
 		season
 	} = $props();
 	let formattedDate = $state(formatDate());
+	let onToday = $state(true);
+	function updateOnToday() {
+		let today = new SvelteDate(Date.now());
+		let dateToSearch = new SvelteDate(date);
+		today.setHours(0, 0, 0, 0);
+		dateToSearch.setHours(0, 0, 0, 0);
+		onToday = today.getTime() == dateToSearch.getTime();
+	}
 
 	let title = $derived.by(() => {
 		if (liturgy) {
@@ -48,9 +56,17 @@
 		date.setDate(date.getDate() + 1);
 		updateLiturgy();
 	}
+	function setDateToday() {
+		let today = new Date(Date.now());
+		date.setFullYear(today.getFullYear());
+		date.setMonth(today.getMonth());
+		date.setDate(today.getDate());
+		updateLiturgy();
+	}
 	function updateLiturgy() {
 		formattedDate = formatDate();
 		readingIndex = 0;
+		updateOnToday();
 	}
 
 	function selectReading(value) {
@@ -136,7 +152,20 @@
 					</div>
 				{/key}
 			</div>
-			<p class="pb-1">{formattedDate}</p>
+			<div class="flex items-center justify-center pb-1">
+				<div class="relative">
+					{#if !onToday}
+						<MaterialSymbolsRefreshRounded
+							class="absolute -top-[9px] -left-5 cursor-pointer opacity-30 transition-colors hover:text-amber-600"
+							onclick={setDateToday}
+						/>
+					{/if}
+				</div>
+				<!-- <div> -->
+				<p class="justify-self-center">{formattedDate}</p>
+				<!-- </div> -->
+				<div class=""></div>
+			</div>
 		</div>
 		<button onclick={dateNext} class="arrowButton group">
 			<MaterialSymbolsArrowRightAltRounded class="arrowIcon group-active:scale-90" />
@@ -145,7 +174,7 @@
 
 	<!-- Reading Bar -->
 	<div
-		class="mx-3 my-1 flex w-full items-center justify-start gap-10 rounded-lg bg-amber-100 px-3 py-1"
+		class="mx-3 my-2 flex w-full items-center justify-start gap-10 rounded-b-lg bg-amber-100 px-3 py-1"
 	>
 		<div class="flex items-center">
 			<MaterialSymbolsBookRibbonOutlineRounded class="relative mr-1 size-5" />
@@ -153,13 +182,21 @@
 		</div>
 
 		<button
-			class:bg-amber-200={comfortSpacing}
-			class="cursor-pointer rounded-sm p-[2px] transition-all hover:bg-amber-300 active:scale-95"
+			class:opacity-40={!comfortSpacing}
+			class:text-black={!comfortSpacing}
+			class="flex cursor-pointer items-center gap-1 rounded-sm p-[2px] text-amber-600 transition-all hover:text-amber-500 hover:opacity-100 active:scale-95"
 			onclick={() => {
 				comfortSpacing = !comfortSpacing;
 			}}
 		>
 			<MaterialSymbolsFormatLineSpacingRounded class="size-5" />
+			<p class="font-medium">
+				{#if comfortSpacing}
+					Spacious
+				{:else}
+					Compact
+				{/if}
+			</p>
 		</button>
 	</div>
 </div>

@@ -1,8 +1,8 @@
 @import 'tailwindcss';
 
-html {
-	scrollbar-gutter: stable;
-}
+/* html { */
+/* 	scrollbar-gutter: stable; */
+/* } */
 
 button,
 a,

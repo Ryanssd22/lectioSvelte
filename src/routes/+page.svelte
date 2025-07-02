@@ -52,6 +52,7 @@
 		}
 	});
 	$inspect(liturgy);
+	$inspect(date);
 
 	function formatDateForLiturgy() {
 		let year = date.getFullYear();
