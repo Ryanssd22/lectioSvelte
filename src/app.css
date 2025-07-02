@@ -1,7 +1,13 @@
 @import 'tailwindcss';
 
-html {
-	scrollbar-gutter: stable;
+/* html { */
+/* 	scrollbar-gutter: stable; */
+/* } */
+
+button,
+a,
+[role='button'] {
+	touch-action: manipulation;
 }
 
 @layer base {
@@ -17,4 +23,8 @@ html {
 
 .arrowIcon {
 	@apply size-10 transition;
+}
+
+.dateDot {
+	@apply absolute top-[5px] size-2 rounded-full transition-all group-data-outside-month:opacity-40 group-data-today:block;
 }

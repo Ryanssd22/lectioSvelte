@@ -4,7 +4,28 @@
 		<meta charset="utf-8" />
 
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+
+		<style>
+			html,
+			body {
+				overscroll-behavior: none;
+				-webkit-overflow-scrolling: touch;
+				touch-action: manipulation;
+				/* height: 100%; */
+				/* width: 100%; */
+				/* overflow: auto; */
+			}
+
+			#app {
+				overflow: auto;
+				height: 100vh;
+				-webkit-overflow-scrolling: touch;
+			}
+		</style>
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">

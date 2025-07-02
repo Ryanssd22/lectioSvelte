@@ -43,7 +43,7 @@
 		"vite-plugin-wasm": "^3.4.1"
 	},
 	"dependencies": {
-		"@internationalized/date": "^3.8.1",
+		"@internationalized/date": "^3.8.2",
 		"bits-ui": "^2.8.10"
 	}
 }

@@ -9,29 +9,37 @@
 
 	import { browser } from '$app/environment';
 	import init, { wasm_generate_liturgy } from '$lib/lectio-pkg/lectio_wasm';
-	import { onMount } from 'svelte';
+	import { onMount, untrack } from 'svelte';
 
 	let date = new SvelteDate(Date.now());
 	let translation = $state('NABRE');
 	let readingIndex = $state(0);
 
 	let mounted = $state(false);
-	let season = $derived.by(() => {
+	let generatedLiturgy = $derived.by(() => {
 		date;
 		if (mounted) {
-			return JSON.parse(wasm_generate_liturgy(formatDateForLiturgy(), translation)).season;
+			return JSON.parse(wasm_generate_liturgy(formatDateForLiturgy(), translation));
 		} else {
 			return null;
 		}
 	});
+	let currentSeason = $derived.by(() => {
+		if (generatedLiturgy) {
+			return generatedLiturgy.season[formatDateForLiturgy()];
+		} else {
+			return null;
+		}
+	});
+
 	let liturgy = $derived.by(() => {
-		date;
 		if (mounted) {
-			return JSON.parse(wasm_generate_liturgy(formatDateForLiturgy(), translation)).liturgy;
+			return generatedLiturgy?.liturgy;
 		} else {
 			return null;
 		}
 	});
+
 	let multipleReadings = $derived(liturgy?.length > 1 ? true : false);
 	let loaded = $derived(mounted && liturgy);
 	onMount(async () => {
@@ -41,17 +49,12 @@
 					module_or_path: '/lectio_wasm_bg.wasm'
 				});
 				mounted = true;
-				let generatedLiturgy = JSON.parse(
-					wasm_generate_liturgy(formatDateForLiturgy(), translation)
-				);
-				liturgy = generatedLiturgy.liturgy;
-				season = generatedLiturgy.season;
+				generatedLiturgy = JSON.parse(wasm_generate_liturgy(formatDateForLiturgy(), translation));
 			} catch (error) {
 				console.log('Failed to initialize WASM module:', error);
 			}
 		}
 	});
-	$inspect(liturgy);
 
 	function formatDateForLiturgy() {
 		let year = date.getFullYear();
@@ -96,7 +99,8 @@
 		<DatePicker
 			bind:date
 			bind:comfortSpacing
-			{season}
+			seasons={generatedLiturgy.season}
+			{currentSeason}
 			{liturgy}
 			bind:readingIndex
 			{multipleReadings}
