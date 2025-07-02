@@ -4,6 +4,12 @@ html {
 	scrollbar-gutter: stable;
 }
 
+button,
+a,
+[role='button'] {
+	touch-action: manipulation;
+}
+
 @layer base {
 	body {
 		@apply bg-amber-50;

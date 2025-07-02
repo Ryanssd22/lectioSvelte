@@ -60,7 +60,7 @@
 </script>
 
 <div class="w-full md:w-5/6">
-	<div class="flex w-full flex-row items-center justify-between rounded-lg bg-amber-100">
+	<div class="flex w-full flex-row items-center justify-between rounded-lg">
 		<button onclick={datePrev} class="arrowButton group">
 			<MaterialSymbolsArrowLeftAltRounded class="arrowIcon group-active:scale-90" />
 		</button>
@@ -143,7 +143,10 @@
 		</button>
 	</div>
 
-	<div class="mx-3 my-1 flex w-full items-center justify-start gap-10">
+	<!-- Reading Bar -->
+	<div
+		class="mx-3 my-1 flex w-full items-center justify-start gap-10 rounded-lg bg-amber-100 px-3 py-1"
+	>
 		<div class="flex items-center">
 			<MaterialSymbolsBookRibbonOutlineRounded class="relative mr-1 size-5" />
 			<p class="text-md font-medium">{season}</p>
