@@ -3,6 +3,7 @@
 
 	import DatePicker from '$lib/components/DatePicker.svelte';
 	import ReadingDisplay from '$lib/components/ReadingDisplay.svelte';
+  import ReadingBar from '$lib/components/ReadingBar.svelte';
 	import { SvelteDate } from 'svelte/reactivity';
 
 	import { fly } from 'svelte/transition';
@@ -95,16 +96,20 @@
 	</div>
 {:else}
 	<div in:fly={{ delay: 200 }} class="flex w-full flex-col items-center justify-center">
+    <div class="w-full md:w-5/6 flex flex-col items-center">
 		<!-- Reading Heading -->
 		<DatePicker
 			bind:date
-			bind:comfortSpacing
 			seasons={generatedLiturgy.season}
 			{currentSeason}
 			{liturgy}
 			bind:readingIndex
 			{multipleReadings}
 		/>
+
+    <!-- Reading Bar -->
+    <ReadingBar bind:comfortSpacing {currentSeason} />
+  </div>
 
 		<!-- Readings -->
 		{#key liturgy}

@@ -2,8 +2,6 @@
 	import MaterialSymbolsArrowLeftAltRounded from '~icons/material-symbols/arrow-left-alt-rounded';
 	import MaterialSymbolsArrowRightAltRounded from '~icons/material-symbols/arrow-right-alt-rounded';
 	import MaterialSymbolsInfoOutlineRounded from '~icons/material-symbols/info-outline-rounded';
-	import MaterialSymbolsBookRibbonOutlineRounded from '~icons/material-symbols/book-ribbon-outline-rounded';
-	import MaterialSymbolsFormatLineSpacingRounded from '~icons/material-symbols/format-line-spacing-rounded';
 	import MaterialSymbolsRefreshRounded from '~icons/material-symbols/refresh-rounded';
 	import MaterialSymbolsCalendarMonthOutlineRounded from '~icons/material-symbols/calendar-month-outline-rounded';
 
@@ -17,9 +15,7 @@
 		date = $bindable(),
 		liturgy = $bindable(),
 		readingIndex = $bindable(),
-		comfortSpacing = $bindable(),
 		multipleReadings,
-		currentSeason,
 		seasons
 	} = $props();
 	let formattedDate = $state(formatDate());
@@ -274,31 +270,4 @@
 		</button>
 	</div>
 
-	<!-- Reading Bar -->
-	<div
-		class="mx-3 my-2 flex w-full items-center justify-start gap-10 rounded-b-lg bg-amber-100 px-3 py-1"
-	>
-		<div class="flex items-center">
-			<MaterialSymbolsBookRibbonOutlineRounded class="relative mr-1 size-5" />
-			<p class="text-md font-medium">{currentSeason}</p>
-		</div>
-
-		<button
-			class:opacity-40={!comfortSpacing}
-			class:text-black={!comfortSpacing}
-			class="flex cursor-pointer items-center gap-1 rounded-sm p-[2px] text-amber-600 transition-all hover:text-amber-500 hover:opacity-100 active:scale-95"
-			onclick={() => {
-				comfortSpacing = !comfortSpacing;
-			}}
-		>
-			<MaterialSymbolsFormatLineSpacingRounded class="size-5" />
-			<p class="font-medium">
-				{#if comfortSpacing}
-					Spacious
-				{:else}
-					Compact
-				{/if}
-			</p>
-		</button>
-	</div>
 </div>
