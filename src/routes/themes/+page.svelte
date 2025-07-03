@@ -3,58 +3,63 @@
 <script>
 import { onMount } from "svelte";
 
-let liturgicalThemes = [];
 
-let whiteTheme = {
-    primary: "#FFFEF2",
-    secondary: "#CBB06A",
-    tertiary: "#D8D8D6",
-    title: "White",
-    class: "theme-white"
+let liturgicalThemes = [
+    "theme-white",
+    "theme-green",
+    "theme-purple",
+    "theme-red",
+    "theme-rose",
+];
+
+let currentTheme = $state("theme-white");
+//local storage handled here
+
+async function saveTheme(theme) {
+    localStorage.setItem("selectedTheme", theme);
+
+    const cache = await caches.open("theme-cache");
+    const response = new Response(theme, {
+	headers: { "Content-Type": "text/plain" }
+    });
+
+    await cache.put("/cached-theme", response);
 }
 
-let greenTheme = {
-    primary: "#336958",
-    secondary: "#CBB06A",
-    tertiary: "#7c9993",
-    title: "Green",
-    class: "theme-green"
+async function loadTheme() {
+    const cache = await caches.open("theme-cache");
+    const cachedResponse = await cache.match("/cached-theme");
+
+    if ( cachedResponse ) {
+	const cachedTheme = await cachedResponse.text();
+	if (liturgicalThemes.includes(cachedTheme)) {
+	    console.log("Loaded theme from cache: ", cachedTheme);
+	    return cachedTheme;
+	}
+    }
+
+    const local = localStorage.getItem("selectedTheme");
+    if (local && liturgicalThemes.includes(local)) {
+	console.log("Loaded theme from localStorage:", local);
+	return local;
+    }
+
+    console.log("Using default theme");
+    return "theme-white";
 }
 
-let purpleTheme = {
-    primary: "#2F195F",
-    secondary: "#CBB06A",
-    tertiary: "#7353BA",
-    title: "Purple",
-    class: "theme-purple"
-}
-
-let redTheme = {
-    primary: "#9a122d",
-    secondary: "#CBB06A",
-    tertiary: "#d9686d",
-    title: "Red",
-    class: "theme-red"
-}
-
-let roseTheme = {
-    primary: "#b35cb5",
-    secondary: "#CBB06A",
-    tertiary: "#f6bcf7",
-    title: "Rose",
-    class: "theme-rose"
-}
-
-liturgicalThemes.push(whiteTheme, greenTheme, purpleTheme, redTheme, roseTheme);
-
-let currentTheme = liturgicalThemes[4];
-let currentName = currentTheme.class;
 
 function chooseTheme(theme) {
     console.log("Selected theme: ", theme);
     currentTheme = theme;
-    currentName = theme.class;
+
+    //local storage handled here
+    saveTheme(theme);
 }
+
+onMount(async () => {
+    currentTheme = await loadTheme();
+});
 
 </script>
 
@@ -84,34 +89,7 @@ function chooseTheme(theme) {
 <div class="section themes fullWidth">
     <div class="grid">
 	{#each liturgicalThemes as theme, i}
-	    <div class="themeButton group hover:scale-108 active:scale-100 transition-all select-none flex flex-col shadow-lg rounded-full"
-		on:click = {() => {chooseTheme(theme)}}
-		style="
-		background-color: {theme.primary};
-		color: {theme.tertiary};
-		border-radius: 0.5rem;
-		"
-	    >
-		{theme.title}
-
-
-		<div class="flex gap-2 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-		    <div class="w-4 h-4 rounded-full" style="background-color: {theme.secondary}"></div>
-		    <div class="w-4 h-4 rounded-full" style="background-color: {theme.tertiary}"></div>
-		</div>
-
-	    </div>
-	{/each}
-
-    </div>
-</div>
-
-<h1 class="mb-4 text-4xl leading-none tracking-tight text-gray-800 md:text-5xl mt-8">Themes</h1>
-
-<div class="section themes fullWidth {currentName}">
-    <div class="grid">
-	{#each liturgicalThemes as theme, i}
-	    <div class="themeButton group hover:scale-108 active:scale-100 transition-all select-none flex flex-col shadow-lg rounded-full"
+	    <div class="{theme} themeButton group hover:scale-108 active:scale-100 transition-all select-none flex flex-col shadow-lg rounded-full"
 		on:click = {() => {chooseTheme(theme)}}
 		style="
 		background-color: var(--color-primary);
@@ -119,7 +97,7 @@ function chooseTheme(theme) {
 		border-radius: 0.5rem;
 		"
 	    >
-		TESTING
+		{theme}
 
 
 		<div class="flex gap-2 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
@@ -132,3 +110,7 @@ function chooseTheme(theme) {
 
     </div>
 </div>
+
+<h1 class="mb-4 text-4xl leading-none tracking-tight text-gray-800 md:text-5xl mt-8">Themes</h1>
+
+<div class="{currentTheme} hover:scale-108 active:scale-100 transition-all select-none shadow-lg" style="background-color: var(--color-primary)"> hello world </div>

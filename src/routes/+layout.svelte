@@ -3,6 +3,7 @@
 	import Logo from '$lib/images/Logo.svelte';
 
 	let { children } = $props();
+
 </script>
 
 <svelte:head>
