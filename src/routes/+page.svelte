@@ -45,11 +45,12 @@
 	onMount(async () => {
 		if (browser) {
 			try {
-				await init({
+				init({
 					module_or_path: '/lectio_wasm_bg.wasm'
+				}).then(() => {
+					mounted = true;
+					generatedLiturgy = JSON.parse(wasm_generate_liturgy(formatDateForLiturgy(), translation));
 				});
-				mounted = true;
-				generatedLiturgy = JSON.parse(wasm_generate_liturgy(formatDateForLiturgy(), translation));
 			} catch (error) {
 				console.log('Failed to initialize WASM module:', error);
 			}
