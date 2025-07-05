@@ -5,7 +5,7 @@
 	import IcBaselineKeyboardArrowDown from '~icons/ic/baseline-keyboard-arrow-down';
 
 	import { Select } from 'bits-ui';
-	import { crossfade, fly } from 'svelte/transition';
+	import { crossfade, fly, fade } from 'svelte/transition';
 	const [send, receive] = crossfade({ duration: 200 });
 
 	const translations = ['NABRE', 'DRA', 'RSVCE', 'HWP'];
@@ -26,6 +26,66 @@
 		<p class="text-md font-medium">{currentSeason}</p>
 	</div>
 
+	<!-- Translation Dropdown -->
+	<Select.Root
+		bind:open={translationOpened}
+    bind:value={translation}
+		type="single"
+		onValueChange={(t) => (translation = t)}
+		items={translations}
+	>
+		<Select.Trigger>
+			<button
+				class="group flex cursor-pointer items-center active:scale-95 transition-all"
+        class:text-amber-700={translationShowArrow}
+				onmouseenter={() => (translationHovered = true)}
+				onmouseleave={() => (translationHovered = false)}
+			>
+				<div
+					class="relative h-5 w-5 transition-all"
+					class:translate-x-[3px]={translationShowArrow}
+					class:rotate-90={translationOpened}
+				>
+					{#if translationShowArrow}
+						<div transition:fade={{ duration: 100 }}> 
+							<IcBaselineKeyboardArrowDown class="absolute size-5 -rotate-90" />
+						</div>
+					{:else}
+						<div transition:fade={{ duration: 100 }}> 
+							<MaterialSymbolsArticleOutlineRounded class="absolute size-5" />
+						</div>
+					{/if}
+				</div>
+				<p class="ml-1 font-medium text-inherit">{translation}</p>
+			</button>
+		</Select.Trigger>
+
+		<Select.Portal>
+			<Select.Content forceMount>
+				{#snippet child({ props, wrapperProps, open })}
+					{#if open}
+						<div {...wrapperProps}>
+							<div {...props} transition:fly={{ y: -5, duration: 100 }}>
+								<Select.Viewport class="bg-amber-200 px-2 py-1 shadow-xl">
+									{#each translations as translation, i (i)}
+										<Select.Item value={translation}>
+											{#snippet children({ selected })}
+												{#if selected}
+                          >
+												{/if}
+												{translation}
+											{/snippet}
+										</Select.Item>
+									{/each}
+								</Select.Viewport>
+							</div>
+						</div>
+					{/if}
+				{/snippet}
+			</Select.Content>
+		</Select.Portal>
+	</Select.Root>
+
 	<!-- Comfort Spacing -->
 	<button
 		class:opacity-40={!comfortSpacing}
@@ -45,61 +105,4 @@
 		</p>
 	</button>
 
-	<!-- Translation Dropdown -->
-	<Select.Root
-		bind:open={translationOpened}
-		type="single"
-		onValueChange={(t) => (translation = t)}
-		items={translations}
-	>
-		<Select.Trigger>
-			<button
-				class="group flex cursor-pointer items-center"
-				onmouseenter={() => (translationHovered = true)}
-				onmouseleave={() => (translationHovered = false)}
-			>
-				<div
-					class="relative h-5 w-5 transition-all"
-					class:translate-x-[3px]={translationShowArrow}
-					class:rotate-90={translationOpened}
-				>
-					{#if translationShowArrow}
-						<div in:receive={{ key: 'translationIn' }} out:send={{ key: 'translationOut' }}>
-							<IcBaselineKeyboardArrowDown class="absolute size-5 -rotate-90" />
-						</div>
-					{:else}
-						<div in:receive={{ key: 'translationOut' }} out:send={{ key: 'translationIn' }}>
-							<MaterialSymbolsArticleOutlineRounded class="absolute size-5" />
-						</div>
-					{/if}
-				</div>
-				<p class="ml-1 font-medium">{translation}</p>
-			</button>
-		</Select.Trigger>
-
-		<Select.Portal>
-			<Select.Content forceMount>
-				{#snippet child({ props, wrapperProps, open })}
-					{#if open}
-						<div {...wrapperProps}>
-							<div {...props} transition:fly={{ y: -5, duration: 100 }}>
-								<Select.Viewport class="bg-amber-200 px-2 py-1 shadow-xl">
-									{#each translations as translation, i (i)}
-										<Select.Item value={translation}>
-											{#snippet children({ selected })}
-												{translation}
-												{#if selected}
-													<div class="ml-auto"></div>
-												{/if}
-											{/snippet}
-										</Select.Item>
-									{/each}
-								</Select.Viewport>
-							</div>
-						</div>
-					{/if}
-				{/snippet}
-			</Select.Content>
-		</Select.Portal>
-	</Select.Root>
 </div>
