@@ -1,0 +1,11 @@
+@layer base {
+  .theme-rose {
+    --color-primary: #b35cb5;
+    --color-secondary: #CBB06A;
+    --color-tertiary: #f6bcf7;
+
+    --text-color: #2B001F;
+    --bg-color: #FFF0FA;
+    --accent-color: #b35cb5;
+  }
+}

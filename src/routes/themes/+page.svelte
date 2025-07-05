@@ -3,7 +3,19 @@
 <script>
 	import { onMount } from 'svelte';
 
+	let activeTab = 'preset';
+
+	function showPreset() {
+	    activeTab = 'preset';
+	}
+
+	function showCustom() {
+	    activeTab = 'custom';
+	}
+
 	let liturgicalThemes = ['theme-white', 'theme-green', 'theme-purple', 'theme-red', 'theme-rose'];
+
+	let themes = [];
 
 	let currentTheme = $state(null);
 	//local storage handled here
@@ -54,10 +66,35 @@
 	});
 </script>
 
+<div class="{currentTheme}">
+<div class="flex justify-center mb-4 gap-4">
+	<button
+		class = "px-4 py-4 rounded-lg font-semibold transition-colors"
+		class:selected={activeTab === 'preset'}
+		on:click={showPreset}
+		style="background-color: var(--accent-color); color: var(--bg-color);cursor:pointer;"
+	>
+		Preset Themes
+	</button>
+
+	<button
+		class="px-4 py-2 rounded-lg font-semibold transition-colors"
+		class:selected={activeTab === 'custom'}
+		on:click={showCustom}
+		style="background-color: var(--accent-color); color: var(--bg-color); cursor:pointer;"
+	>
+		Custom Theme
+	</button>
+
+</div>
+</div>
+
+
+{#if activeTab === 'preset'}
 <h1 class="mt-8 mb-4 text-4xl leading-none tracking-tight text-gray-800 md:text-5xl">Default</h1>
 
 <div class="section themes fullWidth">
-	<div class="grid">
+	<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
 		{#each liturgicalThemes as theme, i}
 			<div
 				class="{theme} themeButton group flex flex-col rounded-full shadow-lg transition-all select-none hover:scale-108 active:scale-100"
@@ -85,15 +122,24 @@
 
 <h1 class="mt-8 mb-4 text-4xl leading-none tracking-tight text-gray-800 md:text-5xl">Themes</h1>
 
-<div
+{/if}
+
+{#if activeTab === 'custom'}
+
+{/if}
+
+
+
+<!-- testing -->
+<!-- <div
 	class="{currentTheme} shadow-lg select-none hover:scale-108 active:scale-100"
-	style="background-color: var(--color-primary)"
+	style="backgroun==d-color: var(--color-primary)"
 >
 	hello world
-</div>
+</div> -->
 
 <style>
-	.grid {
+	.custom-grid {
 		display: grid;
 		grid-template-columns: repeat(5, 100px);
 		gap: 34px;
@@ -106,5 +152,8 @@
 		align-items: center;
 		justify-content: center;
 		cursor: pointer;
+	}
+	.selected {
+	    outline: 2px solid var(--accent-color);
 	}
 </style>
