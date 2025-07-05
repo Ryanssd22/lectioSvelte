@@ -86,7 +86,7 @@
 <h1 class="mt-8 mb-4 text-4xl leading-none tracking-tight text-gray-800 md:text-5xl">Themes</h1>
 
 <div
-	class="{currentTheme} shadow-lg transition-all select-none hover:scale-108 active:scale-100"
+	class="{currentTheme} shadow-lg select-none hover:scale-108 active:scale-100"
 	style="background-color: var(--color-primary)"
 >
 	hello world
