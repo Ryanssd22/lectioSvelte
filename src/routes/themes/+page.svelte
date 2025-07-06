@@ -3,21 +3,27 @@
 <script>
 	import { onMount } from 'svelte';
 
-	let activeTab = 'preset';
-
 	function showPreset() {
-	    activeTab = 'preset';
+	    activeTab = 'tab-1';
+	    localStorage.setItem('activeTab', 'tab-1');
 	}
 
 	function showCustom() {
-	    activeTab = 'custom';
+	    activeTab = 'tab-2';
+	    localStorage.setItem('activeTab', 'tab-2');
 	}
 
 	let liturgicalThemes = ['theme-white', 'theme-green', 'theme-purple', 'theme-red', 'theme-rose'];
 
 	let themes = [];
+	let tabs = ['tab-1', 'tab-2'];
+	const tabLabels = {
+		'tab-1': 'Preset Themes',
+		'tab-2': 'Custom Theme'
+	};
 
-	let currentTheme = $state(null);
+	let activeTab = null;
+	let currentTheme = null;
 	//local storage handled here
 
 	async function saveTheme(theme) {
@@ -52,6 +58,39 @@
 		console.log('Using default theme');
 		return 'theme-white';
 	}
+    
+	async function saveTab(tab) {
+		localStorage.setItem('selectedTab', tab);
+
+		const cache = await caches.open('tab-cache');
+		const response = new Response(tab, {
+			headers: { 'Content-Type': 'text/plain' }
+		});
+
+		await cache.put('/cached-tab', response);
+	}
+
+	async function loadTab() {
+	    const cache = await caches.open('tab-cache');
+	    const cachedResponse = await cache.match('/cached-tab');
+
+	    if (cachedResponse) {
+		const cachedTab = await cachedResponse.text();
+		if (tabs.includes(cachedTab)) {
+		    console.log('Loaded tab from cache', cachedTab);
+		    return cachedTab;
+		}
+	    }
+
+	    const local = localStorage.getItem('activeTab');
+	    if (local && tabs.includes(local)) {
+    		console.log('Loaded tab from localStorage:', local);
+	    	return local;
+	    }
+
+	    console.log('Using default tab');
+	    return 'tab-1';
+	}
 
 	function chooseTheme(theme) {
 		console.log('Selected theme: ', theme);
@@ -60,37 +99,39 @@
 		//local storage handled here
 		saveTheme(theme);
 	}
+	function chooseTab(tab) {
+		console.log('Selected tab: ', tab);
+		activeTab = tab;
+
+		//local storage handled here
+		saveTab(tab);
+	}
 
 	onMount(async () => {
+		activeTab = await loadTab();
 		currentTheme = await loadTheme();
 	});
 </script>
 
 <div class="{currentTheme}">
 <div class="flex justify-center mb-4 gap-4">
-	<button
-		class = "px-4 py-4 rounded-lg font-semibold transition-colors"
-		class:selected={activeTab === 'preset'}
-		on:click={showPreset}
-		style="background-color: var(--accent-color); color: var(--bg-color);cursor:pointer;"
-	>
-		Preset Themes
-	</button>
-
-	<button
-		class="px-4 py-2 rounded-lg font-semibold transition-colors"
-		class:selected={activeTab === 'custom'}
-		on:click={showCustom}
-		style="background-color: var(--accent-color); color: var(--bg-color); cursor:pointer;"
-	>
-		Custom Theme
-	</button>
-
-</div>
+	{#each tabs as tab}
+		<button
+			class={`px-4 py-4 rounded-lg font-semibold transition-colors duration-200
+				${activeTab === tab 
+					? 'ring-2 ring-[var(--accent-color)] opacity-100' 
+					: 'opacity-50'
+				}`}
+			on:click={() => chooseTab(tab)}
+			style="background-color: var(--accent-color); color: var(--bg-color); cursor:pointer;"
+		>
+			{tabLabels[tab]}
+		</button>
+	{/each}
 </div>
 
 
-{#if activeTab === 'preset'}
+{#if activeTab === 'tab-1'}
 <h1 class="mt-8 mb-4 text-4xl leading-none tracking-tight text-gray-800 md:text-5xl">Default</h1>
 
 <div class="section themes fullWidth">
@@ -102,10 +143,10 @@
 					chooseTheme(theme);
 				}}
 				style="
-		background-color: var(--color-primary);
-		color: var(--color-tertiary);
-		border-radius: 0.5rem;
-		"
+				background-color: var(--color-primary);
+				color: var(--color-tertiary);
+				border-radius: 0.5rem;
+				"
 			>
 				{theme}
 
@@ -124,10 +165,17 @@
 
 {/if}
 
-{#if activeTab === 'custom'}
+{#if activeTab === 'tab-2'}
+	<h1 class="mt-8 mb-4 text-4xl leading-none tracking-tight text-gray-800 md:text-5xl">
+		Custom Theme Builder
+	</h1>
+	<p class="text-lg text-gray-600">
+		This is where you'll customize your theme.
+	</p>
 
 {/if}
 
+</div>
 
 
 <!-- testing -->
@@ -154,6 +202,6 @@
 		cursor: pointer;
 	}
 	.selected {
-	    outline: 2px solid var(--accent-color);
+	    outline: 5px solid var(--color-primary);
 	}
 </style>

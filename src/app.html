@@ -8,9 +8,13 @@
 
     <!-- Theme Handler -->
     <script>
+	//this is for the theme
       const theme = localStorage.getItem('selectedTheme') || "theme-white";
-      document.documentElement.className = theme;
+      const tab = localStorage.getItem('activeTab') || 'tab-1';
+	document.documentElement.className = `${theme} ${tab}`;
       console.log(`${theme} loaded`);
+
+      //this is tabs
     </script>
 		%sveltekit.head%
 	</head>
