@@ -8,9 +8,10 @@
 	import { crossfade, fly, fade } from 'svelte/transition';
 	const [send, receive] = crossfade({ duration: 200 });
 
-	const translations = ['NABRE', 'DRA', 'RSVCE', 'HWP'];
+	// const translations = ['NABRE', 'DRA', 'RSVCE', 'HWP'];
 
-	let { comfortSpacing = $bindable(), translation = $bindable(), currentSeason } = $props();
+
+	let { comfortSpacing = $bindable(), translationIndex = $bindable(), currentSeason, translations } = $props();
 
 	/* TRANSLATION VARIABLES */
 	let translationHovered = $state(false);
@@ -29,9 +30,9 @@
 	<!-- Translation Dropdown -->
 	<Select.Root
 		bind:open={translationOpened}
-    bind:value={translation}
+    bind:value={translationIndex}
 		type="single"
-		onValueChange={(t) => (translation = t)}
+		onValueChange={(t) => (translationIndex = t)}
 		items={translations}
 	>
 		<Select.Trigger>
@@ -56,7 +57,7 @@
 						</div>
 					{/if}
 				</div>
-				<p class="ml-1 font-medium text-inherit">{translation}</p>
+				<p class="ml-1 font-medium text-inherit">{translations[translationIndex].short}</p>
 			</button>
 		</Select.Trigger>
 
@@ -66,14 +67,13 @@
 					{#if open}
 						<div {...wrapperProps}>
 							<div {...props} transition:fly={{ y: -5, duration: 100 }}>
-								<Select.Viewport class="bg-amber-200 px-2 py-1 shadow-xl">
+								<Select.Viewport class="bg-amber-200 shadow-xl rounded-lg">
 									{#each translations as translation, i (i)}
-										<Select.Item value={translation}>
+										<Select.Item value={i} class="">
 											{#snippet children({ selected })}
-												{#if selected}
-                          >
-												{/if}
-												{translation}
+                        <p class="font-medium text-center cursor-pointer px-3 hover:bg-amber-300 transition-all py-[4px]" class:bg-amber-400={selected}>
+                          {translations[i].long}
+                        </p>
 											{/snippet}
 										</Select.Item>
 									{/each}

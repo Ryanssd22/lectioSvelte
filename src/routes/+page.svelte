@@ -13,14 +13,20 @@
 	import { onMount, untrack } from 'svelte';
 
 	let date = new SvelteDate(Date.now());
-	let translation = $state('NABRE');
+  const translations = [
+    {short: "NABRE", long: "New American Bible Revised Edition"},
+    {short: "DRA", long: "Douay-Rheims Bible"},
+    {short: "RSVCE", long: "Revised Standard Version Catholic Edition"},
+    {short: "HWP", long: "Hawai‘i Pidgin"},
+  ]
+  let translationIndex = $state(null);
 	let readingIndex = $state(0);
 
 	let mounted = $state(false);
 	let generatedLiturgy = $derived.by(() => {
 		date;
 		if (mounted) {
-			return JSON.parse(wasm_generate_liturgy(formatDateForLiturgy(), translation));
+			return JSON.parse(wasm_generate_liturgy(formatDateForLiturgy(), translations[translationIndex].short));
 		} else {
 			return null;
 		}
@@ -45,17 +51,37 @@
 	let loaded = $derived(mounted && liturgy);
 	onMount(async () => {
 		if (browser) {
+      // Getting local storage variables
+      comfortSpacing = getLocalStorage("comfortSpacing", false);
+      translationIndex = getLocalStorage("translationIndex", 0);
+
+      console.log("TranslationIndex:", translationIndex);
+
 			try {
 				await init({
 					module_or_path: '/lectio_wasm_bg.wasm'
 				});
-				mounted = true;
-				generatedLiturgy = JSON.parse(wasm_generate_liturgy(formatDateForLiturgy(), translation));
+				generatedLiturgy = JSON.parse(wasm_generate_liturgy(formatDateForLiturgy(), translations[translationIndex].short));
 			} catch (error) {
 				console.log('Failed to initialize WASM module:', error);
+        return;
 			}
+
+      mounted = true
 		}
 	});
+
+  function getLocalStorage(variable, fallback) {
+      const localVar = localStorage.getItem(variable);
+      if (localVar) {
+        if (localVar == "true") { return true }
+        if (localVar == "false") { return false }
+        if (localVar == "0") { return 0 }
+        return Number(localVar) ? Number(localVar) : localVar;
+      } else {
+        return fallback;
+      }
+  }
 
 	function formatDateForLiturgy() {
 		let year = date.getFullYear();
@@ -64,7 +90,7 @@
 		return `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`;
 	}
 
-	let comfortSpacing = $state(false);
+	let comfortSpacing = $state(null);
 	let firstReading = $derived.by(() => {
 		if (liturgy) {
 			return liturgy[readingIndex].first;
@@ -88,6 +114,18 @@
 			return null;
 		}
 	});
+
+  // Handling Local Storage
+  $effect(() => {
+    if (comfortSpacing != null) {
+      localStorage.setItem("comfortSpacing", comfortSpacing);
+    }
+  })
+  $effect(() => {
+    if (translationIndex != null) {
+      localStorage.setItem("translationIndex", translationIndex);
+    }
+  })
 </script>
 
 {#if !loaded}
@@ -108,7 +146,7 @@
 			/>
 
 			<!-- Reading Bar -->
-			<ReadingBar bind:comfortSpacing bind:translation {currentSeason} />
+			<ReadingBar bind:comfortSpacing bind:translationIndex {translations} {currentSeason} />
 		</div>
 
 		<!-- Readings -->
