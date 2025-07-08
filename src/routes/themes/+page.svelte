@@ -169,9 +169,104 @@
 	<h1 class="mt-8 mb-4 text-4xl leading-none tracking-tight text-gray-800 md:text-5xl">
 		Custom Theme Builder
 	</h1>
-	<p class="text-lg text-gray-600">
-		This is where you'll customize your theme.
-	</p>
+	<div class="grid grid-cols-2 md:grid-cols-3 gap-4 justify-center-safe">
+
+	    <div class="flex items-center gap-2">
+	    <input 
+		class ="w-45 flex-grow rounded-md border border-gray-300 text-gray-800 placeholder-gray-400 px-1 py-1"
+		type="text"
+		placeholder="Primary color"
+		style="text-transform: uppercase;"
+	    />
+	    <input 
+		class ="w-10 h-10 px-2 py-2 border border-gray-300 rounded-lg text-gray-800 placeholder-gray-400"
+		type="color"
+		placeholder="Primary color"
+		style="text-transform: uppercase;"
+	    />
+	    </div>
+
+	    <div class="flex items-center gap-2">
+	    <input 
+		class ="w-45 flex-grow rounded-md border border-gray-300 text-gray-800 placeholder-gray-400 px-1 py-1"
+		type="text"
+		placeholder="Secondary color"
+		style="text-transform: uppercase;"
+	    />
+	    <input 
+		class ="w-10 h-10 px-2 py-2 border border-gray-300 rounded-lg text-gray-800 placeholder-gray-400"
+		type="color"
+		placeholder="Secondary color"
+		style="text-transform: uppercase;"
+	    />
+	    </div>
+
+	    <div class="flex items-center gap-2">
+	    <input 
+		class ="w-45 flex-grow rounded-md border border-gray-300 text-gray-800 placeholder-gray-400 px-1 py-1"
+		type="text"
+		placeholder="Tertiary color"
+		style="text-transform: uppercase;"
+	    />
+	    <input 
+		class ="w-10 h-10 px-2 py-2 border border-gray-300 rounded-lg text-gray-800 placeholder-gray-400"
+		type="color"
+		placeholder="Tertiary color"
+		style="text-transform: uppercase;"
+	    />
+	    </div>
+
+
+	    <div class="flex items-center gap-2">
+	    <input 
+		class ="w-45 flex-grow rounded-md border border-gray-300 text-gray-800 placeholder-gray-400 px-1 py-1"
+		type="text"
+		placeholder="Text color"
+		style="text-transform: uppercase;"
+	    />
+	    <input 
+		class ="w-10 h-10 px-2 py-2 border border-gray-300 rounded-lg text-gray-800 placeholder-gray-400"
+		type="color"
+		placeholder="Text color"
+		style="text-transform: uppercase;"
+	    />
+	    </div>
+
+	    <div class="flex items-center gap-2">
+	    <input 
+		class ="w-45 flex-grow rounded-md border border-gray-300 text-gray-800 placeholder-gray-400 px-1 py-1"
+		type="text"
+		placeholder="Accent color"
+		style="text-transform: uppercase;"
+	    />
+	    <input 
+		class ="w-10 h-10 px-2 py-2 border border-gray-300 rounded-lg text-gray-800 placeholder-gray-400"
+		type="color"
+		placeholder="Accent color"
+		style="text-transform: uppercase;"
+	    />
+	    </div>
+
+	    <div class="flex items-center gap-2">
+	    <input 
+		class ="w-45 flex-grow rounded-md border border-gray-300 text-gray-800 placeholder-gray-400 px-1 py-1"
+		type="text"
+		placeholder="Background color"
+		style="text-transform: uppercase;"
+	    />
+	    <input 
+		class ="w-10 h-10 px-2 py-2 border border-gray-300 rounded-lg text-gray-800 placeholder-gray-400"
+		type="color"
+		placeholder="Background color"
+		style="text-transform: uppercase;"
+	    />
+	    </div>
+
+	</div>
+
+	<h1 class="mt-8 mb-4 text-4xl leading-none tracking-tight text-gray-800 md:text-5xl">
+	    Preview
+	</h1>
 
 {/if}
 
