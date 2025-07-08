@@ -16,7 +16,8 @@
 		liturgy = $bindable(),
 		readingIndex = $bindable(),
 		multipleReadings,
-		seasons
+		seasons,
+		translationLoaded
 	} = $props();
 	let formattedDate = $state(formatDate());
 	let onToday = $state(true);
@@ -108,7 +109,9 @@
 					class="pointer-events-none flex items-end justify-center px-2 text-center text-3xl leading-tight font-semibold opacity-0"
 					aria-hidden="true"
 				>
-					<h1 class="items-end">{title}</h1>
+					<h1 class="items-end">
+						{title}
+					</h1>
 					{#if multipleReadings}
 						<div class="flex h-4/5">
 							<MaterialSymbolsInfoOutlineRounded class="size-4 items-start opacity-60" />
@@ -116,7 +119,7 @@
 					{/if}
 				</div>
 
-				{#key liturgy}
+				{#key title}
 					<div
 						in:fly={{ duration: 100, delay: 100, y: titleFly }}
 						out:fly={{ duration: 100, y: -titleFly }}
