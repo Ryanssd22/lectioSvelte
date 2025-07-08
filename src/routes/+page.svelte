@@ -194,28 +194,30 @@
 		</div>
 
 		<!-- Readings -->
-		{#key liturgy}
-			{#if translationLoaded}
-				<div
-					in:fly={{ duration: 100, delay: 100, y: 10 }}
-					out:fly={{ duration: 100, y: -10 }}
-					class="w-full md:w-2/3"
-				>
-					{#if firstReading}
-						<ReadingDisplay title="First Reading" reading={firstReading} {comfortSpacing} />
-					{/if}
+		{#if translationLoaded}
+      <div>
+          {#key liturgy}
+            <div
+              in:fly={{ duration: 100, delay: 100, y: 10 }}
+              out:fly={{ duration: 100, y: -10 }}
+              class="w-full md:w-2/3"
+            >
+              {#if firstReading}
+                <ReadingDisplay title="First Reading" reading={firstReading} {comfortSpacing} />
+              {/if}
 
-					{#if secondReading}
-						<ReadingDisplay title="Second Reading" reading={secondReading} {comfortSpacing} />
-					{/if}
+              {#if secondReading}
+              <ReadingDisplay title="Second Reading" reading={secondReading} {comfortSpacing} />
+            {/if}
 
-					{#if gospel}
-						<ReadingDisplay title="Gospel" reading={gospel} {comfortSpacing} />
-					{/if}
-				</div>
-			{:else}
-				<p>TEST</p>
-			{/if}
-		{/key}
+            {#if gospel}
+              <ReadingDisplay title="Gospel" reading={gospel} {comfortSpacing} />
+            {/if}
+          </div>
+        {/key}
+    </div>
+		{:else}
+			<p>TEST</p>
+		{/if}
 	</div>
 {/if}
