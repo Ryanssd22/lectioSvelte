@@ -182,7 +182,6 @@
 			<DatePicker
 				bind:date
 				seasons={generatedLiturgy.season}
-				{currentSeason}
 				{liturgy}
 				bind:readingIndex
 				{multipleReadings}
@@ -195,29 +194,27 @@
 
 		<!-- Readings -->
 		{#if translationLoaded}
-      <div>
-          {#key liturgy}
-            <div
-              in:fly={{ duration: 100, delay: 100, y: 10 }}
-              out:fly={{ duration: 100, y: -10 }}
-              class="w-full md:w-2/3"
-            >
-              {#if firstReading}
-                <ReadingDisplay title="First Reading" reading={firstReading} {comfortSpacing} />
-              {/if}
+			{#key liturgy}
+				<div
+					in:fly={{ duration: 100, delay: 100, y: 10 }}
+					out:fly={{ duration: 100, y: -10 }}
+					class="w-full items-center md:w-2/3"
+				>
+					{#if firstReading}
+						<ReadingDisplay title="First Reading" reading={firstReading} {comfortSpacing} />
+					{/if}
 
-              {#if secondReading}
-              <ReadingDisplay title="Second Reading" reading={secondReading} {comfortSpacing} />
-            {/if}
+					{#if secondReading}
+						<ReadingDisplay title="Second Reading" reading={secondReading} {comfortSpacing} />
+					{/if}
 
-            {#if gospel}
-              <ReadingDisplay title="Gospel" reading={gospel} {comfortSpacing} />
-            {/if}
-          </div>
-        {/key}
-    </div>
+					{#if gospel}
+						<ReadingDisplay title="Gospel" reading={gospel} {comfortSpacing} />
+					{/if}
+				</div>
+			{/key}
 		{:else}
-			<p>TEST</p>
+			<p>Loading Translation...</p>
 		{/if}
 	</div>
 {/if}
