@@ -179,10 +179,10 @@ $effect(() => {
 	    {#if firstReading != ''}
 		<h2 class="text-xl font-semibold">First Reading</h2>
 		<p>{firstReading.rawReading}</p>
-		{#each firstReading.reading[0].verses as verse}
-		    <p>{verse.chapter}:{verse.verse}</p>
-		    <p>{verse.translation}</p>
-		{/each}
+		<!-- {#each firstReading.reading[0].verses as verse} -->
+		<!--     <p>{verse.chapter}:{verse.verse}</p> -->
+		<!--     <p>{verse.translation}</p> -->
+		<!-- {/each} -->
 	    {/if}
 	</div>
     </div>
