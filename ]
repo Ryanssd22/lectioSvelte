@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@layer base {
+	body {
+		@apply bg-amber-50;
+		font-family: 'Lora', 'Inter';
+	}
+}
+
+.arrowButton {
+	@apply self-stretch px-2 cursor-pointer items-center justify-center rounded-lg transition-colors duration-200 hover:bg-amber-200 active:bg-amber-300;
+}
+
+.arrowIcon {
+	@apply size-10 transition;
+}
+
+
+@theme {
+    --color-mint-500: oklch(0.72 0.11 178);
+
+    --color-white-primary:;
+}

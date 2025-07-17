@@ -1,0 +1,11 @@
+@layer base {
+  .theme-white {
+    --color-primary: #FFFEF2;
+    --color-secondary: #CBB06A;
+    --color-tertiary: #D8D8D6;
+
+    --text-color: #2D2D2D;
+    --bg-color: #FFFEF2;
+    --accent-color: #CBB06A;
+  }
+}

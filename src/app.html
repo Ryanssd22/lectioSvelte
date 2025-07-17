@@ -4,6 +4,16 @@
 		<meta charset="utf-8" />
 
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Theme Handler -->
+    <script>
+	//this is for the theme
+      const theme = localStorage.getItem('selectedTheme') || "theme-white";
+      const tab = localStorage.getItem('activeTab') || 'tab-1';
+	document.documentElement.className = `${theme} ${tab}`;
+      console.log(`${theme} loaded`);
+    </script>
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"

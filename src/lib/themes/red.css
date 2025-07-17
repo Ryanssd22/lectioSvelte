@@ -1,0 +1,11 @@
+@layer base {
+  .theme-red {
+    --color-primary: #9a122d;
+    --color-secondary: #CBB06A;
+    --color-tertiary: #d9686d;
+
+    --text-color: #FFF0F0;
+    --bg-color: #3F0A13;
+    --accent-color: #d9686d;
+  }
+}

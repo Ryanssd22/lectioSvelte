@@ -25,6 +25,82 @@ a,
 	@apply size-10 transition;
 }
 
+:root {
+  --primary-color: #1e90ff;
+  --secondary-color: #ff69b4;
+  --tertiary-color: #32cd32;
+  --accent-color: #ffa500;
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+/*colors */
+@layer base {
+  .theme-white {
+    --color-primary: #FFFEF2;
+    --color-secondary: #CBB06A;
+    --color-tertiary: #D8D8D6;
+
+    --text-color: #2D2D2D;
+    --bg-color: #FFFEF2;
+    --accent-color: #CBB06A;
+  }
+
+  .theme-green {
+    --color-primary: #336958;
+    --color-secondary: #CBB06A;
+    --color-tertiary: #7c9993;
+
+    --text-color: #F0F8F2;
+    --bg-color: #1F4137;
+    --accent-color: #CBB06A;
+  }
+
+  .theme-purple {
+    --color-primary: #2F195F;
+    --color-secondary: #CBB06A;
+    --color-tertiary: #7353BA;
+
+    --text-color: #EDE7F6;
+    --bg-color: #1B0C3D;
+    --accent-color: #7353BA;
+  }
+
+  .theme-red {
+    --color-primary: #9a122d;
+    --color-secondary: #CBB06A;
+    --color-tertiary: #d9686d;
+
+    --text-color: #FFF0F0;
+    --bg-color: #3F0A13;
+    --accent-color: #d9686d;
+  }
+
+  .theme-rose {
+    --color-primary: #b35cb5;
+    --color-secondary: #CBB06A;
+    --color-tertiary: #f6bcf7;
+
+    --text-color: #2B001F;
+    --bg-color: #FFF0FA;
+    --accent-color: #b35cb5;
+  }
+}
+
+
+[data-theme="interstellar"] {
+    background: red;
+}
 .dateDot {
 	@apply absolute top-[5px] size-2 rounded-full transition-all group-data-outside-month:opacity-40 group-data-today:block;
 }
