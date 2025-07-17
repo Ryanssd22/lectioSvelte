@@ -1,5 +1,15 @@
 @import 'tailwindcss';
 
+/* html { */
+/* 	scrollbar-gutter: stable; */
+/* } */
+
+button,
+a,
+[role='button'] {
+	touch-action: manipulation;
+}
+
 @layer base {
 	body {
 		@apply bg-amber-50;
@@ -8,7 +18,7 @@
 }
 
 .arrowButton {
-	@apply self-stretch px-2 cursor-pointer items-center justify-center rounded-lg transition-colors duration-200 hover:bg-amber-200 active:bg-amber-300;
+	@apply cursor-pointer items-center justify-center self-stretch rounded-lg px-2 transition-colors duration-200 hover:bg-amber-200 active:bg-amber-300;
 }
 
 .arrowIcon {
@@ -90,4 +100,7 @@ button {
 
 [data-theme="interstellar"] {
     background: red;
+}
+.dateDot {
+	@apply absolute top-[5px] size-2 rounded-full transition-all group-data-outside-month:opacity-40 group-data-today:block;
 }
