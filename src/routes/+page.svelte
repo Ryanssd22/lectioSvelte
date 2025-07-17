@@ -8,9 +8,9 @@
 
 	import { fly } from 'svelte/transition';
 
-import { browser } from '$app/environment';
-import init, { wasm_generate_liturgy } from '$lib/lectio-pkg/lectio_wasm';
-import { onMount } from 'svelte';
+	import { browser } from '$app/environment';
+	import init, { wasm_generate_liturgy } from '$lib/lectio-pkg/lectio_wasm';
+	import { onMount } from 'svelte';
 
 	let date = $state(new SvelteDate(Date.now()));
 	const translations = [
@@ -124,21 +124,12 @@ import { onMount } from 'svelte';
 		}
 	}
 
-	const wasmBytes = await response.arrayBuffer();
-	await init({ module: wasmBytes });
-	console.log('WASM initialized successfully');
-    } catch (error) {
-	console.log('WASM cache failed: ', error);
-	try {
-	    await init();
-	    console.log('WASM initialized with fallback method');
-	} catch (fallbackError) {
-	    console.error('Both WASM initialization methods failed:', fallbackError);
-	    throw fallbackError;
+	function formatDateForLiturgy() {
+		let year = date.getFullYear();
+		let day = date.getDate().toString();
+		let month = (date.getMonth() + 1).toString();
+		return `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`;
 	}
-    }
-}
-
 
 	let comfortSpacing = $state(null);
 	let firstReading = $derived.by(() => {
