@@ -1,9 +1,11 @@
 <script lang="ts">
 	import '../app.css';
 	import Logo from '$lib/images/Logo.svelte';
+	import MaterialSymbolsBrushSharp from '~icons/material-symbols/brush-sharp';
+	import { page } from '$app/state';
 
 	let { children } = $props();
-
+	let pageName = $derived(page.route.id);
 </script>
 
 <svelte:head>
@@ -20,13 +22,23 @@
 </svelte:head>
 
 <div class="mx-2 flex flex-col sm:mx-10">
-	<div class="m-4 flex h-16 items-center gap-5 border-b-2 border-amber-100 p-5">
+	<div
+		class="m-4 flex h-16 items-center gap-5 border-b-2 border-amber-100 p-5 font-[Lexend] font-light"
+	>
 		<a href="/">
 			<Logo svgClass="w-32" baseColor="amber-500" hoverColor="amber-400" />
 		</a>
-		<a href="/" class="hover:text-amber-300"> Links </a>
-		<a href="/" class="hover:text-amber-300"> More Links </a>
-		<a href="/themes" class="hover:text-amber-300"> Themes </a>
+		<a href="/" class="transition-all hover:text-amber-300"> Links </a>
+		<a href="/" class="transition-all hover:text-amber-300"> More Links </a>
+		<a
+			href="/themes"
+			class:text-amber-500={pageName == '/themes'}
+			class:text-black={pageName != '/themes'}
+			class="flex items-center transition-all hover:text-amber-300"
+		>
+			<MaterialSymbolsBrushSharp class="mr-[2px] size-[15px]" />
+			<p>Themes</p>
+		</a>
 	</div>
 
 	<div class="flex flex-col items-center text-center">
