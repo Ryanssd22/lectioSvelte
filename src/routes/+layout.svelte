@@ -2,10 +2,21 @@
 	import '../app.css';
 	import Logo from '$lib/images/Logo.svelte';
 	import MaterialSymbolsBrushSharp from '~icons/material-symbols/brush-sharp';
+	import Icon from '@iconify/svelte';
 	import { page } from '$app/state';
 
 	let { children } = $props();
 	let pageName = $derived(page.route.id);
+	$inspect('page name:', pageName);
+
+	let menuItems = [
+		{ title: 'Martyrology', route: '/martyrology' },
+		{
+			title: 'Themes',
+			route: '/themes',
+			icon: 'material-symbols:brush-sharp'
+		}
+	];
 </script>
 
 <svelte:head>
@@ -28,17 +39,30 @@
 		<a href="/">
 			<Logo svgClass="w-32" baseColor="amber-500" hoverColor="amber-400" />
 		</a>
-		<a href="/" class="transition-all hover:text-amber-300"> Links </a>
-		<a href="/" class="transition-all hover:text-amber-300"> More Links </a>
-		<a
-			href="/themes"
-			class:text-amber-500={pageName == '/themes'}
-			class:text-black={pageName != '/themes'}
-			class="flex items-center transition-all hover:text-amber-300"
-		>
-			<MaterialSymbolsBrushSharp class="mr-[2px] size-[15px]" />
-			<p>Themes</p>
-		</a>
+		{#each menuItems as menuItem (menuItem.title)}
+			<a
+				href={menuItem.route}
+				class="flex items-center transition-all hover:text-amber-300"
+				class:text-amber-500={pageName == menuItem.route}
+				class:text-black={pageName != menuItem.route}
+			>
+				{#if menuItem.icon}
+					<Icon icon={menuItem.icon} class="mr-[2px] size-[15px]" />
+				{/if}
+				{menuItem.title}
+			</a>
+		{/each}
+		<!-- <a href="/" class="transition-all hover:text-amber-300"> Martyrology </a> -->
+		<!-- <a href="/" class="transition-all hover:text-amber-300"> More Links </a> -->
+		<!-- <a -->
+		<!-- 	href="/themes" -->
+		<!-- 	class:text-amber-500={pageName == '/themes'} -->
+		<!-- 	class:text-black={pageName != '/themes'} -->
+		<!-- 	class="flex items-center transition-all hover:text-amber-300" -->
+		<!-- > -->
+		<!-- 	<MaterialSymbolsBrushSharp class="mr-[2px] size-[15px]" /> -->
+		<!-- 	<p>Themes</p> -->
+		<!-- </a> -->
 	</div>
 
 	<div class="flex flex-col items-center text-center">
