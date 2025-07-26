@@ -4,14 +4,13 @@ module.exports = {
 		'./src/**/*.{html,js,svelte,ts}' // adjust to your file types and folders
 	],
 	theme: {
-		extend: {
 			colors: {
-		primary: 'var()',
+		primary: 'rgb(var(--color-primary))',
 		secondary: 'var()',
 		tertiary: 'var()',
+		test: 'var(--color-test)',
 	    },
 	},
-	},
-	plugins: [require('daisyui')],
-	safelist: ['fill-red-500', 'fill-blue-400', 'fill-green-300', 'fill-amber-500', 'fill-amber-400', 'group-hover:opacity-100', 'opacity-0']
+	plugins: [],
+	safelist: ['fill-red-500', 'fill-blue-400', 'fill-green-300', 'fill-amber-500', 'fill-amber-400', 'group-hover:opacity-100', 'opacity-0', 'bg-primary']
 };

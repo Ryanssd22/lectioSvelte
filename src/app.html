@@ -8,11 +8,10 @@
 
     <!-- Theme Handler -->
     <script>
-	//this is for the theme
-      const theme = localStorage.getItem('selectedTheme') || "theme-white";
+      const theme = JSON.parse(localStorage.getItem('currentTheme')).title || 'lectio';
+      console.log(`${theme} loaded`);
       const tab = localStorage.getItem('activeTab') || 'tab-1';
 	document.documentElement.className = `${theme} ${tab}`;
-      console.log(`${theme} loaded`);
     </script>
 		<meta
 			name="viewport"

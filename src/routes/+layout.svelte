@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import Logo from '$lib/images/Logo.svelte';
+	import { currentTheme } from '$lib/stores/themeStore.svelte.js'
 
 	let { children } = $props();
 
@@ -27,6 +28,7 @@
 		<a href="/" class="hover:text-amber-300"> Links </a>
 		<a href="/" class="hover:text-amber-300"> More Links </a>
 		<a href="/themes" class="hover:text-amber-300"> Themes </a>
+		<a href="/themes-new" class="hover:text-amber-300"> {currentTheme.theme.title} </a>
 	</div>
 
 	<div class="flex flex-col items-center text-center">
