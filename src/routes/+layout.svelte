@@ -4,6 +4,8 @@
 	import MaterialSymbolsBrushSharp from '~icons/material-symbols/brush-sharp';
 	import Icon from '@iconify/svelte';
 	import { page } from '$app/state';
+	import { fade } from 'svelte/transition';
+	import { onMount } from 'svelte';
 
 	let { children } = $props();
 	let pageName = $derived(page.route.id);
@@ -17,6 +19,11 @@
 			icon: 'material-symbols:brush-sharp'
 		}
 	];
+
+	let mounted = $state(false);
+	onMount(() => {
+		mounted = true;
+	});
 </script>
 
 <svelte:head>
@@ -39,19 +46,23 @@
 		<a href="/">
 			<Logo svgClass="w-32" baseColor="amber-500" hoverColor="amber-400" />
 		</a>
-		{#each menuItems as menuItem (menuItem.title)}
-			<a
-				href={menuItem.route}
-				class="flex items-center transition-all hover:text-amber-300"
-				class:text-amber-500={pageName == menuItem.route}
-				class:text-black={pageName != menuItem.route}
-			>
-				{#if menuItem.icon}
-					<Icon icon={menuItem.icon} class="mr-[2px] size-[15px]" />
-				{/if}
-				{menuItem.title}
-			</a>
-		{/each}
+		{#if mounted}
+			<div transition:fade class="flex items-center gap-4">
+				{#each menuItems as menuItem (menuItem.title)}
+					<a
+						href={menuItem.route}
+						class="flex items-center transition-all hover:text-amber-300"
+						class:text-amber-500={pageName == menuItem.route}
+						class:text-black={pageName != menuItem.route}
+					>
+						{#if menuItem.icon}
+							<Icon icon={menuItem.icon} class="mr-[2px] size-[15px]" />
+						{/if}
+						{menuItem.title}
+					</a>
+				{/each}
+			</div>
+		{/if}
 		<!-- <a href="/" class="transition-all hover:text-amber-300"> Martyrology </a> -->
 		<!-- <a href="/" class="transition-all hover:text-amber-300"> More Links </a> -->
 		<!-- <a -->
