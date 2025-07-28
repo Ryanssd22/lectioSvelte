@@ -1,3 +1,5 @@
+<!-- themes/+page.svelte -->
+
 <script>
 	import { onMount, onDestroy } from 'svelte';
 	import { themes, currentTheme } from '$lib/stores/themeStore.svelte.js'
@@ -18,18 +20,19 @@
 
 
 	//tabs on the page
-	let tabs =['tab-1', 'tab-2'];
+	let tabs =['tab1', 'tab2']
+	let currentTab = tabs[0]
 
 	const tabLabels = {
 		'tab-1': 'Presets',
 		'tab-2': 'Custom'
 	};
 
-	let activeTab = null;
+	let activeTab = null
 
 	function showPreset() {
-	    activeTab = 'tab-1';
-	    localStorage.setItem('activeTab', 'tab-1');
+	    activeTab = 'tab-1'
+	    localStorage.setItem('activeTab', 'tab-1')
 	}
 
 	function showCustom() {
@@ -66,18 +69,43 @@
 
 </script>
 
-{each themes as theme}
+<!-- <h1> {JSON.stringify(currentTheme.theme)}</h1> -->
+<h3> Default Themes </h3>
 
+{#if currentTab == 'tab1'}
+
+    {#each tabs as tab}
+
+    {/each}
+    <div class="grid gap-3 grid-cols-2 lg:grid-cols-4 md:grid-cols-3">
+	{#each themes as theme}
+
+	    <button onclick = { changeTheme(theme) }
+		class="group relative w-32 h-16 rounded-lg cursor-pointer shadow-lg
+		transition-transform duration-200 hover:scale-[1.08] duration-200 transition-transform
+		active:scale-100"
+		style="background-color: {theme.primary}; display: flex; align-items: center; justify-content: center;">
+		<span class="transition-opacity duration-200 group-hover:opacity-0">
+		    {theme.title}
+		</span>
+		<div class="absolute inset-0 flex items-center justify-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+		    {#each [theme.secondary, theme.tertiary, theme.accent, theme.background, theme.text] as color}
+			<div class="hover:scale-120 transition-transform w-3 h-3 rounded-full" style="background-color: {color};"></div>
+		    {/each}
+		</div>
+	    </button>    
+	{/each}
+    </div>
+{/if}
+
+{#if currentTab == 'tab2'}
+
+{/if}
 
 <style>
 	.themeButton {
-		background-color: red;
-		height: 100px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 	}
 	.selected {
 		outline: 5px solid var(--color-primary);
-	}
+	}ch
 </style>
