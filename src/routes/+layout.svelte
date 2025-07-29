@@ -6,6 +6,7 @@
 	import { page } from '$app/state';
 	import { fade } from 'svelte/transition';
 	import { onMount } from 'svelte';
+	import { beforeNavigate } from '$app/navigation';
 
 	let { children } = $props();
 	let pageName = $derived(page.route.id);
@@ -23,6 +24,11 @@
 	let mounted = $state(false);
 	onMount(() => {
 		mounted = true;
+	});
+
+	beforeNavigate((navigation) => {
+		console.log('Navigation variable:', navigation);
+		pageName = navigation.to.route.id;
 	});
 </script>
 
@@ -63,17 +69,6 @@
 				{/each}
 			</div>
 		{/if}
-		<!-- <a href="/" class="transition-all hover:text-amber-300"> Martyrology </a> -->
-		<!-- <a href="/" class="transition-all hover:text-amber-300"> More Links </a> -->
-		<!-- <a -->
-		<!-- 	href="/themes" -->
-		<!-- 	class:text-amber-500={pageName == '/themes'} -->
-		<!-- 	class:text-black={pageName != '/themes'} -->
-		<!-- 	class="flex items-center transition-all hover:text-amber-300" -->
-		<!-- > -->
-		<!-- 	<MaterialSymbolsBrushSharp class="mr-[2px] size-[15px]" /> -->
-		<!-- 	<p>Themes</p> -->
-		<!-- </a> -->
 	</div>
 
 	<div class="flex flex-col items-center text-center">
