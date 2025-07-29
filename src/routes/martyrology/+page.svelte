@@ -2,7 +2,7 @@
 <script>
 	import DatePicker from '$lib/components/DatePicker.svelte';
 	import { SvelteDate } from 'svelte/reactivity';
-	import { onMount } from 'svelte';
+	import { fly } from 'svelte/transition';
 
 	let { data } = $props();
 	let { martyrology } = data;
@@ -31,17 +31,25 @@
 		martyrology[date] = day;
 		currentMartyrology = day;
 	}
-	// onMount(async () => {
-	// 	await fetchMartyrology();
-	// });
 </script>
 
-<h1 class="text-3xl font-semibold">Martyrology</h1>
-<DatePicker {date} />
-<ul class="">
-	{#each currentMartyrology as item (item)}
-		<li class="my-4 border-b-amber-100 text-left font-[Lexend] text-lg font-light">
-			&#10013; {item}
-		</li>
-	{/each}
-</ul>
+<div
+	class="flex w-full flex-col items-center md:w-5/6"
+	in:fly={{ duration: 100, delay: 100 }}
+	out:fly={{ duration: 100 }}
+>
+	<DatePicker {date} title="Martyrology" />
+	{#key currentMartyrology}
+		<ul
+			class="md:w-4/5"
+			in:fly={{ duration: 100, y: -10, delay: 100 }}
+			out:fly={{ duration: 100, y: 10 }}
+		>
+			{#each currentMartyrology as item (item)}
+				<li class="my-4 border-b-amber-100 text-left font-[Lexend] text-lg font-light">
+					&#10013; {item}
+				</li>
+			{/each}
+		</ul>
+	{/key}
+</div>
