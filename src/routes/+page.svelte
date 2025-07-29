@@ -80,7 +80,7 @@
 	let multipleReadings = $derived(liturgy?.length > 1 ? true : false);
 	let loaded = $state(false);
 	$effect(() => {
-		if (mounted && liturgy) {
+		if (liturgy) {
 			loaded = true;
 		}
 	});
@@ -172,11 +172,14 @@
 </script>
 
 {#if !loaded}
-	<div out:fly={{ duration: 200 }} class="absolute text-xl">
+	<div out:fly={{ duration: 100 }} class="absolute text-xl">
 		<SvgSpinners270RingWithBg class="my-10 size-10 text-amber-300" />
 	</div>
 {:else}
-	<div in:fly={{ delay: 200 }} class="flex w-full flex-col items-center justify-center">
+	<div
+		in:fly={{ delay: 100, duration: 100 }}
+		class="flex w-full flex-col items-center justify-center"
+	>
 		<div class="flex w-full flex-col items-center md:w-5/6">
 			<!-- Reading Heading -->
 			<DatePicker
