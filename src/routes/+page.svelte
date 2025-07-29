@@ -185,7 +185,7 @@
 				{liturgy}
 				bind:readingIndex
 				{multipleReadings}
-				{translationLoaded}
+				title={liturgy[readingIndex].title}
 			/>
 
 			<!-- Reading Bar -->
