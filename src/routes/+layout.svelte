@@ -30,21 +30,23 @@
 
 </style>
 
-<div data-theme={currentTheme.theme.title} class="min-h-screen text-text"
-     style="body"
+<div data-theme={currentTheme.theme.title} class="min-h-screen text-text" 
+    style="background-color: background-test;"
 >
-    <div class="mx-2 flex flex-col sm:mx-10">
-	<div class="m-4 flex h-16 items-center gap-5 border-b-2 border-amber-100 p-5">
-	    <a href="/">
-		<Logo svgClass="w-32" baseColor="bg-amber-300" hoverColor="bg-amber-400" />
-	    </a>
-	    <a href="/" class="transition-colors hover:text-accent">Links</a>
-	    <a href="/" class="transition-colors hover:text-accent">More Links</a>
-	    <a href="/themes" class="hover:text-amber-300"> Themes </a>
-	</div>
+    <div class="background-color: background-test" style="body">
+	<div class="mx-2 flex flex-col sm:mx-10">
+	    <div class="m-4 flex h-16 items-center gap-5 border-b-2 border-amber-100 p-5">
+		<a href="/">
+		    <Logo svgClass="w-32" baseColor=bg-amber-300 hoverColor=bg-amber-400 />
+		</a>
+		<a href="/" class="transition-colors hover:text-accent">Links</a>
+		<a href="/" class="transition-colors hover:text-accent">More Links</a>
+		<a href="/themes" class="transition-colors hover:text-accent"> Themes </a>
+	    </div>
 
-	<div class="flex flex-col items-center text-center">
-	    {@render children()}
+	    <div class="flex flex-col items-center text-center">
+		{@render children()}
+	    </div>
 	</div>
     </div>
 </div>
