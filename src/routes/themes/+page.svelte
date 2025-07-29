@@ -68,7 +68,7 @@
 		class="group relative w-32 h-16 rounded-lg cursor-pointer shadow-lg
 		transition-transform duration-200 hover:scale-[1.08] duration-200 transition-transform
 		active:scale-100"
-		style="background-color: {theme.primary}; display: flex; align-items: center; justify-content: center;">
+		style="background-color: {theme.primary}; text-color: {theme.text};display: flex; align-items: center; justify-content: center;">
 		<span class="transition-opacity duration-200 group-hover:opacity-0">
 		    {theme.title}
 		</span>

@@ -47,10 +47,10 @@ button {
 /*colors */
 @layer base {
 
-
 [data-theme="igor"] {
     --color-test: #b35cb5;
 }
+
 }
 
 [data-theme="interstellar"] {
@@ -58,77 +58,17 @@ button {
 }
 
 .dateDot {
-	@apply absolute top-[5px] size-2 rounded-full transition-all group-data-outside-month:opacity-40 group-data-today:block;
+    @apply absolute top-[5px] size-2 rounded-full transition-all group-data-outside-month:opacity-40 group-data-today:block;
 }
 
-/* [data-theme="lectio"] {
-    primary-color: '#FFC107';
-    secondary-color: '#FFB300';
-    tertiary-color: '#FF7043';
-    accent-color: '#FF6F00';
-    background-color: '#FAF9F6';
-    text-color: '#3E2723';
-}
-[data-theme="liturgical"] {
-    primary-color: '#FFC107';
-    secondary-color: '#FFB300';
-    tertiary-color: '#FF7043';
-    accent-color: '#FF6F00';
-    background-color: '#FAF9F6';
-    text-color: '#3E2723';
-}
-[data-theme="green"] {
-    primary-color: #336958;
-    secondary-color: #CBB06A;
-    tertiary-color: #7c9993;
-
-    text-color: #F0F8F2;
-    background-color: #daffd9;
-    accent-color: #CBB06A;
-}
-[data-theme="white"] {
-    primary-color: #FFFEF2;
-    secondary-color: #CBB06A;
-    tertiary-color: #D8D8D6;
-
-    text-color: #2D2D2D;
-    background-color: #FFFEF2;
-    accent-color: #CBB06A;
-}
-[data-theme="rose"] {
-    primary-color: #2F195F;
-    secondary-color: #CBB06A;
-    tertiary-color: #7353BA;
-
-    text-color: #EDE7F6;
-    background-color: #fcdcef;
-    accent-color: #7353BA;
-}
-[data-theme="purple"] {
-    primary-color: #2F195F;
-    secondary-color: #CBB06A;
-    tertiary-color: #7353BA;
-
-    text-color: #EDE7F6;
-    background-color: #d3baff;
-    accent-color: #7353BA;
-}
-[data-theme="red"] {
-    primary-color: #9a122d;
-    secondary-color: #CBB06A;
-    tertiary-color: #d9686d;
-
-    text-color: #FFF0F0;
-    background-color: #ff8a90;
-    accent-color: #d9686d;
-} */
 @theme inline {
-    --color-primary = var(--primary-color);
-    --color-secondary = var(--secondary-color);
-    --color-tertiary = var(--tertiary-color);
-    --color-accent = var(--accent-color);
-    --color-background = var(--background-color);
-    --color-text = var(--text-color);
+    --color-primary: var(--primary-color);
+    --color-secondary: var(--secondary-color);
+    --color-tertiary: var(--tertiary-color);
+    --color-accent: var(--accent-color);
+    --color-background: var(--background-color);
+    --color-text: var(--text-color);
+    --color-test: blue;
 }
 
 [data-theme="lectio"] {
@@ -192,4 +132,4 @@ button {
   --accent-color: #d9686d;
   --background-color: #ff8a90;
   --text-color: #FFF0F0;
-
+}

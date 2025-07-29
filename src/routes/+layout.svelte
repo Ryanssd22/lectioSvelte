@@ -1,3 +1,4 @@
+<!--+layout.svelte-->
 <script lang="ts">
 	import '../app.css';
 	import Logo from '$lib/images/Logo.svelte';
@@ -29,7 +30,7 @@
 
 </style>
 
-<div data-theme={currentTheme.theme.title} class="min-h-screen"
+<div data-theme={currentTheme.theme.title} class="min-h-screen text-text"
      style="body"
 >
     <div class="mx-2 flex flex-col sm:mx-10">
@@ -37,8 +38,8 @@
 	    <a href="/">
 		<Logo svgClass="w-32" baseColor="bg-amber-300" hoverColor="bg-amber-400" />
 	    </a>
-	    <a href="/" class="transition-colors hover:text-primary">Links</a>
-	    <a href="/" class="transition-colors hover:text-[color:var(--primary-color)]">More Links</a>
+	    <a href="/" class="transition-colors hover:text-accent">Links</a>
+	    <a href="/" class="transition-colors hover:text-accent">More Links</a>
 	    <a href="/themes" class="hover:text-amber-300"> Themes </a>
 	</div>
 
