@@ -25,36 +25,14 @@ a,
 	@apply size-10 transition;
 }
 
-/* :root { */
-/*   --primary-color: #1e90ff; */
-/*   --secondary-color: #ff69b4; */
-/*   --tertiary-color: #32cd32; */
-/*   --accent-color: #ffa500; */
-/*   --background-color: #ffffff; */
-/*   --text-color: #000000; */
-/* } */
-
 body {
-  background-color: var(--background-color);
-  color: var(--text-color);
+	background-color: var(--background-color);
+	color: var(--text-color);
 }
 
 button {
-  background-color: var(--primary-color);
-  color: var(--text-color);
-}
-
-/*colors */
-@layer base {
-
-[data-theme="igor"] {
-    --color-test: #b35cb5;
-}
-
-}
-
-[data-theme="interstellar"] {
-    background: red;
+	background-color: var(--primary-color);
+	color: var(--text-color);
 }
 
 .dateDot {
@@ -68,7 +46,6 @@ button {
     --color-accent: var(--accent-color);
     --color-background: var(--background-color);
     --color-text: var(--text-color);
-    --color-test: blue;
 }
 
 [data-theme="lectio"] {
