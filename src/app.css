@@ -25,15 +25,6 @@ a,
 	@apply size-10 transition;
 }
 
-:root {
-	--primary-color: #1e90ff;
-	--secondary-color: #ff69b4;
-	--tertiary-color: #32cd32;
-	--accent-color: #ffa500;
-	--background-color: #ffffff;
-	--text-color: #000000;
-}
-
 body {
 	background-color: var(--background-color);
 	color: var(--text-color);
@@ -44,62 +35,78 @@ button {
 	color: var(--text-color);
 }
 
-/*colors */
-@layer base {
-	.theme-white {
-		--color-primary: #fffef2;
-		--color-secondary: #cbb06a;
-		--color-tertiary: #d8d8d6;
-
-		--text-color: #2d2d2d;
-		--bg-color: #fffef2;
-		--accent-color: #cbb06a;
-	}
-
-	.theme-green {
-		--color-primary: #336958;
-		--color-secondary: #cbb06a;
-		--color-tertiary: #7c9993;
-
-		--text-color: #f0f8f2;
-		--bg-color: #1f4137;
-		--accent-color: #cbb06a;
-	}
-
-	.theme-purple {
-		--color-primary: #2f195f;
-		--color-secondary: #cbb06a;
-		--color-tertiary: #7353ba;
-
-		--text-color: #ede7f6;
-		--bg-color: #1b0c3d;
-		--accent-color: #7353ba;
-	}
-
-	.theme-red {
-		--color-primary: #9a122d;
-		--color-secondary: #cbb06a;
-		--color-tertiary: #d9686d;
-
-		--text-color: #fff0f0;
-		--bg-color: #3f0a13;
-		--accent-color: #d9686d;
-	}
-
-	.theme-rose {
-		--color-primary: #b35cb5;
-		--color-secondary: #cbb06a;
-		--color-tertiary: #f6bcf7;
-
-		--text-color: #2b001f;
-		--bg-color: #fff0fa;
-		--accent-color: #b35cb5;
-	}
-}
-
-[data-theme='interstellar'] {
-	background: red;
-}
 .dateDot {
-	@apply absolute top-[5px] size-2 rounded-full transition-all group-data-outside-month:opacity-40 group-data-today:block;
+    @apply absolute top-[5px] size-2 rounded-full transition-all group-data-outside-month:opacity-40 group-data-today:block;
+}
+
+@theme inline {
+    --color-primary: var(--primary-color);
+    --color-secondary: var(--secondary-color);
+    --color-tertiary: var(--tertiary-color);
+    --color-accent: var(--accent-color);
+    --color-background: var(--background-color);
+    --color-text: var(--text-color);
+}
+
+[data-theme="lectio"] {
+  --primary-color: #FFC107;
+  --secondary-color: #FFB300;
+  --tertiary-color: #FF7043;
+  --accent-color: #FF6F00;
+  --background-color: #FAF9F6;
+  --text-color: #3E2723;
+}
+
+[data-theme="liturgical"] {
+  --primary-color: #FFC107;
+  --secondary-color: #FFB300;
+  --tertiary-color: #FF7043;
+  --accent-color: #FF6F00;
+  --background-color: #FAF9F6;
+  --text-color: #3E2723;
+}
+
+[data-theme="green"] {
+  --primary-color: #336958;
+  --secondary-color: #CBB06A;
+  --tertiary-color: #7c9993;
+  --accent-color: #CBB06A;
+  --background-color: #daffd9;
+  --text-color: #F0F8F2;
+}
+
+[data-theme="white"] {
+  --primary-color: #FFFEF2;
+  --secondary-color: #CBB06A;
+  --tertiary-color: #D8D8D6;
+  --accent-color: #CBB06A;
+  --background-color: #FFFEF2;
+  --text-color: #2D2D2D;
+}
+
+[data-theme="rose"] {
+  --primary-color: #2F195F;
+  --secondary-color: #CBB06A;
+  --tertiary-color: #7353BA;
+  --accent-color: #7353BA;
+  --background-color: #fcdcef;
+  --text-color: #EDE7F6;
+}
+
+[data-theme="purple"] {
+  --primary-color: #2F195F;
+  --secondary-color: #CBB06A;
+  --tertiary-color: #7353BA;
+  --accent-color: #7353BA;
+  --background-color: #d3baff;
+  --text-color: #EDE7F6;
+}
+
+[data-theme="red"] {
+  --primary-color: #9a122d;
+  --secondary-color: #CBB06A;
+  --tertiary-color: #d9686d;
+  --accent-color: #d9686d;
+  --background-color: #ff8a90;
+  --text-color: #FFF0F0;
 }
