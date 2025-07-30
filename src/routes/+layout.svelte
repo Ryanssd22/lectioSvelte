@@ -3,14 +3,12 @@
 	import '../app.css';
 	import Logo from '$lib/images/Logo.svelte';
 
-	import { currentTheme } from '$lib/stores/themeStore.svelte.js'
+	import { currentTheme } from '$lib/stores/themeStore.svelte.js';
 
-	import MaterialSymbolsBrushSharp from '~icons/material-symbols/brush-sharp';
 	import Icon from '@iconify/svelte';
 	import { page } from '$app/state';
 	import { fade } from 'svelte/transition';
 	import { onMount } from 'svelte';
-
 
 	let { children } = $props();
 	let pageName = $derived(page.route.id);
@@ -44,38 +42,13 @@
 	/>
 </svelte:head>
 
-
-<style global>
-:global(html),
-:global(body) {
-    margin: 0;
-    padding: 0;
-    height: 100%; /* Or min-height: 100vh; */
-}
-
-</style>
-
-<div data-theme={currentTheme.theme.title} class="min-h-screen text-text" 
-    style="background-color: background-test;"
->
-    <div class="background-color: background-test" style="body">
-	<div class="mx-2 flex flex-col sm:mx-10">
-	    <div class="m-4 flex h-16 items-center gap-5 border-b-2 border-amber-100 p-5">
-
-<div class="mx-2 flex flex-col sm:mx-10">
+<div class="mx-2 flex flex-col" data-theme={currentTheme.theme.title}>
 	<div
 		class="m-4 flex h-16 items-center gap-5 border-b-2 border-amber-100 p-5 font-[Lexend] font-light"
 	>
-
 		<a href="/">
-		    <Logo svgClass="w-32" baseColor=bg-amber-300 hoverColor=bg-amber-400 />
+			<Logo svgClass="w-32" baseColor="blue" hoverColor="red" />
 		</a>
-
-		<a href="/" class="transition-colors hover:text-accent">Links</a>
-		<a href="/" class="transition-colors hover:text-accent">More Links</a>
-		<a href="/themes" class="transition-colors hover:text-accent"> Themes </a>
-	    </div>
-
 		{#if mounted}
 			<div transition:fade class="flex items-center gap-4">
 				{#each menuItems as menuItem (menuItem.title)}
@@ -93,23 +66,18 @@
 				{/each}
 			</div>
 		{/if}
-		<!-- <a href="/" class="transition-all hover:text-amber-300"> Martyrology </a> -->
-		<!-- <a href="/" class="transition-all hover:text-amber-300"> More Links </a> -->
-		<!-- <a -->
-		<!-- 	href="/themes" -->
-		<!-- 	class:text-amber-500={pageName == '/themes'} -->
-		<!-- 	class:text-black={pageName != '/themes'} -->
-		<!-- 	class="flex items-center transition-all hover:text-amber-300" -->
-		<!-- > -->
-		<!-- 	<MaterialSymbolsBrushSharp class="mr-[2px] size-[15px]" /> -->
-		<!-- 	<p>Themes</p> -->
-		<!-- </a> -->
 	</div>
 
-
-	    <div class="flex flex-col items-center text-center">
+	<div class="flex flex-col items-center text-center">
 		{@render children()}
-	    </div>
 	</div>
-    </div>
 </div>
+
+<style global>
+	:global(html),
+	:global(body) {
+		margin: 0;
+		padding: 0;
+		height: 100%; /* Or min-height: 100vh; */
+	}
+</style>
