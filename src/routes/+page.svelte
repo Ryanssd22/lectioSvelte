@@ -173,7 +173,7 @@
 
 {#if !loaded}
 	<div out:fly={{ duration: 200 }} class="absolute text-xl">
-		<SvgSpinners270RingWithBg class="my-10 size-10 text-amber-300" />
+		<SvgSpinners270RingWithBg class="my-10 size-10 text-primary" />
 	</div>
 {:else}
 	<div in:fly={{ delay: 200 }} class="flex w-full flex-col items-center justify-center">

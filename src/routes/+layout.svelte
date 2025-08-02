@@ -26,6 +26,9 @@
 	let mounted = $state(false);
 	onMount(() => {
 		mounted = true;
+		currentTheme.theme = JSON.parse(localStorage.getItem('currentTheme')).title || {
+			title: 'lectio'
+		};
 	});
 </script>
 
@@ -42,11 +45,11 @@
 	/>
 </svelte:head>
 
-<div class="mx-2 flex flex-col" data-theme={currentTheme.theme.title}>
+<div class="mx-2 flex flex-col sm:mx-10">
 	<div
-		class="m-4 flex h-16 items-center gap-5 border-b-2 border-amber-100 p-5 font-[Lexend] font-light"
+		class="border-background-variant m-4 flex h-16 items-center gap-5 border-b-2 p-5 font-[Lexend] font-light"
 	>
-		<a href="/">
+		<a href="/" class="">
 			<Logo svgClass="w-32" baseColor="blue" hoverColor="red" />
 		</a>
 		{#if mounted}
@@ -54,9 +57,8 @@
 				{#each menuItems as menuItem (menuItem.title)}
 					<a
 						href={menuItem.route}
-						class="flex items-center transition-all hover:text-amber-300"
-						class:text-amber-500={pageName == menuItem.route}
-						class:text-black={pageName != menuItem.route}
+						class="hover:text-primary text-md flex items-center transition-all"
+						class:text-primary={pageName == menuItem.route}
 					>
 						{#if menuItem.icon}
 							<Icon icon={menuItem.icon} class="mr-[2px] size-[15px]" />

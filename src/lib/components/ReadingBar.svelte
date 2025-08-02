@@ -25,7 +25,7 @@
 
 <!-- Reading Bar -->
 <div
-	class="my-2 flex w-5/6 flex-col items-center justify-center gap-1 rounded-b-lg bg-amber-100 px-3 py-1 text-lg sm:flex-row sm:justify-around sm:text-base"
+	class="bg-background-variant my-2 flex w-5/6 flex-col items-center justify-center gap-1 rounded-b-lg px-3 py-1 text-lg sm:flex-row sm:justify-around sm:text-base"
 >
 	<!-- Season Display -->
 	<div class="flex items-center justify-center">
@@ -44,7 +44,7 @@
 		<Select.Trigger>
 			<button
 				class="group flex cursor-pointer items-center justify-center gap-[5px] transition-all active:scale-95 sm:gap-0"
-				class:text-amber-700={translationShowArrow}
+				class:text-secondary={translationShowArrow}
 				onmouseenter={() => (translationHovered = true)}
 				onmouseleave={() => (translationHovered = false)}
 			>
@@ -73,13 +73,13 @@
 					{#if open}
 						<div {...wrapperProps}>
 							<div {...props} transition:fly={{ y: -5, duration: 100 }}>
-								<Select.Viewport class="rounded-lg bg-amber-200 shadow-xl">
+								<Select.Viewport class="bg-background-variant rounded-lg shadow-xl">
 									{#each translations as translation, i (i)}
 										<Select.Item value={i} class="">
 											{#snippet children({ selected })}
 												<p
-													class="cursor-pointer px-3 py-[4px] text-center font-medium transition-all hover:bg-amber-300"
-													class:bg-amber-400={selected}
+													class="hover:bg-secondary cursor-pointer px-3 py-[4px] text-center font-medium transition-all"
+													class:bg-secondary={selected}
 												>
 													{translations[i].long}
 												</p>
@@ -99,8 +99,7 @@
 	<div class="flex w-full justify-center sm:w-auto">
 		<button
 			class:opacity-40={!comfortSpacing}
-			class:text-black={!comfortSpacing}
-			class="flex cursor-pointer items-center justify-center gap-1 rounded-sm text-amber-600 transition-all hover:text-amber-500 hover:opacity-100 active:scale-95"
+			class="flex cursor-pointer items-center justify-center gap-1 rounded-sm transition-all hover:text-primary hover:opacity-100 active:scale-95"
 			onclick={() => {
 				comfortSpacing = !comfortSpacing;
 			}}

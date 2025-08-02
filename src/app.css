@@ -4,12 +4,6 @@
 /* 	scrollbar-gutter: stable; */
 /* } */
 
-button,
-a,
-[role='button'] {
-	touch-action: manipulation;
-}
-
 @layer base {
 	body {
 		font-family: 'Lora', 'Inter';
@@ -18,7 +12,7 @@ a,
 }
 
 .arrowButton {
-	@apply cursor-pointer items-center justify-center self-stretch rounded-lg px-2 transition-colors duration-200 hover:bg-amber-200 active:bg-amber-300;
+	@apply hover:bg-primary active:bg-primary cursor-pointer items-center justify-center self-stretch rounded-lg px-2 transition-colors duration-200;
 }
 
 .arrowIcon {
@@ -30,22 +24,28 @@ body {
 	color: var(--text-color);
 }
 
-button {
-	background-color: var(--primary-color);
-	color: var(--text-color);
-}
-
 .dateDot {
 	@apply absolute top-[5px] size-2 rounded-full transition-all group-data-outside-month:opacity-40 group-data-today:block;
 }
 
+/* THEMES */
+/* Primary color: Main accent color of the page. Mainly the logo and reading bar */
+/* Primary variant color: A lighter or darker primary, to give buttons a subtle hue change */
+/* Secondary color: A complementary color to the primary */
+/* Background color: body BG */
+/* Text Color: Color of the text, MAKE SURE IT IS READABLE IN FRONT OF BG */
+/* Text Variant Color: Lighter or darker version of the text */
+
 @theme inline {
 	--color-primary: var(--primary-color);
+	--color-primary-variant: var(--primary-variant-color);
 	--color-secondary: var(--secondary-color);
 	--color-tertiary: var(--tertiary-color);
 	--color-accent: var(--accent-color);
 	--color-background: var(--background-color);
+	--color-background-variant: var(--background-variant-color);
 	--color-text: var(--text-color);
+	--color-text-variant: var(--text-variant-color);
 }
 
 [data-theme='lectio'] {
@@ -109,4 +109,12 @@ button {
 	--accent-color: #d9686d;
 	--background-color: #ff8a90;
 	--text-color: #fff0f0;
+}
+
+[data-theme='beach'] {
+	--background-color: #ffeead;
+	--text-color: #5b7869;
+	--primary-color: #96ceb4;
+  --primary-variant-color: #a2dec2;
+	--background-variant-color: #f7dc8f;
 }
