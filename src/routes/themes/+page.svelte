@@ -62,7 +62,7 @@
 {#if activeTab == 'preset'}
 	<h1 class="text-4xl">Default Themes</h1>
 	<div class="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4">
-		{#each themes as theme}
+		{#each themes as theme (theme.title)}
 			<button
 				on:click={() => changeTheme(theme)}
 				class="group relative h-16 w-32 cursor-pointer rounded-lg shadow-lg
@@ -90,10 +90,10 @@
 
 {#if activeTab == 'custom'}{/if}
 
-<style>
-	.themeButton {
-	}
-	.selected {
-		outline: 5px solid var(--color-primary);
-	}ch
-</style>
+<!-- <style> -->
+<!-- 	.themeButton { -->
+<!-- 	} -->
+<!-- 	.selected { -->
+<!-- 		outline: 5px solid var(--color-primary); -->
+<!-- 	}ch -->
+<!-- </style> -->
