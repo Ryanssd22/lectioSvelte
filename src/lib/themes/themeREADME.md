@@ -1,5 +1,5 @@
-rename stores/ to themes/
-update themes page to search for right folder
+rename stores/ to themes/ ✓
+update themes page to search for right folder ✓
 
 goal:
     - each theme should be its own separate .json
@@ -7,6 +7,7 @@ goal:
 in each .json it will be these colors
 
 beach.json
+
 {
     primary: #hex main accent color of the page, maily the logo and the reading bar
     primary-variant: #hex a variant of primary for the logo and the top bar to change to
