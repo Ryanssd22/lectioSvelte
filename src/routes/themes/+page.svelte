@@ -2,7 +2,7 @@
 
 <script>
 	import { onMount, onDestroy } from 'svelte';
-	import { themes, currentTheme } from '$lib/stores/themeStore.svelte.js';
+	import { themes, currentTheme } from '$lib/themes/themeStore.svelte.js';
 
 	console.log('themes object: ', themes);
 
