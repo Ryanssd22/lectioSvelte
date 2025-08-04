@@ -3,7 +3,7 @@
 	import '../app.css';
 	import Logo from '$lib/images/Logo.svelte';
 
-	import { currentTheme } from '$lib/themes/themeStore.svelte.js';
+	import { currentTheme } from '$lib/themes/themes.svelte.js';
 
 	import Icon from '@iconify/svelte';
 	import { page } from '$app/state';

@@ -2,9 +2,10 @@
 
 <script>
 	import { onMount, onDestroy } from 'svelte';
-	import { themes, currentTheme } from '$lib/themes/themeStore.svelte.js';
+	import { themes, currentTheme } from '$lib/themes/themes.svelte.js';
 
 	console.log('themes object: ', themes);
+	console.log('themes object: ', currentTheme);
 
 	function changeTheme(newTheme) {
 		currentTheme.theme = newTheme;

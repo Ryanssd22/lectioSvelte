@@ -2,9 +2,7 @@ rename stores/ to themes/ ✓
 update themes page to search for right folder ✓
 
 goal:
-    - each theme should be its own separate .json
-
-in each .json it will be these colors
+    - each theme should be its own separate .json ✓
 
 beach.json
 
@@ -18,7 +16,7 @@ beach.json
     text-variant: # for text that requires an accent
 }
 
-Javascript (In layout.svelte) reads in current theme and searches corresponding json file.
+Javascript (In layout.svelte) reads in current theme and searches corresponding json file. ✓
 Css variables are set using javascript.
     element.style.setProperty('--primary-color', currentTheme.primary);
 
