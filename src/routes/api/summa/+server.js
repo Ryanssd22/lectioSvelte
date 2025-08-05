@@ -16,8 +16,6 @@ export const GET = ({ url }) => {
 	const treatise = params?.get('treatise');
 	const article = params?.get('article');
 
-	console.log(params);
-
 	try {
 		if (part) {
 			part = part.toUpperCase();
