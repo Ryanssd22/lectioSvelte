@@ -53,7 +53,7 @@
 		<div
 			class="group flex h-16 w-20 items-center justify-center rounded-lg border shadow-lg transition-transform duration-200 hover:scale-[1.08]"
 			on:click={() => chooseTab(tab)}
-			style="background-color: {currentTheme.secondary}"
+			style="background-color: {currentTheme.bgvariant}"
 		>
 			{tab}
 		</div>
@@ -77,7 +77,7 @@
 				<div
 					class="absolute inset-0 flex items-center justify-center gap-1 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
 				>
-					{#each [theme.secondary, theme.tertiary, theme.accent, theme.background, theme.text] as color}
+					{#each [theme.primvariant, theme.secondary, theme.background, theme.bgvariant, theme.text] as color}
 						<div
 							class="h-3 w-3 rounded-full transition-transform hover:scale-120"
 							style="background-color: {color};"

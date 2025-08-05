@@ -112,9 +112,9 @@ body {
 }
 
 [data-theme='beach'] {
-	--background-color: #ffeead;
-	--text-color: #5b7869;
-	--primary-color: #96ceb4;
-  --primary-variant-color: #a2dec2;
-	--background-variant-color: #f7dc8f;
+    --background-color: #ffeead;
+    --text-color: #5b7869;
+    --primary-color: #96ceb4;
+    --primary-variant-color: #a2dec2;
+    --background-variant-color: #f7dc8f;
 }
