@@ -16,6 +16,7 @@
 
 	let menuItems = [
 		{ title: 'Martyrology', route: '/martyrology' },
+		{ title: 'Summa', route: '/summa' },
 		{
 			title: 'Themes',
 			route: '/themes',
