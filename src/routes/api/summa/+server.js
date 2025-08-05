@@ -14,7 +14,7 @@ export const GET = ({ url }) => {
 
 	let part = params?.get('part');
 	const treatise = params?.get('treatise');
-	const article = params?.get('article');
+	const question = params?.get('question');
 
 	try {
 		if (part) {
@@ -24,22 +24,22 @@ export const GET = ({ url }) => {
 		if (treatise) {
 			verify_treatise(treatise, part);
 		}
-		if (article) {
-			verify_article(article, treatise, part);
+		if (question) {
+			verify_question(question, treatise, part);
 		}
 	} catch (err) {
 		return error(400, err.message);
 	}
 
-	if (part && treatise && article) {
-		return json(SUMMA[part][treatise - 1]['articles'][article - 1]);
+	if (part && treatise && question) {
+		return json(SUMMA[part][treatise - 1]['articles'][question - 1]);
 	} else if (part && treatise) {
 		return json(SUMMA[part][treatise - 1]);
 	} else if (part) {
 		return json(SUMMA[part]);
 	}
 
-	return json(condense_summa(SUMMA));
+	return json(SUMMA_CONDENSED);
 };
 
 function verify_part(part) {
@@ -59,7 +59,7 @@ function verify_treatise(treatise, part) {
 	}
 }
 
-function verify_article(article, treatise, part) {
+function verify_question(question, treatise, part) {
 	if (!part) {
 		throw new Error('Need to specify part');
 	}
@@ -67,13 +67,13 @@ function verify_article(article, treatise, part) {
 		throw new Error('Need to specify treatise');
 	}
 
-	if (article > SUMMA[part][treatise]['articles'].length || article < 1) {
-		throw new Error(`Not a valid article (1 - ${SUMMA[part][treatise]['articles'].length})`);
+	if (question > SUMMA[part][treatise]['articles'].length || question < 1) {
+		throw new Error(`Not a valid question (1 - ${SUMMA[part][treatise]['articles'].length})`);
 	}
 }
 
 function condense_summa(summa) {
-	let condensedSumma = summa;
+	let condensedSumma = structuredClone(SUMMA);
 	for (const part of ['FP', 'FS', 'SS', 'TP']) {
 		for (const [i, article] of condensedSumma[part].entries()) {
 			for (const [j, question] of article['articles'].entries()) {

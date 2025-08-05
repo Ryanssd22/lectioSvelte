@@ -46,35 +46,37 @@
 	/>
 </svelte:head>
 
-<div class="mx-2 flex flex-col sm:mx-10">
-	<div
-		class="border-background-variant m-4 flex h-16 items-center gap-5 border-b-2 p-5 font-[Lexend] font-light"
-	>
-		<a href="/" class="">
-			<Logo svgClass="w-32" baseColor="blue" hoverColor="red" />
-		</a>
-		{#if mounted}
-			<div transition:fade class="flex items-center gap-4">
-				{#each menuItems as menuItem (menuItem.title)}
-					<a
-						href={menuItem.route}
-						class="hover:text-primary text-md flex items-center transition-all"
-						class:text-primary={pageName == menuItem.route}
-					>
-						{#if menuItem.icon}
-							<Icon icon={menuItem.icon} class="mr-[2px] size-[15px]" />
-						{/if}
-						{menuItem.title}
-					</a>
-				{/each}
-			</div>
-		{/if}
-	</div>
+{#key page.url.pathname}
+	<div class="mx-2 flex flex-col sm:mx-10">
+		<div
+			class="border-background-variant m-4 flex h-16 items-center gap-5 border-b-2 p-5 font-[Lexend] font-light"
+		>
+			<a href="/" class="">
+				<Logo svgClass="w-32" baseColor="blue" hoverColor="red" />
+			</a>
+			{#if mounted}
+				<div transition:fade class="flex items-center gap-4">
+					{#each menuItems as menuItem (menuItem.title)}
+						<a
+							href={menuItem.route}
+							class="hover:text-primary text-md flex items-center transition-all"
+							class:text-primary={pageName == menuItem.route}
+						>
+							{#if menuItem.icon}
+								<Icon icon={menuItem.icon} class="mr-[2px] size-[15px]" />
+							{/if}
+							{menuItem.title}
+						</a>
+					{/each}
+				</div>
+			{/if}
+		</div>
 
-	<div class="flex flex-col items-center text-center">
-		{@render children()}
+		<div class="flex flex-col items-center text-center">
+			{@render children()}
+		</div>
 	</div>
-</div>
+{/key}
 
 <style global>
 	:global(html),
