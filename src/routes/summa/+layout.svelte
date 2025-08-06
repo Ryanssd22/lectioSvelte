@@ -7,7 +7,8 @@
 	import { goto } from '$app/navigation';
 
 	let { data, children } = $props();
-	const { summaParts, part, treatise } = $derived(data);
+	const { summaParts, part, treatise, summa } = $derived(data);
+	const { partTitle, partTitleLatin, treatiseTitle } = $derived(page.data);
 	// let { showBackButton } = data;
 
 	function goBack() {
@@ -19,7 +20,6 @@
 	let activePos = $state(null);
 	onMount(() => {
 		handleClick(part);
-		handleNav();
 	});
 
 	let hoveredBoxPos = $state('opacity: 0;');
@@ -44,18 +44,21 @@
 	}
 
 	// Handles navigation width when treatise is chosen
-	let navWidth = $state('width: 600px');
+	let navWidth = $state('width: 0px');
 	let linkDiv = $state(null);
+	let partDiv = $state(null);
+	let navReady = $state(false);
 	$effect(() => {
 		handleNav();
 	});
 
 	function handleNav() {
-		if (treatise) {
-			console.log('Treatise');
-			navWidth = 'width: 200px';
-		} else {
-			navWidth = `width: 600px;`;
+		console.log(linkDiv, partDiv);
+		if (treatise && partDiv) {
+			console.log('HANDLING PART DIV', partDiv.offsetWidth, linkDiv.offsetWidth);
+			navWidth = `width: ${partDiv.offsetWidth}px; height: 75px;`;
+		} else if (!treatise && linkDiv) {
+			navWidth = `width: ${linkDiv.offsetWidth}px; height: 50px`;
 		}
 	}
 </script>
@@ -85,31 +88,32 @@
 <hr class="bg-background-variant my-2 h-[2px] w-5/6 border-0" />
 
 <!-- Part Navigation -->
-<div
-	class="bg-background-variant border-background-variant relative flex h-12 items-center overflow-hidden rounded-xl border-1 transition-all duration-500 ease-in-out"
-	style={navWidth}
->
-	{#if !treatise}
-		<!-- Moving Div -->
-		<div
-			class="absolute inset-0 z-0 opacity-50 transition-all duration-300 ease-in-out"
-			style={hoveredBoxPos}
-		>
-			<!-- Width-changing Div -->
+<div class="flex w-screen items-center justify-center">
+	<div
+		class="bg-background-variant border-background-variant relative flex items-center overflow-hidden rounded-xl border-1 transition-all duration-500 ease-in-out hover:shadow-sm"
+		style={navWidth}
+	>
+		{#if !treatise}
+			<!-- Moving Div -->
 			<div
-				class="bg-background h-full w-15 rounded-lg transition-all duration-300 active:bg-blue-500"
-				style={hoveredBoxWid}
-			></div>
-		</div>
-	{/if}
+				class="absolute inset-0 z-0 opacity-50 transition-all duration-300 ease-in-out"
+				style={hoveredBoxPos}
+			>
+				<!-- Width-changing Div -->
+				<div
+					class="bg-background h-full w-15 rounded-lg transition-all duration-300 active:bg-blue-500"
+					style={hoveredBoxWid}
+				></div>
+			</div>
+		{/if}
 
-	<!-- Links -->
-	<div class="relative flex h-full w-full justify-center" bind:this={linkDiv}>
-		{#each summaParts as partObj (partObj.title)}
-			{#if !treatise || (treatise && part == partObj.link)}
+		<!-- Links -->
+		<div class="absolute flex h-full justify-center" bind:this={linkDiv}>
+			{#each summaParts as partObj (partObj.title)}
 				<a
 					href="/summa/{partObj.link}"
 					class="active:bg-background relative z-10 h-full items-center overflow-hidden rounded-lg transition-all"
+					class:opacity-0={treatise}
 					class:bg-background={partObj.link == part}
 					onmouseover={handleMouseOver}
 					onfocus={handleMouseOver}
@@ -123,8 +127,19 @@
 						{partObj.latin}
 					</div>
 				</a>
-			{/if}
-		{/each}
+			{/each}
+		</div>
+
+		<!-- Part Div -->
+		<div
+			class="absolute flex h-full w-full items-center justify-center opacity-0"
+			class:opacity-100={treatise}
+		>
+			<div class="flex flex-col justify-center px-5" bind:this={partDiv}>
+				<a class="text-lg font-medium text-nowrap">{partTitleLatin}</a>
+				<h3 class="text-nowrap">{treatiseTitle}</h3>
+			</div>
+		</div>
 	</div>
 </div>
 

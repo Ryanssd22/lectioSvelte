@@ -7,6 +7,7 @@ export const load = async ({ fetch, params, parent }) => {
 
 	return {
 		treatiseJSON: treatiseJSON,
-		treatiseIndex: treatise
+		treatiseIndex: treatise,
+		treatiseTitle: treatiseJSON.treatise
 	};
 };

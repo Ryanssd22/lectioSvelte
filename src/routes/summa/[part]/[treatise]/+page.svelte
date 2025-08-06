@@ -4,6 +4,6 @@
 	let { treatiseJSON, treatiseIndex } = data;
 </script>
 
-{#each treatiseJSON.articles as question, i (question.question)}
+{#each treatiseJSON.articles as question, i (i)}
 	<a href="{treatiseIndex}/{(i + 1).toString()}">{question.question}</a>
 {/each}

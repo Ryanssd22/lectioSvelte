@@ -59,7 +59,7 @@
 					<a
 						href={menuItem.route}
 						class="hover:text-primary text-md flex items-center transition-all"
-						class:text-primary={pageName == menuItem.route}
+						class:text-primary={pageName.includes(menuItem.route)}
 						onclick={() => {
 							menuClick = !menuClick;
 						}}
