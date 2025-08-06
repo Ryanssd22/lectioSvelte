@@ -14,7 +14,7 @@
 	];
 </script>
 
-<h2>{question.question}</h2>
+<!-- <h2>{question.question}</h2> -->
 
 {#each sections as section (section.short)}
 	{#if question[section.short]}

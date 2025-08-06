@@ -67,8 +67,8 @@ function verify_question(question, treatise, part) {
 		throw new Error('Need to specify treatise');
 	}
 
-	if (question > SUMMA[part][treatise]['articles'].length || question < 1) {
-		throw new Error(`Not a valid question (1 - ${SUMMA[part][treatise]['articles'].length})`);
+	if (question > SUMMA[part][treatise - 1]['articles'].length || question < 1) {
+		throw new Error(`Not a valid question (1 - ${SUMMA[part][treatise - 1]['articles'].length})`);
 	}
 }
 
