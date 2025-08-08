@@ -3,7 +3,7 @@
 	import '../app.css';
 	import Logo from '$lib/images/Logo.svelte';
 
-	import { currentTheme, themes, applyTheme } from '$lib/themes/themes.svelte.js';
+	import { currentTheme, themes } from '$lib/themes/themes.svelte.js';
 
 	import Icon from '@iconify/svelte';
 	import { page } from '$app/state';
@@ -27,6 +27,7 @@
 		}; */
 		console.log("current theme, layout.svelte", currentTheme.theme)
 	});
+
 
 </script>
 

@@ -7,14 +7,6 @@ export const themes = Object.entries(import.meta.glob('./*.json', { eager: true,
     };
   });
 
-export function applyTheme(theme) {
-    for (const [key, value] of Object.entries(theme)) {
-	if (key !== 'title') {
-	    document.documentElement.style.setProperty(`--${key}`, value);
-	}
-    }
-}
-
 const lectioTheme = themes.find(theme => theme.name === 'lectio');
 
 // export const currentTheme = $state(lectioTheme ?? themes[0] ?? {});

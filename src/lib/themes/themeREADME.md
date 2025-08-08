@@ -17,9 +17,9 @@ beach.json
 }
 
 Javascript (In layout.svelte) reads in current theme and searches corresponding json file. ✓
-Css variables are set using javascript.
+Css variables are set using javascript.✓
     element.style.setProperty('--primary-color', currentTheme.primary);
 
-HTML can now use those colors.
+HTML can now use those colors.✓
 
-replace data-theme method
+replace data-theme method✓

@@ -9,10 +9,17 @@
 		<!-- Theme Handler -->
 
 		<script>
-			import { currentTheme } from '$lib/themes/themes.svelte.js'
-			currentTheme = JSON.parse(localStorage.getItem('currentTheme')).title || 'lectio';
+			const currentTheme = JSON.parse(localStorage.getItem('currentTheme'));
 			console.log(`${currentTheme} loaded`);
-			document.documentElement.setAttribute('data-theme', currentTheme);
+			const element = document.documentElement;
+			element.style.setProperty('--primary-color', currentTheme.primary);
+			element.style.setProperty('--primary-variant-color', currentTheme["primary-variant"]);
+			element.style.setProperty('--secondary-color', currentTheme.secondary);
+			element.style.setProperty('--background-color', currentTheme.background);
+			element.style.setProperty('--background-variant-color', currentTheme["background-variant"]);
+			element.style.setProperty('--text-color', currentTheme.text);
+			element.style.setProperty('--text-variant-color', currentTheme["text-variant"]);
+			
 		</script>
 		<meta
 			name="viewport"

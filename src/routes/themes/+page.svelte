@@ -2,7 +2,7 @@
 
 <script>
 	import { onMount, onDestroy } from 'svelte';
-	import { themes, currentTheme, applyTheme } from '$lib/themes/themes.svelte.js';
+	import { themes, currentTheme } from '$lib/themes/themes.svelte.js';
 
 	console.log('themes object: ', currentTheme);
 	let theme = currentTheme
@@ -15,8 +15,14 @@
 	function changeTheme(newTheme) {
 		currentTheme.theme = newTheme;
 		localStorage.setItem('currentTheme', JSON.stringify(newTheme));
-		document.documentElement.setAttribute('data-theme', newTheme.title);
-		applyTheme(newTheme)
+	    const element = document.body;
+	    element.style.setProperty('--primary-color', newTheme.primary);
+	    element.style.setProperty('--primary-variant-color', newTheme["primary-variant"]);
+	    element.style.setProperty('--secondary-color', newTheme.secondary);
+	    element.style.setProperty('--background-color', newTheme.background);
+	    element.style.setProperty('--background-variant-color', newTheme["background-variant"]);
+	    element.style.setProperty('--text-color', newTheme.text);
+	    element.style.setProperty('--text-variant-color', newTheme["text-variant"]);
 	}
 
 	function loadTheme() {
@@ -47,10 +53,10 @@
 		saveTab(tab);
 	}
 
-	onMount(() => {
+	/* onMount(() => {
 		loadTab();
 		loadTheme();
-	});
+	}); */
 </script>
 
 
