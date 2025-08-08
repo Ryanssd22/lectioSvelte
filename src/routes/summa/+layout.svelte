@@ -1,14 +1,17 @@
 <!-- Summa layout, featuring the header -->
 <script>
 	import MaterialSymbolsArrowLeftAltRounded from '~icons/material-symbols/arrow-left-alt-rounded';
+	import MaterialSymbolsArrowBackIosNewRounded from '~icons/material-symbols/arrow-back-ios-new-rounded';
+	import MaterialSymbolsArrowForwardIosRounded from '~icons/material-symbols/arrow-forward-ios-rounded';
 	import { fade } from 'svelte/transition';
-	import { onMount } from 'svelte';
+	import { onMount, tick } from 'svelte';
 	import { page } from '$app/state';
 	import { goto } from '$app/navigation';
 
 	let { data, children } = $props();
-	const { summaParts, part, treatise, summa } = $derived(data);
-	const { partTitle, partTitleLatin, treatiseTitle } = $derived(page.data);
+	const { summaParts, part, treatise, question } = $derived(data);
+	const { treatiseTitle, questionJSON } = $derived(page.data);
+	$inspect('QUESTION JSON', questionJSON);
 	// let { showBackButton } = data;
 
 	function goBack() {
@@ -44,7 +47,7 @@
 	}
 
 	// Handles navigation width when treatise is chosen
-	let navWidth = $state('width: 0px');
+	let navWidth = $state('width: 500px');
 	let linkDiv = $state(null);
 	let partDiv = $state(null);
 	let navReady = $state(false);
@@ -54,11 +57,13 @@
 
 	function handleNav() {
 		console.log(linkDiv, partDiv);
-		if (treatise && partDiv) {
-			console.log('HANDLING PART DIV', partDiv.offsetWidth, linkDiv.offsetWidth);
-			navWidth = `width: ${partDiv.offsetWidth}px; height: 75px;`;
+		navWidth = 'width: auto; height: auto;';
+		if (question && partDiv) {
+			navWidth = `width: ${partDiv.offsetWidth}px; height: ${partDiv.offsetHeight}px;`;
+		} else if (treatise && partDiv) {
+			navWidth = `width: ${partDiv.offsetWidth}px; height: ${partDiv.offsetHeight}px;`;
 		} else if (!treatise && linkDiv) {
-			navWidth = `width: ${linkDiv.offsetWidth}px; height: 50px`;
+			navWidth = `width: ${linkDiv.offsetWidth}px;`;
 		}
 	}
 </script>
@@ -90,7 +95,7 @@
 <!-- Part Navigation -->
 <div class="flex w-screen items-center justify-center">
 	<div
-		class="bg-background-variant border-background-variant relative flex items-center overflow-hidden rounded-xl border-1 transition-all duration-500 ease-in-out hover:shadow-sm"
+		class="bg-background-variant border-background-variant relative flex h-50 items-center overflow-hidden rounded-xl border-1 transition-all duration-500 ease-in-out hover:shadow-sm sm:h-[50px]"
 		style={navWidth}
 	>
 		{#if !treatise}
@@ -108,12 +113,13 @@
 		{/if}
 
 		<!-- Links -->
-		<div class="absolute flex h-full justify-center" bind:this={linkDiv}>
-			{#each summaParts as partObj (partObj.title)}
+		<div class="absolute flex h-full flex-col justify-center sm:flex-row" bind:this={linkDiv}>
+			{#each Object.values(summaParts) as partObj (partObj.title)}
 				<a
 					href="/summa/{partObj.link}"
 					class="active:bg-background relative z-10 h-full items-center overflow-hidden rounded-lg transition-all"
 					class:opacity-0={treatise}
+					class:pointer-events-none={treatise}
 					class:bg-background={partObj.link == part}
 					onmouseover={handleMouseOver}
 					onfocus={handleMouseOver}
@@ -135,9 +141,44 @@
 			class="absolute flex h-full w-full items-center justify-center opacity-0"
 			class:opacity-100={treatise}
 		>
-			<div class="flex flex-col justify-center px-5" bind:this={partDiv}>
-				<a class="text-lg font-medium text-nowrap">{partTitleLatin}</a>
-				<h3 class="text-nowrap">{treatiseTitle}</h3>
+			<div class="flex flex-col justify-center gap-1 px-5 py-3" bind:this={partDiv}>
+				<div class="flex items-center justify-between gap-2 rounded-lg p-1">
+					<MaterialSymbolsArrowBackIosNewRounded class="size-6" />
+					<div class="flex flex-col">
+						<h3 class="text-sm leading-tight">PART</h3>
+						<h3 class="mx-2 text-lg leading-tight font-medium text-nowrap">
+							{summaParts[part].latin}
+						</h3>
+					</div>
+					<MaterialSymbolsArrowForwardIosRounded class="size-6" />
+				</div>
+
+				<hr class="opacity-50" />
+
+				<div class="flex items-center justify-between rounded-lg p-1">
+					<MaterialSymbolsArrowBackIosNewRounded class="size-6" />
+					<div class="flex flex-col">
+						<h3 class="text-sm leading-tight">TREATISE</h3>
+						<h3 class="text-md leading-tight font-medium">
+							{treatise}: {treatiseTitle}
+						</h3>
+					</div>
+					<MaterialSymbolsArrowForwardIosRounded class="size-6" />
+				</div>
+
+				{#if question}
+					<hr class="opacity-50" />
+					<div class="flex items-center justify-between rounded-lg p-1">
+						<MaterialSymbolsArrowBackIosNewRounded class="size-6" />
+						<div class="flex flex-col">
+							<h3 class="text-sm leading-tight">QUESTION</h3>
+							<h3 class="text-md leading-tight font-medium">
+								{question}: {questionJSON.question}
+							</h3>
+						</div>
+						<MaterialSymbolsArrowForwardIosRounded class="size-6" />
+					</div>
+				{/if}
 			</div>
 		</div>
 	</div>

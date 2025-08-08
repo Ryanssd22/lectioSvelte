@@ -7,6 +7,6 @@ export const load = async ({ fetch, parent }) => {
 	).json();
 
 	return {
-		question: questionJSON
+		questionJSON: questionJSON
 	};
 };

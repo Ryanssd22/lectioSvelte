@@ -1,7 +1,7 @@
 <script>
+	import MaterialSymbolsArrowRightAltRounded from '~icons/material-symbols/arrow-right-alt-rounded';
 	let { data } = $props();
-	let { question } = data;
-	console.log(question);
+	let { questionJSON, question } = data;
 
 	const sections = [
 		{ short: 'OB1', long: 'Objection 1' },
@@ -16,9 +16,14 @@
 
 <!-- <h2>{question.question}</h2> -->
 
-{#each sections as section (section.short)}
-	{#if question[section.short]}
-		<h3 class="font-medium">{section.long}</h3>
-		<p>{question[section.short]}</p>
-	{/if}
-{/each}
+<div class="my-2 flex w-125 flex-col gap-2 text-left">
+	{#each questionJSON.articles as article, i (i)}
+		<a
+			href="{question}/{(i + 1).toString()}"
+			class="border-background-variant flex items-center justify-between gap-2 rounded-md border-2 px-2 py-1 transition-all hover:scale-105"
+		>
+			<p>{i + 1}: {article}</p>
+			<MaterialSymbolsArrowRightAltRounded class="size-6" />
+		</a>
+	{/each}
+</div>

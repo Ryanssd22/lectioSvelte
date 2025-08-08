@@ -1,0 +1,293 @@
+[
+  {
+    "range": {
+      "start": "1",
+      "end": "46"
+    },
+    "header": "TREATISE ON THE THEOLOGICAL VIRTUES",
+    "title": "treatise"
+  },
+  {
+    "range": {
+      "start": "1",
+      "end": "16"
+    },
+    "header": "ON FAITH",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "17",
+      "end": "22"
+    },
+    "header": "ON HOPE",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "23",
+      "end": "46"
+    },
+    "header": "ON CHARITY",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "47",
+      "end": "170"
+    },
+    "header": "TREATISE ON THE CARDINAL VIRTUES",
+    "title": "treatise"
+  },
+  {
+    "range": {
+      "start": "47",
+      "end": "56"
+    },
+    "header": "ON PRUDENCE",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "57",
+      "end": "62"
+    },
+    "header": "ON JUSTICE",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "63"
+    },
+    "header": "VICES OPPOSED TO DISTRIBUTIVE JUSTICE",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "64",
+      "end": "81"
+    },
+    "header": "VICES OPPOSED TO COMMUTATIVE JUSTICE",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "64",
+      "end": "66"
+    },
+    "header": "BY DEEDS",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "67",
+      "end": "71"
+    },
+    "header": "BY WORDS UTILIZED IN A COURT OF LAW",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "72",
+      "end": "76"
+    },
+    "header": "BY WORDS UTTERED EXTRAJUDICIALLY",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "77"
+    },
+    "header": "BY SINS COMMITTED IN BUYING AND SELLING",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "78"
+    },
+    "header": "BY SINS COMMITTED IN LOANS",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "79",
+      "end": "81"
+    },
+    "header": "OF THE PARTS OF JUSTICE",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "82",
+      "end": "83"
+    },
+    "header": "INTERIOR ACTS OF RELIGION",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "84",
+      "end": "91"
+    },
+    "header": "EXTERIOR ACTS OF RELIGION",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "84"
+    },
+    "header": "THE SERVICE OF THE BODY",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "85",
+      "end": "87"
+    },
+    "header": "SERVICE BY GIFT",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "88"
+    },
+    "header": "SERVICE BY PROMISE",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "89",
+      "end": "91"
+    },
+    "header": "BY TAKING THE NAME OF GOD",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "92",
+      "end": "114"
+    },
+    "header": "VICES OPPOSED TO RELIGION",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "97",
+      "end": "102"
+    },
+    "header": "IRRELIGION, i.e. BY WAY OF DEFICIENCY",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "103",
+      "end": "109"
+    },
+    "header": "PARTS OF OBSERVANCE AND ORDINARY VICE",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "110",
+      "end": "114"
+    },
+    "header": "VICES OPPOSED TO TRUTH",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "118",
+      "end": "122"
+    },
+    "header": "VICES OPPOSED TO LIBERALITY",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "123",
+      "end": "170"
+    },
+    "header": "TREATISE ON FORTITUDE AND TEMPERANCE",
+    "title": "treatise"
+  },
+  {
+    "range": {
+      "start": "123",
+      "end": "124"
+    },
+    "header": "FORTITUDE",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "125",
+      "end": "140"
+    },
+    "header": "VICES OPPOSED TO FORTITUDE",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "141",
+      "end": "143"
+    },
+    "header": "TEMPERANCE",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "144",
+      "end": "154"
+    },
+    "header": "INTEGRAL PARTS OF TEMPERANCE",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "155",
+      "end": "170"
+    },
+    "header": "POTENTIAL PARTS OF TEMPERANCE, AND CONTRARY VICES",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "171",
+      "end": "182"
+    },
+    "header": "TREATISE ON GRATUITOUS GRACES",
+    "title": "treatise"
+  },
+  {
+    "range": {
+      "start": "171",
+      "end": "175"
+    },
+    "header": "PERTAINING TO KNOWLEDGE",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "176",
+      "end": "177"
+    },
+    "header": "PERTAINING TO SPEECH",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "178",
+      "end": "182"
+    },
+    "header": "PERTAINING TO WORKS",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "183",
+      "end": "189"
+    },
+    "header": "TREATISE ON THE STATES OF LIFE",
+    "title": "treatise"
+  }
+]
