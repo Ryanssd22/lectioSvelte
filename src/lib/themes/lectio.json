@@ -1,9 +1,9 @@
 {
   "primary": "#ffc107",
-  "primvariant": "#111",
+  "primary-variant": "#111",
   "secondary": "#222222",
   "background": "#faf9f6",
-  "bgvariant": "#f0f0f0",
+  "background-variant": "#f0f0f0",
   "text": "#3e2723",
-  "textvariant": "#555555"
+  "text-variant": "#555555"
 }

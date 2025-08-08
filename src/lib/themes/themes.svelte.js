@@ -1,6 +1,3 @@
-// import { writable } from 'svelte/themes';
-import { writable } from 'svelte/store';
-
 export const themes = Object.entries(import.meta.glob('./*.json', { eager: true, query: '?json' }))
   .map(([path, module]) => {
     const theme = module.default ?? module;
@@ -10,19 +7,17 @@ export const themes = Object.entries(import.meta.glob('./*.json', { eager: true,
     };
   });
 
-/* export const themes = [
-  roseTheme,
-  greenTheme,
-  beachTheme,
-  purpleTheme,
-  whiteTheme,
-  redTheme,
-  lectioTheme,
-  customTheme,
-    //add in here the new theme that is added
-]; */
+export function applyTheme(theme) {
+    for (const [key, value] of Object.entries(theme)) {
+	if (key !== 'title') {
+	    document.documentElement.style.setProperty(`--${key}`, value);
+	}
+    }
+}
 
 const lectioTheme = themes.find(theme => theme.name === 'lectio');
 
-// Initialize currentTheme to lectioTheme or fallback to first theme or empty object
-export const currentTheme = $state(lectioTheme ?? themes[0] ?? {});
+// export const currentTheme = $state(lectioTheme ?? themes[0] ?? {});
+export const currentTheme = $state({theme: lectioTheme ?? themes[0] ?? {}})
+console.log("Themes ",themes)
+console.log("currentTheme",currentTheme)

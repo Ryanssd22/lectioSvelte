@@ -7,8 +7,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<!-- Theme Handler -->
+
 		<script>
-			const currentTheme = JSON.parse(localStorage.getItem('currentTheme')).title || 'lectio';
+			import { currentTheme } from '$lib/themes/themes.svelte.js'
+			currentTheme = JSON.parse(localStorage.getItem('currentTheme')).title || 'lectio';
 			console.log(`${currentTheme} loaded`);
 			document.documentElement.setAttribute('data-theme', currentTheme);
 		</script>
