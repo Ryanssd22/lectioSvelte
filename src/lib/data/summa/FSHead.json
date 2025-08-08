@@ -1,0 +1,58 @@
+[
+  {
+    "range": {
+      "start": "6",
+      "end": "21"
+    },
+    "header": "TREATISE ON HUMAN ACTS: ACTS PECULIAR TO MAN",
+    "title": "treatise"
+  },
+  {
+    "range": {
+      "start": "49",
+      "end": "54"
+    },
+    "header": "TREATISE ON HABITS",
+    "title": "treatise"
+  },
+  {
+    "range": {
+      "start": "55",
+      "end": "89"
+    },
+    "header": "TREATISE ON HABITS IN PARTICULAR",
+    "title": "treatise"
+  },
+  {
+    "range": {
+      "start": "55",
+      "end": "70"
+    },
+    "header": "GOOD HABITS, i.e. VIRTUES",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "71",
+      "end": "89"
+    },
+    "header": "EVIL HABITS, i.e. VICES AND SINS",
+    "title": "sub"
+  },
+  {
+    "range": {
+      "start": "90",
+      "end": "108"
+    },
+    "header": "TREATISE ON LAW",
+    "title": "treatise"
+  },
+  {
+    "range": {
+      "start": "109",
+      "end": "114"
+    },
+    "header": "TREATISE ON GRACE",
+    "title": "treatise"
+  }
+]

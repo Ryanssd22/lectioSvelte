@@ -16,7 +16,12 @@
 
 	let menuItems = [
 		{ title: 'Martyrology', route: '/martyrology' },
-		{ title: 'Themes', route: '/themes', icon: 'material-symbols:brush-sharp' }
+		{ title: 'Summa', route: '/summa' },
+		{
+			title: 'Themes',
+			route: '/themes',
+			icon: 'material-symbols:brush-sharp'
+		}
 	];
 
 	let mounted = $state(false);
@@ -28,7 +33,7 @@
 		console.log("current theme, layout.svelte", currentTheme.theme)
 	});
 
-
+	let menuClick = $state(false);
 </script>
 
 <svelte:head>
@@ -45,9 +50,7 @@
 </svelte:head>
 
 <div class="mx-2 flex flex-col sm:mx-10">
-	<div
-		class="border-background-variant m-4 flex h-16 items-center gap-5 border-b-2 p-5 font-[Lexend] font-light"
-	>
+	<div class="mt-4 flex h-16 items-center gap-5 p-5 font-[Lexend] font-light">
 		<a href="/" class="">
 			<Logo svgClass="w-32" baseColor="blue" hoverColor="red" />
 		</a>
@@ -57,7 +60,10 @@
 					<a
 						href={menuItem.route}
 						class="hover:text-primary text-md flex items-center transition-all"
-						class:text-primary={pageName == menuItem.route}
+						class:text-primary={pageName.includes(menuItem.route)}
+						onclick={() => {
+							menuClick = !menuClick;
+						}}
 					>
 						{#if menuItem.icon}
 							<Icon icon={menuItem.icon} class="mr-[2px] size-[15px]" />
@@ -69,9 +75,17 @@
 		{/if}
 	</div>
 
-	<div class="flex flex-col items-center text-center">
-		{@render children()}
-	</div>
+	<hr class="bg-background-variant mb-4 h-[2px] border-0" />
+
+	{#key menuClick}
+		<div
+			class="flex flex-col items-center text-center"
+			in:fade={{ duration: 100, delay: 100 }}
+			out:fade={{ duration: 100 }}
+		>
+			{@render children()}
+		</div>
+	{/key}
 </div>
 
 <style global>
