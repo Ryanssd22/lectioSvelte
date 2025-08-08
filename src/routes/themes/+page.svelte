@@ -8,10 +8,6 @@
 	let theme = currentTheme
 	console.log(theme);
 
-	$effect(() => {
-	    console.log('Current theme snapshot:', $inspect(currentTheme));
-	});
-
 	function changeTheme(newTheme) {
 		currentTheme.theme = newTheme;
 		localStorage.setItem('currentTheme', JSON.stringify(newTheme));
@@ -34,11 +30,6 @@
 	let activeTab = tabs[0];
 
 	//all subject to change
-	function saveTab(tab) {
-		console.log('saving the tab {}', tab);
-		localStorage.setItem('activeTab', tab);
-	}
-
 	function loadTab() {
 		const saved = localStorage.getItem('activeTab');
 		if (saved && tabs.includes(saved)) {
@@ -49,14 +40,18 @@
 
 	function chooseTab(tab) {
 		console.log('choosing tab');
-		activeTab = tab;
+		activeTab = tab
 		saveTab(tab);
 	}
 
-	/* onMount(() => {
+	function saveTab(tab) {
+	    console.log('saving tab');
+	    localStorage.setItem('activeTab', tab);
+	}
+
+	onMount(() => {
 		loadTab();
-		loadTheme();
-	}); */
+	});
 </script>
 
 
@@ -74,7 +69,7 @@
 </div>
 
 
-
+<div>
 
 
 {#if activeTab == 'preset'}
@@ -111,7 +106,11 @@
     </div>
 {/if}
 
-{#if activeTab == 'custom'}{/if}
+{#if activeTab == 'custom'}
+    <h1 class="text-4xl">Custom Theme</h1>
+    <p>Here is some custom content for the second tab.</p>
+{/if}
+</div>
 
 <!-- <style> -->
 <!-- 	.themeButton { -->
