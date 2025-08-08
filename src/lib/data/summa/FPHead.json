@@ -1,82 +1,82 @@
 [
-	{
-		"range": {
-			"start": "1",
-			"end": "1"
-		},
-		"header": "TREATISE ON SACRED DOCTRINE",
-		"title": "treatise"
-	},
-	{
-		"range": {
-			"start": "2",
-			"end": "26"
-		},
-		"header": "TREATISE ON THE ONE GOD",
-		"title": "treatise"
-	},
-	{
-		"range": {
-			"start": "27",
-			"end": "43"
-		},
-		"header": "TREATISE ON THE MOST HOLY TRINITY",
-		"title": "treatise"
-	},
-	{
-		"range": {
-			"start": "44",
-			"end": "49"
-		},
-		"header": "TREATISE ON THE CREATION",
-		"title": "treatise"
-	},
-	{
-		"range": {
-			"start": "47"
-		},
-		"header": "TREATISE ON THE DISTINCTION OF THINGS IN GENERAL",
-		"title": "treatise"
-	},
-	{
-		"range": {
-			"start": "48",
-			"end": "49"
-		},
-		"header": "TREATISE ON THE DISTINCTION OF GOOD AND EVIL",
-		"title": "treatise"
-	},
-	{
-		"range": {
-			"start": "50",
-			"end": "64"
-		},
-		"header": "TREATISE ON THE ANGELS",
-		"title": "treatise"
-	},
-	{
-		"range": {
-			"start": "65",
-			"end": "74"
-		},
-		"header": "TREATISE ON THE WORK OF THE SIX DAYS",
-		"title": "treatise"
-	},
-	{
-		"range": {
-			"start": "75",
-			"end": "102"
-		},
-		"header": "TREATISE ON MAN",
-		"title": "treatise"
-	},
-	{
-		"range": {
-			"start": "103",
-			"end": "119"
-		},
-		"header": "TREATISE ON THE CONSERVATION AND GOVERNMENT OF CREATURES",
-		"title": "treatise"
-	}
+  {
+    "range": {
+      "start": "1",
+      "end": "1"
+    },
+    "header": "TREATISE ON SACRED DOCTRINE",
+    "title": "treatise"
+  },
+  {
+    "range": {
+      "start": "2",
+      "end": "26"
+    },
+    "header": "TREATISE ON THE ONE GOD",
+    "title": "treatise"
+  },
+  {
+    "range": {
+      "start": "27",
+      "end": "43"
+    },
+    "header": "TREATISE ON THE MOST HOLY TRINITY",
+    "title": "treatise"
+  },
+  {
+    "range": {
+      "start": "44",
+      "end": "49"
+    },
+    "header": "TREATISE ON THE CREATION",
+    "title": "treatise"
+  },
+  {
+    "range": {
+      "start": "47",
+      "end": "47"
+    },
+    "header": "TREATISE ON THE DISTINCTION OF THINGS IN GENERAL",
+    "title": "treatise"
+  },
+  {
+    "range": {
+      "start": "48",
+      "end": "49"
+    },
+    "header": "TREATISE ON THE DISTINCTION OF GOOD AND EVIL",
+    "title": "treatise"
+  },
+  {
+    "range": {
+      "start": "50",
+      "end": "64"
+    },
+    "header": "TREATISE ON THE ANGELS",
+    "title": "treatise"
+  },
+  {
+    "range": {
+      "start": "65",
+      "end": "74"
+    },
+    "header": "TREATISE ON THE WORK OF THE SIX DAYS",
+    "title": "treatise"
+  },
+  {
+    "range": {
+      "start": "75",
+      "end": "102"
+    },
+    "header": "TREATISE ON MAN",
+    "title": "treatise"
+  },
+  {
+    "range": {
+      "start": "103",
+      "end": "119"
+    },
+    "header": "TREATISE ON THE CONSERVATION AND GOVERNMENT OF CREATURES",
+    "title": "treatise"
+  }
 ]
-

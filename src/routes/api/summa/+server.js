@@ -224,6 +224,7 @@ function get_treatises(head, questions) {
 function get_question(part, treatise, question) {
 	let treatiseDetails = SUMMA_TREATISE[part].treatises[treatise];
 	let articles = SUMMA_PARTS[part][question].articles;
+	let description = SUMMA_PARTS[part][question].description;
 	let simplifiedArticles = [];
 	for (const article of articles) {
 		simplifiedArticles.push(article.article);
@@ -232,7 +233,8 @@ function get_question(part, treatise, question) {
 	let questionObj = {
 		treatise: treatiseDetails.treatise,
 		question: treatiseDetails.questions[question],
-		articles: simplifiedArticles
+		articles: simplifiedArticles,
+		description: description
 	};
 	if (treatiseDetails.subs) {
 		for (const sub of treatiseDetails.subs) {

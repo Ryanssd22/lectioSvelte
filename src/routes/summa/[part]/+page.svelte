@@ -4,8 +4,6 @@
 	import { page } from '$app/state';
 	let { data } = $props();
 	let { part, treatises } = $derived(data);
-
-	$inspect('Treatises:', treatises);
 </script>
 
 <!-- <h2>{partTitle}</h2> -->

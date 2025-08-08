@@ -96,7 +96,8 @@
         "RP2": "These three---history, etiology, analogy---are grouped under the literal sense. For it is called history, as Augustine expounds (Epis. 48), whenever anything is simply related; it is called etiology when its cause is assigned, as when Our Lord gave the reason why Moses allowed the putting away of wives---namely, on account of the hardness of men's hearts; it is called analogy whenever the truth of one text of Scripture is shown not to contradict the truth of another. Of these four, allegory alone stands for the three spiritual senses. Thus Hugh of St. Victor (Sacram. iv, 4 Prolog.) includes the anagogical under the allegorical sense, laying down three senses only---the historical, the allegorical, and the tropological.",
         "RP3": "The parabolical sense is contained in the literal, for by words things are signified properly and figuratively. Nor is the figure itself, but that which is figured,  the literal sense. When Scripture speaks of God's arm, the literal sense is not that God has such a member, but only what is signified by this member, namely operative power. Hence it is plain that nothing false can ever underlie the literal sense of Holy Writ."
       }
-    ]
+    ],
+    "description": "To place our purpose within proper limits, we first endeavor to investigate the nature and extent of this sacred doctrine. Concerning this there are ten points of inquiry:"
   },
   {
     "question": "THE EXISTENCE OF GOD",
@@ -132,7 +133,8 @@
         "RP1": "As Augustine says (Enchiridion xi): \"Since God is the highest good, He would not allow any evil to exist in His works, unless His omnipotence and goodness were such as to bring good even out of evil.\" This is part of the infinite goodness of God, that He should allow evil to exist, and out of it produce good.",
         "RP2": "Since nature works for a determinate end under the direction of a higher agent, whatever is done by nature must needs be traced back to God, as to its first cause. So also whatever is done voluntarily must also be traced back to some higher cause other than human reason or will, since these can change or fail; for all things that are changeable and capable of defect must be traced back to an immovable and self-necessary first principle, as was shown in the body of the Article."
       }
-    ]
+    ],
+    "description": "Because the chief aim of sacred doctrine is to teach the knowledge of God, not only as He is in Himself, but also as He is the beginning of things and their last end, and especially of rational creatures, as is clear from what has been already said, therefore, in our endeavor to expound this science, we shall treat: (1) Of God; (2) Of the rational creature's advance towards God; (3) Of Christ, Who as man, is our way to God.\nIn treating of God there will be a threefold division, for we shall consider: (1) Whatever concerns the Divine Essence; (2) Whatever concerns the distinctions of Persons; (3) Whatever concerns the procession of creatures from Him.\nConcerning the Divine Essence, we must consider: (1) Whether God exists? (2) The manner of His existence, or, rather, what is NOT the manner of His existence; (3) Whatever concerns His operations---namely, His knowledge, will, power.\nConcerning the first, there are three points of inquiry:"
   },
   {
     "question": "OF THE SIMPLICITY OF GOD",
@@ -218,7 +220,8 @@
         "RP2": "The Word is an exemplar form; but not a form that is part of a compound.",
         "RP3": "Simple things do not differ by added differences---for this is the property of compounds. Thus man and horse differ by their differences, rational and irrational; which differences, however, do not differ from each other by other differences. Hence, to be quite accurate, it is better to say that they are, not different, but diverse. Hence, according to the Philosopher (Metaph. x), \"things which are diverse are absolutely distinct, but things which are different differ by something.\" Therefore, strictly speaking, primary matter and God do not differ, but are by their very being, diverse. Hence it does not follow they are the same."
       }
-    ]
+    ],
+    "description": "When the existence of a thing has been ascertained there  remains the further question of the manner of its existence, in order that we may know its essence. Now, because we cannot know what God is, but rather what He is not, we have no means for considering how God is, but rather how He is not.\nTherefore, we must consider: (1) How He is not; (2) How He is known by us; (3) How He is named.\nNow it can be shown how God is not, by denying Him whatever is opposed to the idea of Him, viz. composition, motion, and the like. Therefore (1) we must discuss His simplicity, whereby we deny composition in Him; and because whatever is simple in material things is imperfect and a part of something else, we shall discuss (2) His perfection; (3) His infinity; (4) His immutability; (5) His unity.\nConcerning His simplicity, there are eight points of inquiry:"
   },
   {
     "question": "THE PERFECTION OF GOD",
@@ -257,7 +260,8 @@
         "RP3": "Likeness of creatures to God is not affirmed on account of agreement in form according to the formality of the same genus or species, but solely according to analogy, inasmuch as God is essential being, whereas other things are beings by participation.",
         "RP4": "Although it may be admitted that creatures are in some sort like God, it must nowise be admitted that God is like creatures; because, as Dionysius says (Div. Nom. ix): \"A mutual likeness may be found between things of the same order, but not between a cause and that which is caused.\" For, we say that a statue is like a man, but not conversely; so also a creature can be spoken of as in some sort like God; but not that God is like a creature."
       }
-    ]
+    ],
+    "description": "Having considered the divine simplicity, we treat next of God's perfection. Now because everything in so far as it is perfect  is called good, we shall speak first of the divine perfection; secondly of the divine goodness.\nConcerning the first there are three points of inquiry:"
   },
   {
     "question": "OF GOODNESS IN GENERAL",
@@ -335,7 +339,8 @@
         "RP2": "This division is not by opposite things; but by opposite aspects. Now those things are called pleasing which have no other formality under which they are desirable except the pleasant, being sometimes hurtful and contrary to virtue. Whereas the useful applies to such as have nothing desirable in themselves, but are desired only as helpful to something further, as the taking of bitter medicine; while the virtuous is predicated of such as are desirable in themselves.",
         "RP3": "Goodness is not divided into these three as something univocal to be predicated equally of them all; but as something analogical to be predicated of them according to priority and posteriority. Hence it is predicated chiefly of the virtuous; then of the pleasant; and lastly of the useful."
       }
-    ]
+    ],
+    "description": "We next consider goodness: First, goodness in general. Secondly, the goodness of God.\nUnder the first head there are six points of inquiry:"
   },
   {
     "question": "THE GOODNESS OF GOD",
@@ -378,7 +383,8 @@
         "CON": "All things are good, inasmuch as they have being. But they are not called beings through the divine being, but through their own being; therefore all things are not good by the divine goodness, but by their own goodness.",
         "ANS": "As regards relative things, we must admit extrinsic denomination; as, a thing is denominated \"placed\" from \"place,\" and \"measured\" from \"measure.\" But as regards absolute things opinions differ. Plato held the existence of separate ideas  (Question [84], Article [4]) of all things, and that individuals were denominated by them as participating in the separate ideas; for instance, that Socrates is called man according to the separate idea of man. Now just as he laid down separate ideas of man and horse which he called absolute man and absolute horse, so likewise he laid down separate ideas of \"being\" and of \"one,\" and these he called absolute being and absolute oneness; and by participation of these, everything was called \"being\" or \"one\"; and what was thus absolute being and absolute one, he said was the supreme good. And because good is convertible with being, as one is also; he called God the absolute good, from whom all things are called good by way of participation.Although this opinion appears to be unreasonable in affirming separate ideas of natural things as subsisting of themselves---as Aristotle argues in many ways---still, it is absolutely true that there is first something which is essentially being and essentially good, which we call God, as appears from what is shown above (Question [2], Article [3]), and Aristotle agrees with this. Hence from the first being, essentially such, and good, everything can be called good and a being, inasmuch as it participates in it by way of a certain assimilation which is far removed and defective; as appears from the above (Question [4], Article [3]).Everything is therefore called good from the divine goodness, as from the first exemplary effective and final principle of all goodness. Nevertheless, everything is called good by reason of the similitude of the divine goodness belonging to it, which is formally its own goodness, whereby it is denominated good. And so of all things there is one goodness, and yet many goodnesses.This is a sufficient Reply to the Objections."
       }
-    ]
+    ],
+    "description": "We next consider the goodness of God; under which head there are four points of inquiry:"
   },
   {
     "question": "THE INFINITY OF GOD",
@@ -428,7 +434,8 @@
         "RP2": "Species of figures are infinite by infinitude of number. Now there are various species of figures, such as trilateral, quadrilateral and so on; and as an infinitely numerable multitude is not all at once reduced to act, so neither is the multitude of figures.",
         "RP3": "Although the supposition of some things does not preclude the supposition of others, still the supposition of an infinite number is opposed to any single species of multitude. Hence it is not possible for an actually infinite multitude to exist."
       }
-    ]
+    ],
+    "description": "After considering the divine perfection we must consider the divine infinity, and God's existence in things: for God is everywhere, and in all things, inasmuch as He is boundless and infinite.\nConcerning the first, there are four points of inquiry:"
   },
   {
     "question": "THE EXISTENCE OF GOD IN THINGS",
@@ -484,7 +491,8 @@
         "RP3": "The whole body of the universe is everywhere, but not primarily; forasmuch as it is not wholly in each place, but according to its parts; nor again is it everywhere absolutely, because, supposing that other places existed besides itself, it would not be in them.",
         "RP4": "If an infinite body existed, it would be everywhere; but according to its parts."
       }
-    ]
+    ],
+    "description": "Since it evidently belongs to the infinite to be present everywhere, and in all things, we now consider whether this belongs to God; and concerning this there arise four points of inquiry:"
   },
   {
     "question": "THE IMMUTABILITY OF GOD",
@@ -511,7 +519,8 @@
         "RP2": "The good angels, besides their natural endowment of immutability of being, have also immutability of election by divine power; nevertheless there remains in them mutability as regards place.",
         "RP3": "Forms are called invariable, forasmuch as they cannot be subjects of variation; but they are subject to variation because by them their subject is variable. Hence it is clear that they vary in so far as they are; for they are not called beings as though they were the subject of being, but because through them something has being."
       }
-    ]
+    ],
+    "description": "We next consider God's immutability, and His eternity following on His immutability. On the immutability of God there are two points of inquiry:"
   },
   {
     "question": "THE ETERNITY OF GOD",
@@ -590,7 +599,8 @@
         "RP3": "All temporal things did not begin together; nevertheless there is one time for all of them, by reason of the first measured by time; and thus all aeviternal things have one aeviternity by reason of the first, though all did not begin together.",
         "RP4": "For things to be measured by one, it is not necessary that the one should be the cause of all, but that it be more simple than the rest."
       }
-    ]
+    ],
+    "description": "We must now consider the eternity of God, concerning which arise six points of inquiry:"
   },
   {
     "question": "THE UNITY OF GOD",
@@ -639,7 +649,8 @@
         "RP2": "A point and unity which is the principle of number, are not supremely being, inasmuch as they have being only in some subject. Hence neither of them can be supremely \"one.\" For as a subject cannot be supremely \"one,\" because of the difference within it of accident and subject, so neither can an accident.",
         "RP3": "Although every being is \"one\" by its substance, still every such substance is not equally the cause of unity; for the substance of some things is compound and of others simple."
       }
-    ]
+    ],
+    "description": "After the foregoing, we consider the divine unity; concerning which there are four points of inquiry:"
   },
   {
     "question": "HOW GOD IS KNOWN BY US",
@@ -788,7 +799,8 @@
         "RP2": "From the images either received from sense in the natural order, or divinely formed in the imagination, we have so much the more excellent intellectual knowledge, the stronger the intelligible light is in man; and thus through the revelation given by the images a fuller knowledge is received by the infusion of the divine light.",
         "RP3": "Faith is a kind of knowledge, inasmuch as the intellect is determined by faith to some knowable object. But this determination to one object does not proceed from the vision of the believer, but from the vision of Him who is believed. Thus as far as faith falls short of vision, it falls short of the knowledge which belongs to science, for science determines the intellect to one object by the vision and understanding of first principles."
       }
-    ]
+    ],
+    "description": "As hitherto we have considered God as He is in Himself, we now go on to consider in what manner He is in the knowledge of creatures; concerning which there are thirteen points of inquiry:"
   },
   {
     "question": "THE NAMES OF GOD",
@@ -925,7 +937,8 @@
         "RP2": "Our intellect cannot comprehend simple subsisting forms, as they really are in themselves; but it apprehends them as compound things in which there is something taken as subject and something that is inherent. Therefore it apprehends the simple form as a subject, and attributes something else to it.",
         "RP3": "This proposition, \"The intellect understanding anything otherwise than it is, is false,\" can be taken in two senses, accordingly as this adverb \"otherwise\" determines the word \"understanding\" on the part of the thing understood, or on the part of the one who understands. Taken as referring to the thing understood, the proposition is true, and the meaning is: Any intellect which understands that the thing is otherwise than it is, is false. But this does not hold in the present case; because our intellect, when forming a proposition about God, does not affirm that He is composite, but that He is simple. But taken as referring to the one who understands, the proposition is false. For the mode of the intellect in understanding is different from the mode of the thing in its essence. Since it is clear that our intellect understands material things below itself in an immaterial manner; not that it understands them to be immaterial things; but its manner of understanding is immaterial. Likewise, when it understands simple things above itself, it understands them according to its own mode, which is in a composite manner; yet not so as to understand them to be composite things. And thus our intellect is not false in forming composition in its ideas concerning God."
       }
-    ]
+    ],
+    "description": "After the consideration of those things which belong to the divine knowledge, we now proceed to the consideration of the divine names. For everything is named by us according to our knowledge of it.\nUnder this head, there are twelve points for inquiry:"
   },
   {
     "question": "OF GOD'S KNOWLEDGE",
@@ -1101,7 +1114,8 @@
         "RP1": "The knowledge of God is the cause, not indeed of Himself, but of other things. He is actually the cause of some, that is, of things that come to be in some period of time; and He is virtually the cause of others, that is, of things which He can make, and which nevertheless are never made.",
         "RP2": "The fact that knowledge is derived from things known does not essentially belong to speculative knowledge, but only accidentally in so far as it is human.In answer to what is objected on the contrary, we must say that perfect knowledge of operable things is obtainable only if they are known in so far as they are operable. Therefore, since the knowledge of God is in every way perfect, He must know what is operable by Him, formally as such, and not only in so far as they are speculative. Nevertheless this does not impair the nobility of His speculative knowledge, forasmuch as He sees all things other than Himself in Himself, and He knows Himself speculatively; and so in the speculative knowledge of Himself, he possesses both speculative and practical knowledge of all other things."
       }
-    ]
+    ],
+    "description": "Having considered what belongs to the divine substance, we have now to treat of God's operation. And since one kind of operation is immanent, and another kind of operation proceeds to the exterior effect, we treat first of knowledge and of will (for understanding abides in the intelligent agent, and will is in the one who wills); and afterwards of the power of God, the principle of the divine operation as proceeding to the exterior effect. Now because to understand is a kind of life, after treating of the  divine knowledge, we consider truth and falsehood. Further, as everything known is in the knower, and the types of things as existing in the knowledge of God are called ideas, to the consideration of knowledge will be added the treatment of ideas.\nConcerning knowledge, there are sixteen points for inquiry:"
   },
   {
     "question": "OF IDEAS",
@@ -1143,7 +1157,8 @@
         "RP3": "Plato is said by some to have considered matter as not created; and therefore he postulated not an idea of matter but a concause with matter. Since, however, we hold matter to be created by God, though not apart from form, matter has its idea in God; but not apart from the idea of the composite; for matter in itself can neither exist, nor be known.",
         "RP4": "Genus can have no idea apart from the idea of species, in so far as idea denotes an \"exemplar\"; for genus cannot exist except in some species. The same is the case with those accidents that inseparably accompany their subject; for these come into being along with their subject. But accidents which supervene to the subject, have their special idea. For an architect produces through the form of the house all the accidents that originally accompany it; whereas those that are superadded to the house when completed, such as painting, or any other such thing, are produced through some other form. Now individual things, according to Plato,  have no other idea than that of species; both because particular things are individualized by matter, which, as some say, he held to be uncreated and the concause with the idea; and because the intention of nature regards the species, and produces individuals only that in them the species may be preserved. However, divine providence extends not merely to species; but to individuals as will be shown later (Question [22], Article [3])."
       }
-    ]
+    ],
+    "description": "After considering the knowledge of God, it remains to consider ideas. And about this there are three points of inquiry:"
   },
   {
     "question": "OF TRUTH",
@@ -1234,7 +1249,8 @@
         "RP3": "A proposition not only has truth, as other things are said to have it, in so far, that is, as they correspond to that which is the design of the divine intellect concerning them; but it said to have truth in a special way, in so far as it indicates the truth of the intellect, which consists in the conformity of the intellect with a thing. When this disappears, the truth of an opinion changes, and consequently the truth of the proposition. So therefore this proposition, \"Socrates sits,\" is true, as long as he is sitting, both with the truth of the thing, in so far as the expression is significative, and with the truth of signification, in so far as it signifies a true opinion. When Socrates rises, the first truth remains, but the second is changed.",
         "RP4": "The sitting of Socrates, which is the cause of the truth of the proposition, \"Socrates sits,\" has not the same meaning when Socrates sits, after he sits, and before he sits. Hence the truth which results, varies, and is variously signified by these propositions concerning present, past, or future. Thus it does not follow, though one of the three propositions is true, that the same truth remains invariable."
       }
-    ]
+    ],
+    "description": "Since knowledge is of things that are true, after the consideration of the knowledge of God, we must inquire concerning truth. About this there are eight points of inquiry:"
   },
   {
     "question": "CONCERNING FALSITY",
@@ -1281,7 +1297,8 @@
         "RP2": "Falsity is not founded in the truth which is contrary to it, just as evil is not founded in the good which is contrary to it, but in that which is its proper subject. This happens in either, because true and good are universals, and convertible with being. Hence, as every privation is founded in a subject, that is a being, so every evil is founded in some good, and every falsity in some truth.",
         "RP3": "Because contraries, and opposites by way of privation, are by nature about one and the same thing, therefore there is nothing contrary to God, considered in Himself, either  with respect to His goodness or His truth, for in His intellect there can be nothing false. But in our apprehension of Him contraries exist, for the false opinion concerning Him is contrary to the true. So idols are called lies, opposed to the divine truth, inasmuch as the false opinion concerning them is contrary to the true opinion of the divine unity."
       }
-    ]
+    ],
+    "description": "We next consider falsity. About this four points of inquiry arise:"
   },
   {
     "question": "THE LIFE OF GOD",
@@ -1331,7 +1348,8 @@
         "RP3": "If form only, and not matter, belonged to natural things, then in all respects natural things would exist more truly in the divine mind, by the ideas of them, than in themselves. For which reason, in fact, Plato held that the \"separate\" man was the true man; and that man as he exists in matter, is man only by participation. But since matter enters into the being of natural things, we must say that those things have simply being in the divine mind more truly than in themselves, because in that mind they have an uncreated being, but in themselves a created being: whereas this particular being, a man, or horse, for example, has this being more truly in its own nature than in the divine mind, because it belongs to human nature to be material, which, as existing in the divine mind, it is not. Even so a house has nobler being in the architect's mind than in matter; yet a material house is called a house more truly than the one which exists in the mind; since the former is actual, the latter only potential.",
         "RP4": "Although bad things are in God's knowledge, as being comprised under that knowledge, yet they are not in God as created by Him, or preserved by Him, or as having their type in Him. They are known by God through the types of good things. Hence it cannot be said that bad things are life in God. Those things that are not in time may be called life in God in so far as life means understanding only, and inasmuch as they are understood by God; but not in so far as life implies a principle of operation."
       }
-    ]
+    ],
+    "description": "Since to understand belongs to living beings, after considering the divine knowledge and intellect, we must consider the divine life. About this, four points of inquiry arise:"
   },
   {
     "question": "THE WILL OF GOD",
@@ -1474,7 +1492,8 @@
         "RP3": "Rational creatures are masters of their own acts; and for this reason certain special expressions of the divine will are assigned to their acts, inasmuch as God ordains rational creatures to act voluntarily and of themselves. Other creatures act only as moved by the divine operation; therefore only operation and permission are concerned with these.",
         "RP4": "All evil of sin, though happening in many ways, agrees in being out of harmony with the divine will. Hence with regard to evil, only one expression is assigned, that of prohibition. On the other hand, good stands in various relations to the divine goodness, since there are good deeds without which we cannot attain to the fruition of that goodness, and these are the subject of precept; and there are others by which we attain to it more perfectly, and these are the subject of counsel. Or it may be said that counsel is not only concerned with the obtaining of greater good; but also with the avoiding of lesser evils."
       }
-    ]
+    ],
+    "description": "After considering the things belonging to the divine knowledge, we consider what belongs to the divine will. The first consideration is about the divine will itself; the second about what belongs strictly to His will; the third about what belongs to the intellect in relation to His will. About His will itself there are twelve points of inquiry:"
   },
   {
     "question": "GOD'S LOVE",
@@ -1528,7 +1547,8 @@
         "RP3": "This doubt concerning Peter and John has been solved in various ways. Augustine interprets it mystically, and says that the active life, signified by Peter, loves God more than the contemplative signified by John, because the former is more  conscious of the miseries of this present life, and therefore the more ardently desires to be freed from them, and depart to God. God, he says, loves more the contemplative life, since He preserves it longer. For it does not end, as the active life does, with the life of the body.Some say that Peter loved Christ more in His members, and therefore was loved more by Christ also, for which reason He gave him the care of the Church; but that John loved Christ more in Himself, and so was loved more by Him; on which account Christ commended His mother to his care. Others say that it is uncertain which of them loved Christ more with the love of charity, and uncertain also which of them God loved more and ordained to a greater degree of glory in eternal life. Peter is said to have loved more, in regard to a certain promptness and fervor; but John to have been more loved, with respect to certain marks of familiarity which Christ showed to him rather than to others, on account of his youth and purity. While others say that Christ loved Peter more, from his more excellent gift of charity; but John more, from his gifts of intellect. Hence, absolutely speaking, Peter was the better and more beloved; but, in a certain sense, John was the better, and was loved the more. However, it may seem presumptuous to pass judgment on these matters; since \"the Lord\" and no other \"is the weigher of spirits\" (Prov. 16:2).",
         "RP4": "The penitent and the innocent are related as exceeding and exceeded. For whether innocent or penitent, those are the better and better loved who have most grace. Other things being equal, innocence is the nobler thing and the more beloved. God is said to rejoice more over the penitent than over the innocent, because often penitents rise from sin more cautious, humble, and fervent. Hence Gregory commenting on these words (Hom. 34 in Ev.) says that, \"In battle the general loves the soldier who after flight returns and bravely pursues the enemy, more than him who has never fled, but has never done a brave deed.\"Or it may be answered that gifts of grace, equal in themselves, are more as conferred on the penitent, who deserved punishment, than as conferred on the innocent, to whom no punishment was due; just as a hundred pounds [marcoe] are a greater gift to a poor man than to a king."
       }
-    ]
+    ],
+    "description": "We next consider those things that pertain absolutely to the will of God. In the appetitive part of the soul there are found in ourselves both the passions of the soul, as joy, love, and the like; and the habits of the moral virtues, as justice, fortitude and the like. Hence we shall first consider the love of God, and  secondly His justice and mercy. About the first there are four points of inquiry:"
   },
   {
     "question": "THE JUSTICE AND MERCY OF GOD",
@@ -1577,7 +1597,8 @@
         "RP3": "Justice and mercy appear in the punishment of the just in this world, since by afflictions lesser faults are cleansed in them, and they are the more raised up from earthly affections to God. As to this Gregory says (Moral. xxvi, 9): \"The evils that press on us in this world force us to go to God.\"",
         "RP4": "Although creation presupposes nothing in the universe; yet it does presuppose something in the knowledge of God. In this way too the idea of justice is preserved in creation; by the production of beings in a manner that accords with the divine wisdom and goodness. And the idea of mercy, also, is preserved in the change of creatures from non-existence to existence."
       }
-    ]
+    ],
+    "description": "After considering the divine love, we must treat of God's  justice and mercy. Under this head there are four points of inquiry:"
   },
   {
     "question": "THE PROVIDENCE OF GOD",
@@ -1629,7 +1650,8 @@
         "RP2": "The order of divine providence is unchangeable and certain, so far as all things foreseen happen as they have been foreseen, whether from necessity or from contingency.",
         "RP3": "That indissolubility and unchangeableness of which Boethius speaks, pertain to the certainty of providence, which fails not to produce its effect, and that in the way foreseen; but they do not pertain to the necessity of the effects. We must remember that properly speaking 'necessary' and \"contingent\" are consequent upon being, as such. Hence the mode both of necessity and of contingency falls under the foresight of God, who provides universally for all being; not under the foresight of causes that provide only for some particular order of things."
       }
-    ]
+    ],
+    "description": "Having considered all that relates to the will absolutely, we must now proceed to those things which have relation to both the intellect and the will, namely providence, in respect to all created things; predestination and reprobation and all that is connected with these acts in respect especially of man as regards his eternal salvation. For in the science of morals, after the moral virtues themselves, comes the consideration of prudence, to which providence would seem to belong. Concerning God's providence there are four points of inquiry:"
   },
   {
     "question": "OF PREDESTINATION",
@@ -1726,7 +1748,8 @@
         "RP2": "One is said to be helped by another in two ways; in one way, inasmuch as he receives power from him: and to be helped thus belongs to the weak; but this cannot be said of God, and thus we are to understand, \"Who hath helped the Spirit of the Lord?\" In another way one is said to be helped by a person through whom he carries out his work, as a master through a servant. In this way God is helped by us; inasmuch as we execute His orders, according to 1 Cor. 3:9: \"We are God's co-adjutors.\" Nor is this on account of any defect in the power of God, but because He employs intermediary causes, in order that the beauty of order may be preserved in the universe; and also that He may communicate to creatures the dignity of causality.",
         "RP3": "Secondary causes cannot escape the order of the first universal cause, as has been said above (Question [19], Article [6]), indeed, they execute that order. And therefore predestination can be furthered by creatures, but it cannot be impeded by them."
       }
-    ]
+    ],
+    "description": "After consideration of divine providence, we must treat of predestination and the book of life. Concerning predestination there are eight points of inquiry:"
   },
   {
     "question": "THE BOOK OF LIFE",
@@ -1763,7 +1786,8 @@
         "RP2": "Although things are immutably in God, yet in themselves they are subject to change. To this it is that the blotting out of the book of life refers.",
         "RP3": "The way in which one is said to be blotted out of the book of life is that in which one is said to be written therein anew; either in the opinion of men, or because he begins again to have relation towards eternal life through grace; which also is included in the knowledge of God, although not anew."
       }
-    ]
+    ],
+    "description": "We now consider the book of life; concerning which there are three points of inquiry:"
   },
   {
     "question": "THE POWER OF GOD",
@@ -1840,7 +1864,8 @@
         "RP3": "The universe, the present creation being supposed, cannot be better, on account of the most beautiful order given to things by God; in which the good of the universe consists. For if any one thing were bettered, the proportion of order would be destroyed; as if one string were stretched more than it ought to be, the melody of the harp would be destroyed. Yet God could make other things, or add something to the present creation; and then there would be another and a better universe.",
         "RP4": "The humanity of Christ, from the fact that it is united to the Godhead; and created happiness from the fact that it is the fruition of God; and the Blessed Virgin from the fact that she is the mother of God; have all a certain infinite dignity from the infinite good, which is God. And on this account there cannot be anything better than these; just as there cannot be anything better than God."
       }
-    ]
+    ],
+    "description": "After considering the divine foreknowledge and will, and other things pertaining thereto, it remains for us to consider the power of God. About this are six points of inquiry:"
   },
   {
     "question": "OF THE DIVINE BEATITUDE",
@@ -1881,7 +1906,8 @@
         "RP1": "A particular kind of beatitude is false according as it falls short of the idea of true beatitude; and thus it is not in God. But whatever semblance it has, howsoever slight, of beatitude, the whole of it pre-exists in the divine beatitude.",
         "RP2": "The good that exists in things corporeal in a corporeal manner, is also in God, but in a spiritual manner.We have now spoken enough concerning what pertains to the unity of the divine essence."
       }
-    ]
+    ],
+    "description": "After considering all that pertains to the unity of the divine essence, we come to treat of the divine beatitude. Concerning this, there are four points of inquiry:"
   },
   {
     "question": "THE PROCESSION OF THE DIVINE PERSONS",
@@ -1941,7 +1967,8 @@
         "RP2": "As Boethius says (De Hebdom.), goodness belongs to the essence and not to the operation, unless considered as the object of the will.Thus, as the divine processions must be denominated from certain actions; no other processions can be understood in God according to goodness and the like attributes except those of the Word and of love, according as God understands and loves His own essence, truth and goodness.",
         "RP3": "As above explained (Question [14], Article [5]; Question [19], Article [5]), God understands all things by one simple act; and by one act also He wills all things. Hence there cannot exist in Him a procession of Word from Word, nor of Love from Love: for there is in Him only one perfect Word, and one perfect Love; thereby being manifested His perfect fecundity."
       }
-    ]
+    ],
+    "description": "Having considered what belongs to the unity of the divine essence, it remains to treat of what belongs to the Trinity of the persons in God. And because the divine Persons are distinguished from each other according to the relations of origin, the order of the doctrine leads us to consider firstly, the question of origin or procession; secondly, the relations of origin; thirdly, the persons.\nConcerning procession there are five points of inquiry:"
   },
   {
     "question": "THE DIVINE RELATIONS",
@@ -1994,7 +2021,8 @@
         "RP3": "Ideal relations exist as understood by God. Hence it does not follow from their plurality that there are many relations in God; but that God knows these many relations.",
         "RP4": "Equality and similitude in God are not real relations; but are only logical relations (Question [42], Article [3], ad 4)."
       }
-    ]
+    ],
+    "description": "The divine relations are next to be considered, in four points of inquiry:"
   },
   {
     "question": "THE DIVINE PERSONS",
@@ -2051,7 +2079,8 @@
         "RP3": "In God the individual---i.e. distinct and incommunicable substance---includes the idea of relation, as above explained.",
         "RP4": "The different sense of the less common term does not produce equivocation in the more common. Although a horse and an ass have their own proper definitions, nevertheless they agree univocally in animal, because the common definition of animal applies to both. So it does not follow that, although relation is contained in the signification of divine person, but not in that of an angelic or of a human person, the word \"person\" is used in an equivocal sense. Though neither is it applied univocally, since nothing can be said univocally of God and creatures (Question [13], Article [5])."
       }
-    ]
+    ],
+    "description": "Having premised what have appeared necessary notions concerning the processions and the relations, we must now approach the subject of the persons.\nFirst, we shall consider the persons absolutely, and then comparatively as regards each other. We must consider the persons absolutely first in common; and then singly.\nThe general consideration of the persons seemingly involves four points: (1) The signification of this word \"person\"; (2) the number of the persons; (3) what is involved in the number of persons, or is opposed thereto; as diversity, and similitude, and the like; and (4) what belongs to our knowledge of the persons.\nFour subjects of inquiry are comprised in the first point:(1) The definition of \"person.\""
   },
   {
     "question": "THE PLURALITY OF PERSONS IN GOD",
@@ -2105,7 +2134,8 @@
         "RP2": "Although person is incommunicable, yet the mode itself of incommunicable existence can be common to many.",
         "RP3": "Although this community is logical and not real, yet it does not follow that in God there is universal or particular, or genus, or species; both because neither in human affairs is the community of person the same as community of genus or species; and because the divine persons have one being; whereas genus and species and every other universal are predicated of many which differ in being."
       }
-    ]
+    ],
+    "description": "We are now led to consider the plurality of the persons: about which there are four points of inquiry:"
   },
   {
     "question": "OF WHAT BELONGS TO THE UNITY OR PLURALITY IN GOD",
@@ -2160,7 +2190,8 @@
         "RP3": "The exclusive diction does not exclude what enters into the concept of the term to which it is adjoined, if they do not differ in \"suppositum,\" as part and universal. But the Son differs in \"suppositum\" from the Father; and so there is no parity.",
         "RP4": "We do not say absolutely that the Son alone is Most High; but that He alone is Most High \"with the Holy Ghost, in the glory of God the Father.\""
       }
-    ]
+    ],
+    "description": "We now consider what belongs to the unity or plurality in God; which gives rise to four points of inquiry:"
   },
   {
     "question": "THE KNOWLEDGE OF THE DIVINE PERSONS",
@@ -2207,7 +2238,8 @@
         "CON": "The notions are not articles of faith. Therefore different opinions of the notions are permissible.",
         "ANS": "Anything is of faith in two ways; directly, where any truth comes to us principally as divinely taught, as the trinity and unity of God, the Incarnation of the Son, and the like; and concerning these truths a false opinion of itself involves heresy, especially if it be held obstinately. A thing is of faith, indirectly, if the denial of it involves as a consequence something against faith; as for instance if anyone said that Samuel was not the son of Elcana, for it follows that the divine Scripture would be false. Concerning such things anyone may have a false opinion without danger of heresy, before the matter has been considered or settled as involving consequences against faith, and particularly if no obstinacy be shown; whereas when it is manifest, and especially if the Church has decided that consequences follow against faith, then the error cannot be free from heresy. For this reason many things are now considered as heretical which were formerly not so considered, as their consequences are now more manifest.So we must decide that anyone may entertain contrary opinions about the notions, if he does not mean to uphold anything at variance with faith. If, however, anyone should entertain a false opinion of the notions, knowing or thinking that consequences against the faith would follow, he would lapse into heresy.By what has been said all the objections may be solved."
       }
-    ]
+    ],
+    "description": "We proceed to inquire concerning the knowledge of the divine persons; and this involves four points of inquiry:"
   },
   {
     "question": "OF THE PERSON OF THE FATHER",
@@ -2260,7 +2292,8 @@
         "RP3": "According to Damascene (De Fide Orth. ii, 9), \"unbegotten\" in one sense signifies the same as \"uncreated\"; and thus it applies to the substance, for thereby does the created substance differ from the uncreated. In another sense it signifies what is not begotten, and in this sense it is a relative term; just as negation is reduced to the genus of affirmation, as \"not man\" is reduced to the genus of substance, and \"not white\" to the genus of quality. Hence, since \"begotten\" implies relation in God, \"unbegotten\" belongs also to relation. Thus it does not follow that the Father unbegotten is substantially distinguished from the Son begotten; but only by relation; that is, as the relation of Son is denied of the Father.",
         "RP4": "In every genus there must be something first; so in the divine nature there must be some one principle which is not from another, and which we call \"unbegotten.\" To admit two innascibles is to suppose the existence of two Gods, and two divine natures. Hence Hilary says (De Synod.): \"As there is one God, so there cannot be two innascibles.\" And this especially because, did two innascibles exist, one would not be from the other, and they  would not be distinguished by relative opposition: therefore they would be distinguished from each other by diversity of nature."
       }
-    ]
+    ],
+    "description": "We now consider the persons singly; and first, the Person of the Father, concerning Whom there are four points of inquiry:"
   },
   {
     "question": "OF THE PERSON OF THE SON",
@@ -2306,7 +2339,8 @@
         "RP3": "Creatures are known to God not by a knowledge derived from the creatures themselves, but by His own essence. Hence it is not necessary that the Word should proceed from creatures, although the Word is expressive of creatures.",
         "RP4": "The name of Idea is imposed chiefly to signify relation to creatures; and therefore it is applied in a plural sense to God; and it is not said personally. But the name of Word is imposed chiefly to signify the speaker, and consequently, relation to creatures, inasmuch as God, by understanding Himself, understands every creature; and so there is only one Word in God, and that is a personal one."
       }
-    ]
+    ],
+    "description": "We next consider the person of the Son. Three names are attributed to the Son---namely, \"Son,\" \"Word,\" and \"Image.\" The idea of Son is gathered from the idea of Father. Hence it remains for us to consider Word and Image.\nConcerning Word there are three points of inquiry:"
   },
   {
     "question": "OF THE IMAGE",
@@ -2333,7 +2367,8 @@
         "RP2": "Although the Holy Ghost is like to the Father and the Son, still it does not follow that He is the Image, as above explained.",
         "RP3": "The image of a thing may be found in something in two ways. In one way it is found in something of the same specific nature; as the image of the king is found in his son. In another way it is found in something of a different nature, as the king's image on the coin. In the first sense the Son is the Image of the Father; in the second sense man is called the image of God; and therefore in order to express the imperfect character of the divine image in man, man is not simply called the image, but \"to the image,\" whereby is expressed a certain movement of tendency to perfection. But it cannot be said that the Son of God is \"to the image,\" because He is the perfect Image of the Father."
       }
-    ]
+    ],
+    "description": "We next inquire concerning the image: about which there are two points of inquiry:"
   },
   {
     "question": "OF THE PERSON OF THE HOLY GHOST",
@@ -2390,7 +2425,8 @@
         "RP3": "It is not by reason of relative properties that we speak of similitude or dissimilitude in God, but by reason of the essence. Hence, as the Father is not more like to Himself than He is to the Son; so likewise neither is the Son more like to the Father than is the Holy Ghost.",
         "RP4": "These two propositions, \"The Father and the Son are one principle which is the Father,\" or, \"one principle which is not the Father,\" are not mutually contradictory; and hence it is not necessary to assert one or other of them. For when we say the Father and the Son are one principle, this word \"principle\" has not determinate supposition but rather it stands indeterminately for two persons together. Hence there is a fallacy of \"figure of speech\" as the argument concludes from the indeterminate to the determinate."
       }
-    ]
+    ],
+    "description": "We proceed to treat of what belongs to the person of the Holy Ghost, Who is called not only the Holy Ghost, but also the Love and Gift of God. Concerning the name \"Holy Ghost\" there are four points of inquiry:"
   },
   {
     "question": "OF THE NAME OF THE HOLY GHOST---LOVE",
@@ -2419,7 +2455,8 @@
         "RP2": "When the idea of an action includes a determined effect, the principle of the action may be denominated both from the action, and from the effect; so we can say, for instance, that a tree flowers by its flowering and by its flower. When, however, the idea of an action does not include a determined effect, then in that case, the principle of the action cannot be denominated from the effect, but only from the action. For we do not say that the tree produces the flower by the flower, but by the production of the flower. So when we say, \"spirates\" or \"begets,\" this imports only a notional act. Hence we cannot say that the Father spirates by the Holy Ghost, or begets by the Son. But we can say that the Father speaks by the Word, as by the Person proceeding, \"and speaks by the speaking,\" as by a notional act; forasmuch as \"to speak\" imports a determinate person proceeding; since \"to speak\" means to produce a word. Likewise to love, taken in a notional sense, means to produce love; and so it can be said that the Father loves the Son by the Holy Ghost, as by the person proceeding, and by Love itself as a notional act.",
         "RP3": "The Father loves not only the Son, but also Himself and us, by the Holy Ghost; because, as above explained, to love, taken in a notional sense, not only imports the production of a divine person, but also the person produced, by way of love, which has relation to the object loved. Hence, as the Father speaks Himself and every creature by His begotten Word, inasmuch as the Word \"begotten\" adequately represents the Father and every creature; so He loves Himself and every creature by the Holy Ghost, inasmuch as the Holy Ghost proceeds as the love of the primal goodness whereby the Father loves Himself and every creature. Thus it is evident that relation to the creature is implied both in the Word and in the proceeding Love, as it were in a secondary way, inasmuch as the divine truth and goodness are a principle of understanding and loving all creatures."
       }
-    ]
+    ],
+    "description": "We now inquire concerning the name \"Love,\" on which arise two points of inquiry:"
   },
   {
     "question": "OF THE NAME OF THE HOLY GHOST, AS GIFT",
@@ -2448,7 +2485,8 @@
         "RP2": "The name Gift involves the idea of belonging to the Giver through its origin; and thus it imports the property of the origin of the Holy Ghost---that is, His procession.",
         "RP3": "Before a gift is given, it belongs only to the giver; but when it is given, it is his to whom it is given. Therefore, because \"Gift\" does not import the actual giving, it cannot be called a gift of man, but the Gift of God giving. When, however, it has been given, then it is the spirit of man, or a gift bestowed on man."
       }
-    ]
+    ],
+    "description": "There now follows the consideration of the Gift; concerning which there are two points of inquiry:"
   },
   {
     "question": "OF THE PERSONS IN RELATION TO THE ESSENCE",
@@ -2547,7 +2585,8 @@
         "OB5": "Likewise, Truth is appropriated to the Son, according to Jn. 14:6, \"I am the Way, the Truth, and the Life\"; and likewise \"the book of life,\" according to Ps. 39:9, \"In the beginning of the book it is written of Me,\" where a gloss observes, \"that is, with the Father Who is My head,\" also this word \"Who is\"; because on the text of Is. 65:1, \"Behold I go to the Gentiles,\" a gloss adds, \"The Son speaks Who said to Moses, I am Who am.\" These appear to belong to the Son, and are not appropriated. For \"truth,\" according to Augustine (De Vera Relig. 36), \"is the supreme similitude of the principle without any dissimilitude.\" So it seems that it properly belongs to the Son, Who has a principle. Also the \"book of life\" seems proper to the Son, as signifying \"a thing from another\"; for every book is written by someone. This also, \"Who is,\" appears to be proper to the Son; because if when it was said to Moses, \"I am Who am,\" the Trinity spoke, then Moses could have said, \"He Who is Father, Son, and Holy Ghost, and the Holy Ghost sent me to you,\" so also he could have said further, \"He Who is the Father, and the Son, and the Holy Ghost sent me to you,\" pointing out a certain person. This, however, is false; because no person is Father, Son  and Holy Ghost. Therefore it cannot be common to the Trinity, but is proper to the Son.",
         "ANS": "Our intellect, which is led to the knowledge of God from creatures, must consider God according to the mode derived from creatures. In considering any creature four points present themselves to us in due order. Firstly, the thing itself taken absolutely is considered as a being. Secondly, it is considered as one. Thirdly, its intrinsic power of operation and causality is considered. The fourth point of consideration embraces its relation to its effects. Hence this fourfold consideration comes to our mind in reference to God.According to the first point of consideration, whereby we consider God absolutely in His being, the appropriation mentioned by Hilary applies, according to which \"eternity\" is appropriated to the Father, \"species\" to the Son, \"use\" to the Holy Ghost. For \"eternity\" as meaning a \"being\" without a principle, has a likeness to the property of the Father, Who is \"a principle without a principle.\" Species or beauty has a likeness to the property of the Son. For beauty includes three conditions, \"integrity\" or \"perfection,\" since those things which are impaired are by the very fact ugly; due \"proportion\" or \"harmony\"; and lastly, \"brightness\" or \"clarity,\" whence things are called beautiful which have a bright color.The first of these has a likeness to the property of the Son, inasmuch as He as Son has in Himself truly and perfectly the nature of the Father. To insinuate this, Augustine says in his explanation (De Trin. vi, 10): \"Where---that is, in the Son---there is supreme and primal life,\" etc.The second agrees with the Son's property, inasmuch as He is the express Image of the Father. Hence we see that an image is said to be beautiful, if it perfectly represents even an ugly thing. This is indicated by Augustine when he says (De Trin. vi, 10), \"Where there exists wondrous proportion and primal equality,\" etc.The third agrees with the property of the Son, as the Word, which is the light and splendor of the intellect, as Damascene says (De Fide Orth. iii, 3). Augustine alludes to the same when he says (De Trin. vi, 10): \"As the perfect Word, not wanting in anything, and, so to speak, the art of the omnipotent God,\" etc.\"Use\" has a likeness to the property of the Holy Ghost; provided the \"use\" be taken in a wide sense, as including also the sense of \"to enjoy\"; according as \"to use\" is to employ something at the beck of the will, and \"to enjoy\" means to use joyfully, as Augustine says (De Trin. x, 11). So \"use,\" whereby the Father and the Son enjoy each other, agrees with the property of the Holy Ghost, as Love. This is what Augustine says (De Trin. vi, 10): \"That love, that delectation, that felicity or beatitude, is called use by him\" (Hilary). But the \"use\" by which we enjoy God, is likened to the property of the Holy Ghost as the Gift; and  Augustine points to this when he says (De Trin. vi, 10): \"In the Trinity, the Holy Ghost, the sweetness of the Begettor and the Begotten, pours out upon us mere creatures His immense bounty and wealth.\" Thus it is clear how \"eternity,\" \"species,\" and \"use\" are attributed or appropriated to the persons, but not essence or operation; because, being common, there is nothing in their concept to liken them to the properties of the Persons.The second consideration of God regards Him as \"one.\" In that view Augustine (De Doctr. Christ. i, 5) appropriates \"unity\" to the Father, \"equality\" to the Son, \"concord\" or \"union\" to the Holy Ghost. It is manifest that these three imply unity, but in different ways. For \"unity\" is said absolutely, as it does not presuppose anything else; and for this reason it is appropriated to the Father, to Whom any other person is not presupposed since He is the \"principle without principle.\" \"Equality\" implies unity as regards another; for that is equal which has the same quantity as another. So equality is appropriated to the Son, Who is the \"principle from a principle.\" \"Union\" implies the unity of two; and is therefore appropriated to the Holy Ghost, inasmuch as He proceeds from two. And from this we can understand what Augustine means when he says (De Doctr. Christ. i, 5) that \"The Three are one, by reason of the Father; They are equal by reason of the Son; and are united by reason of the Holy Ghost.\" For it is clear that we trace a thing back to that in which we find it first: just as in this lower world we attribute life to the vegetative soul, because therein we find the first trace of life. Now \"unity\" is perceived at once in the person of the Father, even if by an impossible hypothesis, the other persons were removed. So the other persons derive their unity from the Father. But if the other persons be removed, we do not find equality in the Father, but we find it as soon as we suppose the Son. So, all are equal by reason of the Son, not as if the Son were the principle of equality in the Father, but that, without the Son equal to the Father, the Father could not be called equal; because His equality is considered firstly in regard to the Son: for that the Holy Ghost is equal to the Father, is also from the Son. Likewise, if the Holy Ghost, Who is the union of the two, be excluded, we cannot understand the oneness of the union between the Father and the Son. So all are connected by reason of the Holy Ghost; because given the Holy Ghost, we find whence the Father and the Son are said to be united.According to the third consideration, which brings before us the adequate power of God in the sphere of causality, there is said to be a third kind of appropriation, of \"power,\" \"wisdom,\" and \"goodness.\" This kind of appropriation is made both by reason of similitude as regards what exists in the divine persons, and by reason of dissimilitude if we consider what is in creatures. For \"power\" has the nature of a principle, and so it has a likeness to the heavenly Father, Who is the principle of the whole Godhead. But in an earthly father it is wanting sometimes by reason of old age. \"Wisdom\" has likeness to the heavenly Son, as the Word, for a word is nothing but the concept of wisdom. In an earthly son this is sometimes absent by reason of lack of years. \"Goodness,\" as the  nature and object of love, has likeness to the Holy Ghost; but seems repugnant to the earthly spirit, which often implies a certain violent impulse, according to Is. 25:4: \"The spirit of the strong is as a blast beating on the wall.\" \"Strength\" is appropriated to the Son and to the Holy Ghost, not as denoting the power itself of a thing, but as sometimes used to express that which proceeds from power; for instance, we say that the strong work done by an agent is its strength.According to the fourth consideration, i.e. God's relation to His effects, there arise appropriation of the expression \"from Whom, by Whom, and in Whom.\" For this preposition \"from\" [ex] sometimes implies a certain relation of the material cause; which has no place in God; and sometimes it expresses the relation of the efficient cause, which can be applied to God by reason of His active power; hence it is appropriated to the Father in the same way as power. The preposition \"by\" [per] sometimes designates an intermediate cause; thus we may say that a smith works \"by\" a hammer. Hence the word \"by\" is not always appropriated to the Son, but belongs to the Son properly and strictly, according to the text, \"All things were made by Him\" (Jn. 1:3); not that the Son is an instrument, but as \"the principle from a principle.\" Sometimes it designates the habitude of a form \"by\" which an agent works; thus we say that an artificer works by his art. Hence, as wisdom and art are appropriated to the Son, so also is the expression \"by Whom.\" The preposition \"in\" strictly denotes the habitude of one containing. Now, God contains things in two ways: in one way by their similitudes; thus things are said to be in God, as existing in His knowledge. In this sense the expression \"in Him\" should be appropriated to the Son. In another sense things are contained in God forasmuch as He in His goodness preserves and governs them, by guiding them to a fitting end; and in this sense the expression \"in Him\" is appropriated to the Holy Ghost, as likewise is \"goodness.\" Nor need the habitude of the final cause (though the first of causes) be appropriated to the Father, Who is \"the principle without a principle\": because the divine persons, of Whom the Father is the principle, do not proceed from Him as towards an end, since each of Them is the last end; but They proceed by a natural procession, which seems more to belong to the nature of a natural power.Regarding the other points of inquiry, we can say that since \"truth\" belongs to the intellect, as stated above (Question [16], Article [1]), it is appropriated to the Son, without, however, being a property of His. For truth can be considered as existing in the thought or in the thing itself. Hence, as intellect and thing in their essential meaning, are referred to the essence, and not to the persons, so the same is to be said of truth. The definition quoted from Augustine belongs to truth as appropriated to the Son. The \"book of life\" directly means knowledge but indirectly it means life. For, as above explained (Question [24], Article [1]), it is God's knowledge regarding those who are to possess eternal life. Consequently, it is appropriated to the Son; although life is appropriated to the Holy Ghost, as implying a certain kind of interior movement, agreeing in that  sense with the property of the Holy Ghost as Love. To be written by another is not of the essence of a book considered as such; but this belongs to it only as a work produced. So this does not imply origin; nor is it personal, but an appropriation to a person. The expression \"Who is\" is appropriated to the person of the Son, not by reason of itself, but by reason of an adjunct, inasmuch as, in God's word to Moses, was prefigured the delivery of the human race accomplished by the Son. Yet, forasmuch as the word \"Who\" is taken in a relative sense, it may sometimes relate to the person of the Son; and in that sense it would be taken personally; as, for instance, were we to say, \"The Son is the begotten 'Who is,'\" inasmuch as \"God begotten is personal.\" But taken indefinitely, it is an essential term. And although the pronoun \"this\" [iste] seems grammatically to point to a particular person, nevertheless everything that we can point to can be grammatically treated as a person, although in its own nature it is not a person; as we may say, \"this stone,\" and \"this ass.\" So, speaking in a grammatical sense, so far as the word \"God\" signifies and stands for the divine essence, the latter may be designated by the pronoun \"this,\" according to Ex. 15:2: \"This is my God, and I will glorify Him.\""
       }
-    ]
+    ],
+    "description": "Those things considered which belong to the divine persons absolutely, we next treat of what concerns the person in reference to the essence, to the properties, and to the notional acts; and of the comparison of these with each other.\nAs regards the first of these, there are eight points of inquiry:"
   },
   {
     "question": "OF THE PERSONS AS COMPARED TO THE RELATIONS OR PROPERTIES",
@@ -2598,7 +2637,8 @@
         "RP2": "This objection avails of paternity as a relation, but not as constituting a person.",
         "RP3": "Nativity is the way to the person of the Son; and so, in the order of intelligence, it precedes filiation, even as constituting the person of the Son. But active generation signifies a proceeding from the person of the Father; wherefore it presupposes the personal property of the Father."
       }
-    ]
+    ],
+    "description": "We now consider the persons in connection with the relations, or properties; and there are four points of inquiry:"
   },
   {
     "question": "OF THE PERSONS IN REFERENCE TO THE NOTIONAL ACTS",
@@ -2674,7 +2714,8 @@
         "RP2": "Augustine does not mean to say by those words that the Son could beget a Son: but that if He did not, it was not because He could not, as we shall see later on (Question [42], Article [6], ad 3).",
         "RP3": "Divine perfection and the total absence of matter in God require that there cannot be several Sons in God, as we have explained. Wherefore that there are not several Sons is not due to any lack of begetting power in the Father."
       }
-    ]
+    ],
+    "description": "We now consider the persons in reference to the notional acts, concerning which six points of inquiry arise:"
   },
   {
     "question": "OF EQUALITY AND LIKENESS AMONG THE DIVINE PERSONS",
@@ -2751,7 +2792,8 @@
         "RP2": "The Father's \"showing\" and the Son's \"hearing\" are to be taken in the sense that the Father communicates knowledge to the Son, as He communicates His essence. The command of the Father can be explained in the same sense, as giving Him from eternity knowledge and will to act, by begetting Him. Or, better still, this may be referred to Christ in His human nature.",
         "RP3": "As the same essence is paternity in the Father, and filiation in the Son: so by the same power the Father begets, and the Son is begotten. Hence it is clear that the Son can do whatever the Father can do; yet it does not follow that the Son can beget; for to argue thus would imply transition from substance to relation, for generation signifies a divine relation. So the Son has the same omnipotence as the Father, but with another relation; the Father possessing power as \"giving\" signified when we say that He is able to beget; while the Son possesses the power of \"receiving,\" signified by saying that He can be begotten."
       }
-    ]
+    ],
+    "description": "We now have to consider the persons as compared to one another: firstly, with regard to equality and likeness; secondly, with regard to mission. Concerning the first there are six points of inquiry."
   },
   {
     "question": "THE MISSION OF THE DIVINE PERSONS",
@@ -2848,7 +2890,8 @@
         "CON": "The Son is sent by the Holy Ghost, according to Is. 48:16, \"Now the Lord God hath sent Me and His Spirit.\" But the Son is not from the Holy Ghost. Therefore a divine person is sent by one from Whom He does not proceed.",
         "ANS": "There are different opinions on this point. Some say that the divine person is sent only by the one whence He proceeds eternally; and so, when it is said that the Son of God is sent by the Holy Ghost, this is to be explained as regards His human nature, by reason of which He was sent to preach by the Holy Ghost. Augustine, however, says (De Trin. ii, 5) that the Son is sent by Himself, and by the Holy Ghost; and the Holy Ghost is sent by Himself, and by the Son; so that to be sent in God does not apply to each person, but only to the person proceeding fromanother, whereas to send belongs to each person.There is some truth in both of these opinions; because when a person is described as being sent, the person Himself existing from another is designated, with the visible or invisible effect, applicable to the mission of the divine person. Thus if the sender be designated as the principle of the person sent, in this sense not each person sends, but that person only Who is the principle of that person who is sent; and thus the Son is sent only by the Father; and the Holy Ghost by the Father and the Son. If, however, the person sending is understood as the principle of the effect implied in the mission, in that sense the whole Trinity sends the person sent. This reason does not prove that a man can send the Holy Ghost, forasmuch as man cannot cause the effect of grace.The answers to the objections appear from the above."
       }
-    ]
+    ],
+    "description": "We next consider the mission of the divine persons, concerning which there are eight points of inquiry:"
   },
   {
     "question": "THE PROCESSION OF CREATURES FROM GOD, AND OF THE FIRST CAUSE OF ALL THINGS",
@@ -2901,7 +2944,8 @@
         "RP3": "All things desire God as their end, when they desire some good thing, whether this desire be intellectual or sensible, or natural, i.e. without knowledge; because nothing is good and desirable except forasmuch as it participates in the likeness to God.",
         "RP4": "Since God is the efficient, the exemplar and the final cause of all things, and since primary matter is from Him, it follows that the first principle of all things is one in reality. But this does not prevent us from mentally considering many things in Him, some of which come into our mind before others."
       }
-    ]
+    ],
+    "description": "After treating of the procession of the divine persons, we must consider the procession of creatures from God. This consideration will be threefold: (1) of the production of creatures; (2) of the distinction between them; (3) of their preservation and government. Concerning the first point there are three things to be considered: (1) the first cause of beings; (2) the mode of procession of creatures from the first cause; (3) the principle of the duration of things.\nUnder the first head there are four points of inquiry:"
   },
   {
     "question": "THE MODE OF EMANATION OF THINGS FROM THE FIRST PRINCIPLE",
@@ -2998,7 +3042,8 @@
         "RP3": "For the generation of imperfect animals, a universal agent suffices, and this is to be found in the celestial power to which they are assimilated, not in species, but according to a kind of analogy. Nor is it necessary to say that their forms are created by a separate agent. However, for the generation of perfect animals the universal agent does not suffice, but a proper agent is required, in the shape of a univocal generator.",
         "RP4": "The operation of nature takes place only on the presupposition of created principles; and thus the products of nature are called creatures."
       }
-    ]
+    ],
+    "description": "The next question concerns the mode of the emanation of things from the First Principle, and this is called creation, and includes eight points of inquiry:"
   },
   {
     "question": "OF THE BEGINNING OF THE DURATION OF CREATURES",
@@ -3042,7 +3087,8 @@
         "RP2": "This saying of the Philosopher is understood \"of being made\" by means of movement, or as the term of movement. Because, since in every movement there is \"before\" and \"after,\" before any one point in a given movement---that is, whilst anything is in the process of being moved and made, there is a \"before\" and also an \"after,\" because what is in the beginning of movement or in its term is not in \"being moved.\" But creation is neither movement nor the term of movement, as was said above (Question [45], Articles [2],3). Hence a thing is created in such a way that it was not being created before.",
         "RP3": "Nothing is made except as it exists. But nothing exists of time except \"now.\" Hence time cannot be made except according to some \"now\"; not because in the first \"now\" is time, but because from it time begins."
       }
-    ]
+    ],
+    "description": "Next must be considered the beginning of the duration of creatures, about which there are three points for treatment:"
   },
   {
     "question": "OF THE DISTINCTION OF THINGS IN GENERAL",
@@ -3080,7 +3126,8 @@
         "RP2": "No agent intends material plurality as the end forasmuch as material multitude has no certain limit, but of itself tends to infinity, and the infinite is opposed to the notion of end. Now when it is said that many worlds are better than one, this has reference to material order. But the best in this sense is not the intention of the divine agent; forasmuch as for the same reason it might be said that if He had made two worlds, it would be better if He had made three; and so on to infinite.",
         "RP3": "The world is composed of the whole of its matter. For it is not possible for there to be another earth than this one, since every earth would naturally be carried to this central one, wherever it was. The same applies to the other bodies which are part of the world."
       }
-    ]
+    ],
+    "description": "After considering the production of creatures, we come to the consideration of the distinction of things. This consideration will be threefold---first, of the distinction of things in general; secondly, of the distinction of good and evil; thirdly, of the distinction of the spiritual and corporeal creature.\nUnder the first head, there are three points of inquiry:"
   },
   {
     "question": "THE DISTINCTION OF THINGS IN PARTICULAR",
@@ -3158,7 +3205,8 @@
         "RP2": "The order of action which is destroyed by fault is the more perfect good of the agent, since it is the second perfection, than the good taken away by pain, which is the first perfection.",
         "RP3": "Pain and fault are not to be compared as end and order to the end; because one may be deprived of both of these in some way, both by fault and by pain; by pain, accordingly as a man is removed from the end and from the order to the end; by fault, inasmuch as this privation belongs to the action which is not ordered to its due end."
       }
-    ]
+    ],
+    "description": "We must now consider the distinction of things in particular; and firstly the distinction of good and evil; and then the distinction of the spiritual and corporeal creatures.\nConcerning the first, we inquire into evil and its cause.\nConcerning evil, six points are to be considered:"
   },
   {
     "question": "THE CAUSE OF EVIL",
@@ -3201,7 +3249,8 @@
         "RP3": "Increase in intensity is in proportion to the nature of a thing. And as the form is a perfection, so privation removes a perfection. Hence every form, perfection, and good is intensified by approach to the perfect term; but privation and evil by receding from that term. Hence a thing is not said to be evil and worse, by reason of access to the supreme evil, in the same way as it is said to be good and better, by reason of access to the supreme good.",
         "RP4": "No being is called evil by participation, but by privation of participation. Hence it is not necessary to reduce it to any essential evil."
       }
-    ]
+    ],
+    "description": "We next inquire into the cause of evil. Concerning this there are three points of inquire:"
   },
   {
     "question": "OF THE SUBSTANCE OF THE ANGELS ABSOLUTELY CONSIDERED",
@@ -3267,7 +3316,8 @@
         "RP2": "By the expression 'gods' Plato understands the heavenly bodies, which he supposed to be made up of elements, and therefore dissoluble of their own nature; yet they are for ever preserved in existence by the Divine will.",
         "RP3": "As was observed above (Question [44], Article [1]) there is a kind of necessary thing which has a cause of its necessity. Hence it is not repugnant to a necessary or incorruptible being to depend for its existence on another as its cause. Therefore, when it is said that all things, even the angels, would lapse into nothing, unless preserved by God, it is not to be gathered therefrom that there is any principle of corruption in the angels; but that the nature of the angels is dependent upon God as its cause. For a thing is said to be corruptible not merely because God can reduce it to non-existence, by withdrawing His act of preservation; but also because it has some principle of corruption within itself, or some contrariety, or at least the potentiality of matter."
       }
-    ]
+    ],
+    "description": "Now we consider the distinction of corporeal and spiritual creatures: firstly, the purely spiritual creature which in Holy Scripture is called angel; secondly, the creature wholly corporeal; thirdly, the composite creature, corporeal and spiritual, which is man.\nConcerning the angels, we consider first what belongs to their substance; secondly, what belongs to their intellect; thirdly, what belongs to their will; fourthly, what belongs to their creation.\nTheir substance we consider absolutely and in relation to corporeal things.\nConcerning their substance absolutely considered, there are five points of inquiry:"
   },
   {
     "question": "OF THE ANGELS IN COMPARISON WITH BODIES",
@@ -3308,7 +3358,8 @@
         "RP3": "Movement coming from a united mover is a proper function of life; but the bodies assumed by the angels are not thus moved, since the angels are not their forms. Yet the angels are moved accidentally, when such bodies are moved, since they are in them as movers are in the moved; and they are here in such a way as not to be elsewhere which cannot be said of God. Accordingly, although God is not moved when the things are moved in which He exists, since He is everywhere; yet the angels are moved accidentally according to the movement of the bodies assumed. But they are not moved according to the movement of the heavenly bodies, even though they be in them as the movers in the thing moved, because the heavenly bodies do not change place in their entirety; nor for the spirit which moves the world is there any fixed locality according to any restricted part of the world's substance, which now is in the east, and now in the west, but according to a fixed quarter; because \"the moving energy is always in the east,\" as stated in Phys. viii, text 84.",
         "RP4": "Properly speaking, the angels do not talk through their assumed bodies; yet there is a semblance of speech, in so far as they fashion sounds in the air like to human voices."
       }
-    ]
+    ],
+    "description": "We next inquire about the angels in comparison with corporeal things; and in the first place about their comparison with bodies; secondly, of the angels in comparison with corporeal places; and, thirdly, of their comparison with local movement.\nUnder the first heading there are three points of inquiry:"
   },
   {
     "question": "OF THE ANGELS IN RELATION TO PLACE",
@@ -3340,7 +3391,8 @@
         "RP2": "An angel and a body are not in a place in the same way; hence the conclusion does not follow.",
         "RP3": "Not even a demon and a soul are compared to a body according to the same relation of causality; since the soul is its form, while the demon is not. Hence the inference does not follow."
       }
-    ]
+    ],
+    "description": "We now inquire into the place of the angels. Touching this there are three subjects of inquiry:"
   },
   {
     "question": "OF THE LOCAL MOVEMENT OF THE ANGELS",
@@ -3377,7 +3429,8 @@
         "RP2": "Illumination is the term of a movement; and is an alteration, not a local movement, as though the light were understood to be moved to what is near, before being moved to what is remote. But the angel's movement is local, and, besides, it is not the term of movement; hence there is no comparison.",
         "RP3": "This objection is based on continuous time. But the same time of an angel's movement can be non-continuous. So an angel can be in one place in one instant, and in another place in the next instant, without any time intervening. If the time of the angel's movement be continuous, he is changed through infinite places throughout the whole time which precedes the last 'now'; as was already shown (Article [2]). Nevertheless he is partly in one of the continuous places, and partly in another, not because his substance is susceptible of parts, but because his power is applied to a part of the first place and to a part of the second, as was said above (Article [2])."
       }
-    ]
+    ],
+    "description": "We must next consider the local movement of the angels; under  which heading there are three points of inquiry:"
   },
   {
     "question": "OF THE KNOWLEDGE OF THE ANGELS",
@@ -3430,7 +3483,8 @@
         "CON": "Gregory says (Hom. 29 in Ev.), that \"man senses in common with the brutes, and understands with the angels.\"",
         "ANS": "In our soul there are certain powers whose operations are exercised by corporeal organs; such powers are acts of sundry parts of the body, as sight of the eye, and hearing of the ear. There are some other powers of the soul whose operations are not performed through bodily organs, as intellect and will: these are not acts of any parts of the body. Now the angels have no bodies naturally joined to them, as is manifest from what has been said already (Question [51], Article [1]). Hence of the soul's powers only intellect and will can belong to them.The Commentator (Metaph. xii) says the same thing, namely, that the separated substances are divided into intellect and will. And it is in keeping with the order of the universe for the highest intellectual creature to be entirely intelligent; and not in part, as is our soul. For this reason the angels are called \"intellects\" and \"minds,\" as was said above (Article [3], ad 1).A twofold answer can be returned to the contrary objections. First, it may be replied that those authorities are speaking according to the opinion of such men as contended that angels and demons have bodies naturally united to them. Augustine often makes use of this opinion in his books, although he does not mean to assert it; hence he says (De Civ. Dei xxi) that \"such an inquiry does not call for much labor.\" Secondly, it may be said that such authorities and the like are to be understood by way of similitude. Because, since sense has a sure apprehension of its proper sensible object, it is a common usage of speech, when he understands something for certain, to say that we \"sense it.\" And hence it is that we use the word \"sentence.\" Experience can be attributed to the angels according to the likeness of the things known, although not by likeness of the faculty knowing them. We have experience when we know single objects through the senses: the angels likewise know single objects, as we shall show (Question [57], Article [2]), yet not through the senses. But memory can be allowed in the angels, according as Augustine (De Trin. x) puts it in the mind; although it cannot belong to them in so far as it is a part of the sensitive soul. In like fashion 'a perverted phantasy' is attributed to demons, since they have a false practical estimate of what is the true good; while deception in us comes properly from the phantasy, whereby we sometimes hold fast to images of things as to the things themselves, as is manifest in sleepers and lunatics."
       }
-    ]
+    ],
+    "description": "After considering what belongs to the angel's substance, we now proceed to his knowledge. This investigation will be fourfold. In the first place inquiry must be made into his power of knowledge: secondly, into his medium of knowledge: thirdly, into the objects known: and fourthly, into the manner whereby he knows them.\nUnder the first heading there are five points of inquiry:"
   },
   {
     "question": "OF THE MEDIUM OF THE ANGELIC KNOWLEDGE",
@@ -3468,7 +3522,8 @@
         "RP2": "To know anything universally can be taken in two senses. In one way, on the part of the thing known, namely, that only the universal nature of the thing is known. To know a thing thus is something less perfect: for he would have but an imperfect knowledge of a man who only knew him to be an animal. In another way, on the part of the medium of such knowledge. In this way it is more perfect to know a thing in the universal; for the intellect, which by one universal medium can know each of the things which are properly contained in it, is more perfect than one which cannot.",
         "RP3": "The same cannot be the proper and adequate type of several things. But if it be eminent, then it can be taken as the proper type and likeness of many. Just as in man, there is a universal prudence with respect to all the acts of the virtues; which can be taken as the proper type and likeness of that prudence which in the lion leads to acts of magnanimity, and in the fox to acts of wariness; and so on of the rest. The Divine essence, on account of Its eminence, is in like fashion taken as the proper type of each thing contained therein: hence each one is likened to It according to its proper type. The same applies to the universal form which is in the mind of the angel, so that, on account of its excellence, many things can be known through it with a proper knowledge."
       }
-    ]
+    ],
+    "description": "Next in order, the question arises as to the medium of the angelic knowledge. Under this heading there are three points of inquiry:"
   },
   {
     "question": "OF THE ANGEL'S KNOWLEDGE OF IMMATERIAL THINGS",
@@ -3508,7 +3563,8 @@
         "RP2": "Since an angel's intellect and essence are infinitely remote from God, it follows that he cannot comprehend Him; nor can he see God's essence through his own nature. Yet it does not follow on that account that he can have no knowledge of Him at all: because, as God is infinitely remote from the angel, so the knowledge which God has of Himself is infinitely above the knowledge which an angel has of Him.",
         "RP3": "The knowledge which an angel has of God is midway between these two kinds of knowledge; nevertheless it approaches more to one of them, as was said above."
       }
-    ]
+    ],
+    "description": "We now inquire into the knowledge of the angels with regard to the objects known by them. We shall treat of their knowledge, first, of immaterial things, secondly of things material. Under the first heading there are three points of inquiry:"
   },
   {
     "question": "OF THE ANGEL'S KNOWLEDGE OF MATERIAL THINGS",
@@ -3570,7 +3626,8 @@
         "RP2": "Although the angels in bliss behold the Divine wisdom, yet they do not comprehend it. So it is not necessary for them to know everything hidden in it.",
         "RP3": "Whatever the prophets knew by revelation of the mysteries of grace, was revealed in a more excellent way to the angels. And although God revealed in general to the prophets what He was one day to do regarding the salvation of the human race, still the apostles knew some particulars of the same, which the prophets did not know. Thus we read (Eph. 3:4,5): \"As you reading, may understand my knowledge in the mystery of Christ, which in other generations was not known to the sons of men, as it is now revealed to His holy apostles.\" Among the prophets also, the later ones knew what the former did not know; according to Ps. 118:100: \"I have had understanding above ancients,\" and Gregory says: \"The knowledge of Divine things increased as time went on\" (Hom. xvi in Ezech.)."
       }
-    ]
+    ],
+    "description": "We next investigate the material objects which are known by the angels. Under this heading there are five points of inquiry:"
   },
   {
     "question": "OF THE MODE OF ANGELIC KNOWLEDGE",
@@ -3648,7 +3705,8 @@
         "RP2": "There can be two operations of the same faculty at the one time, one of which is referred to the other; as is evident when the will at the same time wills the end and the means to the end; and the intellect at the same instant perceives principles and conclusions through those principles, when it has already acquired knowledge. As Augustine says (Gen. ad lit. iv, 24), the evening knowledge is referred to the morning knowledge in the angels; hence there is nothing to hinder both from being at the same time in the angels.",
         "RP3": "On the coming of what is perfect, the opposite imperfect is done away: just as faith, which is of the things that are not seen, is made void when vision succeeds. But the imperfection of the evening knowledge is not opposed to the perfection of the morning knowledge. For that a thing be known in itself, is not opposite to its being known in its cause. Nor, again, is there any inconsistency in knowing a thing through two mediums, one of which is more perfect and the other less perfect; just as we can have a demonstrative and a probable medium for reaching the same conclusion. In like manner a thing can be known by the angel through the uncreated Word, and through an innate idea."
       }
-    ]
+    ],
+    "description": "After the foregoing we have now to treat of the mode of the angelic knowledge, concerning which there are seven points of inquiry:"
   },
   {
     "question": "THE WILL OF THE ANGELS",
@@ -3697,7 +3755,8 @@
         "RP2": "Love and joy, in so far as they are passions, are in the concupiscible appetite, but in so far as they express a simple act of the will, they are in the intellective part: in this sense to love is to wish well to anyone; and to be glad is for the will to repose in some good possessed. Universally speaking, none of these things is said of the angels, as by way of passions; as Augustine says (De Civ. Dei ix).",
         "RP3": "Charity, as a virtue, is not in the concupiscible appetite, but in the will; because the object of the concupiscible appetite is the good as delectable to the senses. But the Divine goodness, which is the object of charity, is not of any such kind. For the same reason it must be said that hope does not exist in the irascible appetite; because the object of the irascible appetite is something arduous belonging to the sensible order, which the virtue of hope does not regard; since the object of hope is arduous and divine. Temperance, however, considered as a human virtue, deals with the desires of sensible pleasures, which belong to the concupiscible faculty. Similarly, fortitude regulates daring and fear, which reside in the irascible part. Consequently temperance, in so far as it is a human virtue, resides in the concupiscible part, and fortitude in the irascible. But they do not exist in the angels in this manner. For in them there are no passions of concupiscence, nor of fear and daring, to be regulated by temperance and fortitude. But temperance is predicated of them according as in moderation they display their will in conformity with the Divine will. Fortitude is likewise attributed to them, in so far as they firmly carry out the Divine will. All of this is done by their will, and not by the irascible or concupiscible appetite."
       }
-    ]
+    ],
+    "description": "In the next place we must treat of things concerning the will of the angels. In the first place we shall treat of the will itself; secondly, of its movement, which is love. Under the first heading there are four points of inquiry:"
   },
   {
     "question": "OF THE LOVE OR DILECTION OF THE ANGELS",
@@ -3757,7 +3816,8 @@
         "RP3": "Nature's operation is self-centered not merely as to certain particular details, but much more as to what is common; for everything is inclined to preserve not merely its individuality, but likewise its species. And much more has everything a natural inclination towards what is the absolutely universal good.",
         "RP4": "God, in so far as He is the universal good, from Whom every natural good depends, is loved by everything with natural love. So far as He is the good which of its very nature beatifies all with supernatural beatitude, He is love with the love of charity."
       }
-    ]
+    ],
+    "description": "The next subject for our consideration is that act of the will which is love or dilection; because every act of the appetitive faculty comes of love.\nUnder this heading there are five points of inquiry:"
   },
   {
     "question": "OF THE PRODUCTION OF THE ANGELS IN THE ORDER OF NATURAL BEING",
@@ -3805,7 +3865,8 @@
         "RP2": "By the uppermost atmosphere Augustine possibly means the highest part of heaven, to which the atmosphere has a kind of affinity owing to its subtlety and transparency. Or else he is not speaking of all the angels; but only of such as sinned, who, in the opinion of some, belonged to the inferior orders. But there is nothing to hinder us from saying that the higher angels, as having an exalted and universal power over all corporeal things, were created in the highest place of the corporeal creature; while the other angels, as having more restricted powers, were created among the inferior bodies.",
         "RP3": "Isaias is not speaking there of any corporeal heaven, but of the heaven of the Blessed Trinity; unto which the sinning angel wished to ascend, when he desired to be equal in some manner to God, as will appear later on (Question [63], Article [3])."
       }
-    ]
+    ],
+    "description": "After dealing with the nature of the angels, their knowledge and will, it now remains for us to treat of their creation, or, speaking in a general way, of their origin. Such consideration is threefold. In the first place we must see how they were brought into natural existence; secondly, how they were made perfect in grace or glory; and thirdly, how some of them became wicked.\nUnder the first heading there are four points of inquiry:"
   },
   {
     "question": "OF THE PERFECTION OF THE ANGELS IN THE ORDER OF GRACE AND OF GLORY",
@@ -3908,7 +3969,8 @@
         "RP2": "A thing can be termed useful in two ways. First of all, as being on the way to an end; and so the merit of beatitude is useful. Secondly, as the part is useful for the whole; as the wall for a house. In this way the angelic ministerings are useful for the beatified angels, inasmuch as they are a part of their beatitude; for to pour out acquired perfection upon others is of the nature of what is perfect, considered as perfect.",
         "RP3": "Although a beatified angel is not absolutely in the highest degree of beatitude, yet, in his own regard he is in the highest degree, according to Divine predestination. Nevertheless the joy of the angels can be increased with regard to the salvation of such as are saved by their ministrations, according to Lk. 15:10: \"There is [Vulg.'shall be'] joy before the angels of God upon one sinner doing penance.\" Such joy belongs to their accidental reward, which can be increased unto judgment day. Hence some writers say that they can merit as to their accidental reward. But it is better to say that the Blessed can in no wise merit without being at the same time a wayfarer and a comprehensor; like Christ, Who alone was such. For the Blessed acquire such joy from the virtue of their beatitude, rather than merit it."
       }
-    ]
+    ],
+    "description": "In due sequence we have to inquire how the angels were made in the order of grace and of glory; under which heading there are nine points of inquiry:"
   },
   {
     "question": "THE MALICE OF THE ANGELS WITH REGARD TO SIN",
@@ -4014,7 +4076,8 @@
         "RP1": "The Philosopher is speaking with regard to men, in whom evil comes to pass from seeking after sensible pleasures, which are known to most men, and from forsaking the good dictated by reason, which good is known to the few. In the angels there is only an intellectual nature; hence the argument does not hold.And from this we have the answer to the second difficulty.",
         "RP3": "According to those who hold that the chief devil belonged to the lower order of the angels, who are set over earthly affairs, it is evident that some of every order did not fall, but only those of the lowest order. According to those who maintain that the chief devil was of the highest order, it is probable that some fell of every order; just as men are taken up into every order to supply for the angelic ruin. In this view the liberty of free-will is more established; which in every degree of creature can be turned to evil. In the Sacred Scripture, however, the names of some orders, as of Seraphim and Thrones, are not attributed to demons; since they are derived from the ardor of love and from God's indwelling, which are not consistent with mortal sin. Yet the names of Cherubim, Powers, and Principalities are attributed to them; because these names are derived from knowledge and from power, which can be common to both good and bad."
       }
-    ]
+    ],
+    "description": "In the next place we must consider how angels became evil: first of all with regard to the evil of fault; and secondly, as to the evil of punishment. Under the first heading there are nine points for consideration:"
   },
   {
     "question": "THE PUNISHMENT OF THE DEMONS",
@@ -4069,7 +4132,8 @@
         "RP2": "One soul is not set over another in the order of nature, as the demons are over men in the order of nature; consequently there is no parallel.",
         "RP3": "Some have maintained that the pain of sense for demons and souls is postponed until the judgment day: and that the beatitude of the saints is likewise postponed until the judgment day. But this is erroneous, and contrary to the teaching of the Apostle (2 Cor. 5:1): \"If our earthly house of this habitation be dissolved, we have a house in heaven.\" Others, again, while not admitting the same of souls, admit it as to demons. But it is better to say that the same judgment is passed upon wicked souls and wicked angels, even as on good souls and good angels.Consequently, it must be said that, although a heavenly place belongs to the glory of the angels, yet their glory is not lessened by their coming to us, for they consider that place to be their own; in the same way as we say that the bishop's honor is not lessened while he is not actually sitting on his throne. In like manner it must be said, that although the demons are not actually  bound within the fire of hell while they are in this dark atmosphere, nevertheless their punishment is none the less; because they know that such confinement is their due. Hence it is said in a gloss upon James 3:6: \"They carry fire of hell with them wherever they go.\" Nor is this contrary to what is said (Lk. 8:31), \"They besought the Lord not to cast them into the abyss\"; for they asked for this, deeming it to be a punishment for them to be cast out of a place where they could injure men. Hence it is stated, \"They [Vulg. 'He'] besought Him that He would not expel them [Vulg. 'him'] out of the country\" (Mk. 5:10)."
       }
-    ]
+    ],
+    "description": "It now remains as a sequel to deal with the punishment of the demons; under which heading there are four points of inquiry:"
   },
   {
     "question": "THE WORK OF CREATION OF CORPOREAL CREATURES",
@@ -4118,7 +4182,8 @@
         "RP2": "Forms received into matter are to be referred, not to self-subsisting forms of the same type, as the Platonists held, but either to intelligible forms of the angelic intellect, from which they proceed by movement, or, still higher, to the types in the Divine intellect, by which the seeds of forms are implanted in created things, that they may be able to be brought by movement into act.",
         "RP3": "The heavenly bodies inform earthly ones by movement, not by emanation."
       }
-    ]
+    ],
+    "description": "From the consideration of spiritual creatures we proceed to that of corporeal creatures, in the production of which, as Holy Scripture makes mention, three works are found, namely, the work of creation, as given in the words, \"In the beginning God created heaven and earth\"; the work of distinction as given in the words, \"He divided the light from the darkness, and the waters that are above the firmament from the waters that are under the firmament\"; and the work of adornment, expressed thus, \"Let there be lights in the firmament.\"\nFirst, then, we must consider the work of creation; secondly, the work of distinction; and thirdly, the work of adornment. Under the first head there are four points of inquiry:"
   },
   {
     "question": "ON THE ORDER OF CREATION TOWARDS DISTINCTION",
@@ -4174,7 +4239,8 @@
         "RP3": "If the movement of the firmament did not begin immediately from the beginning, then the time that preceded was the measure, not of the firmament's movement, but of the first movement of whatsoever kind. For it is accidental to time to be the measure of the firmament's movement, in so far as this is the first movement. But if the first movement was another than this, time would have been its measure, for everything is measured by the first of its kind. And it must be granted that forthwith from the beginning, there was movement of some kind, at least in the succession of concepts and affections in the angelic mind: while movement without time cannot be conceived, since time is nothing else than \"the measure of priority and succession in movement.\"",
         "RP4": "Among the first created things are to be reckoned those which have a general relationship to things. And, therefore, among these time must be included, as having the nature of a common measure; but not movement, which is related only to the movable subject."
       }
-    ]
+    ],
+    "description": "We must next consider the work of distinction; first, the ordering of creation towards distinction; secondly, the distinction itself. Under the first head there are four points of inquiry:"
   },
   {
     "question": "ON THE WORK OF DISTINCTION IN ITSELF",
@@ -4222,7 +4288,8 @@
         "RP3": "Basil says (Hom. ii in Hexaem.) that day and night were then caused by expansion and contraction of light, rather than by movement. But Augustine objects to this (Gen. ad lit. i), that there was no reason for this vicissitude of expansion and contraction since there were neither men nor animals on the earth at that time, for whose service this was required. Nor does the nature of a luminous body seem to admit of the withdrawal of light, so long as the body is actually present; though this might be effected by a miracle. As to this, however, Augustine remarks (Gen. ad lit. i) that in the first founding of the order of nature we must not look for miracles, but for what is in accordance with nature. We hold, then, that the movement of the heavens is twofold. Of these movements, one is common to the entire heaven, and is the cause of day and night. This, as it seems, had its beginning on the first day. The other varies in proportion as it affects various bodies, and by its variations is the cause of the succession of days, months, and years. Thus it is, that in the account of the first day the distinction between day and night alone is mentioned; this distinction being brought about by the common movement of the heavens. The further distinction into successive days, seasons, and years recorded as begun on the fourth day, in the words, \"let them be for seasons, and for days, and years\" is due to proper movements.",
         "RP4": "As Augustine teaches (Confess. xii; Gen. ad lit. 1,15), formlessness did not precede forms in duration; and so we must understand the production of light to signify the formation of spiritual creatures, not, indeed, with the perfection of glory, in which they were not created, but with the perfection of grace, which they possessed from their creation as said above (Question [62], Article [3]).  Thus the division of light from darkness will denote the distinction of the spiritual creature from other created things as yet without form. But if all created things received their form at the same time, the darkness must be held to mean the spiritual darkness of the wicked, not as existing from the beginning but such as God foresaw would exist."
       }
-    ]
+    ],
+    "description": "We must consider next the work of distinction in itself. First, the work of the first day; secondly, the work of the second day; thirdly the work of the third day.\nUnder the first head there are four points of inquiry:"
   },
   {
     "question": "ON THE WORK OF THE SECOND DAY",
@@ -4268,7 +4335,8 @@
         "RP2": "The argument holds good as to the heaven, in so far as it denotes the entire sum of corporeal creation, for in that sense it is one.",
         "RP3": "All the heavens have in common sublimity and some degree of luminosity, as appears from what has been said."
       }
-    ]
+    ],
+    "description": "We must next consider the work of the second day. Under this head there are four points of inquiry:"
   },
   {
     "question": "ON THE WORK OF THE THIRD DAY",
@@ -4298,7 +4366,8 @@
         "RP2": "Even before the earth was accursed, thorns and thistles had been produced, either virtually or actually. But they were not produced in punishment of man; as though the earth, which he tilled to gain his food, produced unfruitful and noxious plants. Hence it is said: \"Shall it bring forth TO THEE.\"",
         "RP3": "Moses put before the people such things only as were manifest to their senses, as we have said (Question [67], Article [4]; Question [68], Article [3]). But minerals are generated in hidden ways within the bowels of the earth. Moreover they seem hardly specifically distinct from earth, and would seem to be species thereof. For this reason, therefore, he makes no mention of them."
       }
-    ]
+    ],
+    "description": "We next consider the work of the third day. Under this head there are two points of inquiry:"
   },
   {
     "question": "OF THE WORK OF ADORNMENT, AS REGARDS THE FOURTH DAY",
@@ -4345,15 +4414,18 @@
         "RP3": "Since the heavenly body is a mover moved, it is of the nature of an instrument, which acts in virtue of the agent: and therefore since this agent is a living substance the heavenly body can impart life in virtue of that agent.",
         "RP4": "The movements of the heavenly bodies are natural, not on account of their active principle, but on account of their passive principle; that is to say, from a certain natural aptitude for being moved by an intelligent power."
       }
-    ]
+    ],
+    "description": "We must next consider the work of adornment, first as to each day by itself, secondly as to all seven days in general.\nIn the first place, then, we consider the work of the fourth day, secondly, that of the fifth day, thirdly, that of the sixth day, and fourthly, such matters as belong to the seventh day.\nUnder the first head there are three points of inquiry:"
   },
   {
     "question": "ON THE WORK OF THE FIFTH DAY",
-    "articles": []
+    "articles": [],
+    "description": "We must next consider the work of the fifth day.\nObjection 1: It would seem that this work is not fittingly described. For the waters produce that which the power of water suffices to produce. But the power of water does not suffice for the production of every kind of fishes and birds since we find that many of them are generated from seed. Therefore the words, \"Let the waters bring forth the creeping creature having life, and the fowl that may fly over the earth,\" do not fittingly describe this work.\nObjection 2: Further, fishes and birds are not produced from water  only, but earth seems to predominate over water in their composition, as is shown by the fact that their bodies tend naturally to the earth and rest upon it. It is not, then, fittingly that fishes and birds are produced from water.\nObjection 3: Further, fishes move in the waters, and birds in the air. If, then, fishes are produced from the waters, birds ought to be produced from the air, and not from the waters.\nObjection 4: Further, not all fishes creep through the waters, for some, as seals, have feet and walk on land. Therefore the production of fishes is not sufficiently described by the words, \"Let the waters bring forth the creeping creature having life.\"\nObjection 5: Further, land animals are more perfect than birds and fishes which appears from the fact that they have more distinct limbs, and generation of a higher order. For they bring forth living beings, whereas birds and fishes bring forth eggs. But the more perfect has precedence in the order of nature. Therefore fishes and birds ought not to have been produced on the fifth day, before land animals.\nOn the contrary, Suffices the authority of Scripture."
   },
   {
     "question": "ON THE WORK OF THE SIXTH DAY",
-    "articles": []
+    "articles": [],
+    "description": "We must now consider the work of the sixth day.\nObjection 1: It would seem that this work is not fittingly described. For as birds and fishes have a living soul, so also have land animals. But these animals are not themselves living souls.  Therefore the words, \"Let the earth bring forth the living creature,\" should rather have been, \"Let the earth bring forth the living four-footed creatures.\"\nObjection 2: Further, a genus ought not to be opposed to its species. But beasts and cattle are quadrupeds. Therefore quadrupeds ought not to be enumerated as a class with beasts and cattle.\nObjection 3: Further, as animals belong to a determinate genus and species, so also does man. But in the making of man nothing is said of his genus and species, and therefore nothing ought to have been said about them in the production of other animals, whereas it is said \"according to its genus\" and \"in its species.\"\nObjection 4: Further, land animals are more like man, whom God is recorded to have blessed, than are birds and fishes. But as birds and fishes are said to be blessed, this should have been said, with much more reason, of the other animals as well.\nObjection 5: Further, certain animals are generated from putrefaction, which is a kind of corruption. But corruption is repugnant to the first founding of the world. Therefore such animals should not have been produced at that time.\nObjection 6: Further, certain animals are poisonous, and injurious to man. But there ought to have been nothing injurious to man before man sinned. Therefore such animals ought not to have been made by God at all, since He is the Author of good; or at least not until man had sinned.\nOn the contrary, Suffices the authority of Scripture.\nI answer that, As on the fifth day the intermediate body, namely, the water, is adorned, and thus that day corresponds to the second day; so the sixth day, on which the lowest body, or the earth, is adorned by the production of land animals, corresponds to the third day. Hence the earth is mentioned in both places. And here again Augustine says (Gen. ad lit. v) that the production was potential, and other holy writers that it was actual."
   },
   {
     "question": "ON THE THINGS THAT BELONG TO THE SEVENTH DAY",
@@ -4391,7 +4463,8 @@
         "RP2": "In the first six days creatures were produced in their first causes, but after being thus produced, they are multiplied and preserved, and this work also belongs to the Divine goodness. And the perfection of this goodness is made most clear by the knowledge that in it alone God finds His own rest, and we may find ours in its fruition.",
         "RP3": "The good mentioned in the works of each day belongs to the first institution of nature; but the blessing attached to the seventh day, to its propagation."
       }
-    ]
+    ],
+    "description": "We must next consider the things that belong to the seventh day. Under this head there are three points of inquiry:"
   },
   {
     "question": "ON ALL THE SEVEN DAYS IN COMMON",
@@ -4435,7 +4508,8 @@
         "RP3": "In the account of the creation there is found something to correspond to the words, \"God saw that it was good,\" used in the work of distinction and adornment, and this appears from the consideration that the Holy Spirit is Love. Now, \"there are two things,\" says Augustine (Gen. ad lit. i, 8) which came from God's love of His creatures, their existence and their permanence. That they might then exist, and exist permanently, \"the Spirit of God,\" it is said, \"moved over the waters\"---that is to say, over that formless matter, signified by water, even as the love of the artist moves over the materials of his art, that out of them he may form his work. And the words, \"God saw that it was good,\" signify that the things that He had made were to endure, since they express a certain satisfaction taken by God in His works, as of an artist in his art: not as though He knew the creature otherwise, or that the creature was pleasing to Him otherwise, than before He made it. Thus in either work, of creation and of formation, the Trinity of Persons is implied. In creation the Person of the Father is indicated by God the Creator, the Person of the Son by the beginning, in which He created, and the Person of the Holy Ghost by the Spirit that moved over the waters. But in the formation, the Person of the Father is indicated by God that speaks, and the Person of the Son by the Word in which He speaks, and the Person of the Holy Spirit by the satisfaction with which God saw that what was made was good. And if the words, \"God saw that it was good,\" are not said of the work of the second day, this is because the work of distinguishing the waters was only begun on that day, but perfected on the third. Hence these words, that are said of the third day, refer also to the second. Or it may be that Scripture does not use these words of approval of the second days' work, because this is concerned with the distinction of things not evident to the senses of mankind. Or, again, because by the firmament is simply understood the cloudy region of the air, which is not one of the permanent parts of the universe, nor of the principal divisions of the world. The above three reasons are given by Rabbi Moses [*Perplex. ii.], and to these may be added a mystical one derived from numbers and assigned by some writers, according to whom the work of the second day is not marked with approval because the second number is an imperfect number, as receding from the perfection of unity.",
         "RP4": "Rabbi Moses (Perplex. ii) understands by the \"Spirit of the Lord,\" the air or the wind, as Plato also did, and says that it is so called according to the custom of Scripture, in which these things are throughout attributed to God. But according to the holy writers, the Spirit of the Lord signifies the Holy Ghost, Who is said to \"move over the water\"---that is to say, over what Augustine holds to mean formless matter, lest it should be supposed that God loved of necessity the works He was to produce, as though He stood in need of them. For love of that kind is subject to, not superior to, the object of love. Moreover, it is fittingly implied that the Spirit moved over that which was  incomplete and unfinished, since that movement is not one of place, but of pre-eminent power, as Augustine says (Gen. ad lit. i, 7). It is the opinion, however, of Basil (Hom. ii in Hexaem.) that the Spirit moved over the element of water, \"fostering and quickening its nature and impressing vital power, as the hen broods over her chickens.\" For water has especially a life-giving power, since many animals are generated in water, and the seed of all animals is liquid. Also the life of the soul is given by the water of baptism, according to Jn. 3:5: \"Unless a man be born again of water and the Holy Ghost, he cannot enter into the kingdom of God.\""
       }
-    ]
+    ],
+    "description": "We next consider all the seven days in common: and there are three points of inquiry:"
   },
   {
     "question": "OF MAN WHO IS COMPOSED OF A SPIRITUAL AND A CORPOREAL SUBSTANCE: AND IN THE FIRST PLACE, CONCERNING WHAT BELONGS TO THE ESSENCE OF THE SOUL",
@@ -4517,7 +4591,8 @@
         "RP2": "The ultimate specific difference is the noblest because it is the most determinate, in the same way as actuality is nobler than potentiality. Thus, however, the intellectual faculty is not the noblest, because it is indeterminate and common to many degrees of intellectuality; as the sensible faculty is common to many degrees in the sensible nature. Hence, as all sensible things are not of one species, so neither are all intellectual things of one species.",
         "RP3": "The body is not of the essence of the soul; but the soul by the nature of its essence can be united to the body, so that, properly speaking, not the soul alone, but the \"composite,\" is the species. And the very fact that the soul in a certain way requires the body for its operation, proves that the soul is endowed with a grade of intellectuality inferior to that of an angel, who is not united to a body."
       }
-    ]
+    ],
+    "description": "Having treated of the spiritual and of the corporeal creature, we now proceed to treat of man, who is composed of a spiritual and corporeal substance. We shall treat first of the nature of man, and secondly of his origin. Now the theologian considers the nature of man in relation to the soul; but not in relation to the body, except in so far as the body has relation to the soul. Hence the first object of our consideration will be the soul. And since Dionysius (Ang. Hier. xi) says that three things are to be found in spiritual substances---essence, power, and operation---we shall treat first of what belongs to the essence of the soul; secondly, of what belongs to its power; thirdly, of what belongs to its operation.\nConcerning the first, two points have to be considered; the first is the nature of the soul considered in itself; the second is the union of the soul with the body. Under the first head there are seven points of inquiry."
   },
   {
     "question": "OF THE UNION OF BODY AND SOUL",
@@ -4622,7 +4697,8 @@
         "RP3": "An animal is that which is composed of a soul and a whole body, which is the soul's primary and proportionate perfectible. Thus the soul is not in a part. Whence it does not follow that a part of an animal is an animal.",
         "RP4": "Some of the powers of the soul are in it according as it exceeds the entire capacity of the body, namely the intellect and the will; whence these powers are not said to be in any part of the body. Other powers are common to the soul and body; wherefore each of these powers need not be wherever the soul is, but only in that part of the body, which is adapted to the operation of such a power."
       }
-    ]
+    ],
+    "description": "We now consider the union of the soul with the body; and concerning this there are eight points of inquiry:"
   },
   {
     "question": "OF THOSE THINGS WHICH BELONG TO THE POWERS OF THE SOUL IN GENERAL",
@@ -4723,7 +4799,8 @@
         "RP3": "These powers are said not to be weakened when the body becomes weak, because the soul remains unchangeable, and is the virtual principle of these powers.",
         "RP4": "The recollection spoken of there is to be taken in the same way as Augustine (De Trin. x, 11; xiv, 7) places memory in the mind; not as a part of the sensitive soul."
       }
-    ]
+    ],
+    "description": "We proceed to consider those things which belong to the powers of the soul; first, in general, secondly, in particular. Under the first head there are eight points of inquiry:"
   },
   {
     "question": "OF THE SPECIFIC POWERS OF THE SOUL",
@@ -4779,7 +4856,8 @@
         "RP3": "As one power arises from the soul by means of another, as we have seen above (Question [77], Article [7]), so also the soul is the subject of one power through another. In this way the imagination and the memory are called passions of the \"first sensitive.\"",
         "RP4": "Although the operation of the intellect has its origin in the senses: yet, in the thing apprehended through the senses, the intellect knows many things which the senses cannot perceive. In like manner does the estimative power, though in a less perfect manner."
       }
-    ]
+    ],
+    "description": "We next treat of the powers of the soul specifically. The theologian, however, has only to inquire specifically concerning the intellectual and appetitive powers, in which the virtues reside. And since the knowledge of these powers depends to a certain extent on the other powers, our consideration of the powers of the soul taken specifically will be divided into three parts: first, we shall consider those powers which are a preamble to the intellect; secondly, the intellectual powers; thirdly, the appetitive powers.\nUnder the first head there are four points of inquiry:"
   },
   {
     "question": "OF THE INTELLECTUAL POWERS",
@@ -4933,7 +5011,8 @@
         "RP2": "The conscience is said to be defiled, not as a subject, but as the thing known is in knowledge; so far as someone knows he is defiled.",
         "RP3": "Although an act does not always remain in itself, yet it always remains in its cause, which is power and habit. Now all the habits by which conscience is formed, although many, nevertheless have their efficacy from one first habit, the habit of first principles, which is called \"synderesis.\" And for this special reason, this habit is sometimes called conscience, as we have said above."
       }
-    ]
+    ],
+    "description": "The next question concerns the intellectual powers, under which head there are thirteen points of inquiry:"
   },
   {
     "question": "OF THE APPETITIVE POWERS IN GENERAL",
@@ -4959,7 +5038,8 @@
         "RP1": "It is not accidental to the thing desired to be apprehended by the sense or the intellect; on the contrary, this belongs to it by its nature; for the appetible does not move the appetite except as it is apprehended. Wherefore differences in the thing apprehended are of themselves differences of the appetible. And so the appetitive powers are distinct according to the distinction of the things apprehended, as their proper objects.",
         "RP2": "The intellectual appetite, though it tends to individual things which exist outside the soul, yet tends to them as standing under the universal; as when it desires something  because it is good. Wherefore the Philosopher says (Rhetoric. ii, 4) that hatred can regard a universal, as when \"we hate every kind of thief.\" In the same way by the intellectual appetite we may desire the immaterial good, which is not apprehended by sense, such as knowledge, virtue, and suchlike."
       }
-    ]
+    ],
+    "description": "Next we consider the appetitive powers, concerning which there are four heads of consideration: first, the appetitive powers in general; second, sensuality; third, the will; fourth, the free-will. Under the first there are two points of inquiry:"
   },
   {
     "question": "OF THE POWER OF SENSUALITY",
@@ -4997,7 +5077,8 @@
         "RP2": "As the Philosopher says (Polit. i, 2): \"We observe in an animal a despotic and a politic principle: for the soul dominates the body by a despotic power; but the intellect dominates the appetite by a politic and royal power.\" For a power is called despotic whereby a man rules his slaves, who have not the right to resist in any way the orders of the one that commands them, since they have nothing of their own. But that power is called politic and royal by which a man rules over free subjects, who, though subject to the government of the ruler, have nevertheless something of their own, by reason of which they can resist the orders of him who commands. And so, the soul is said to rule the body by a despotic power, because the members of the body cannot in any way resist the sway of the soul, but at the soul's command both hand and foot, and whatever member is naturally moved by voluntary movement, are moved at once. But the intellect or reason is said to rule the irascible and concupiscible by a politic power: because the sensitive appetite has something of its own, by virtue whereof it can resist the commands of reason. For the sensitive appetite is naturally moved, not only by the estimative power in other animals, and in man by the cogitative power which the universal reason guides, but also by the imagination and sense. Whence it is that we experience that the irascible and concupiscible powers do resist reason, inasmuch as we sense or imagine something pleasant, which reason forbids, or unpleasant, which reason commands. And so from the fact that the irascible and concupiscible resist reason in something, we must not conclude that they do not obey.",
         "RP3": "The exterior senses require for action exterior sensible things, whereby they are affected, and the presence of which is not ruled by reason. But the interior powers, both appetitive and apprehensive, do not require exterior things. Therefore they are subject to the command of reason, which can not only incite or modify the affections of the appetitive power, but can also form the phantasms of the imagination."
       }
-    ]
+    ],
+    "description": "Next we have to consider the power of sensuality, concerning which there are three points of inquiry:"
   },
   {
     "question": "OF THE WILL",
@@ -5056,7 +5137,8 @@
         "RP1": "Love, concupiscence, and the like can be understood in two ways. Sometimes they are taken as passions---arising, that is, with a certain commotion of the soul. And thus they are commonly understood, and in this sense they are only in the sensitive appetite. They may, however, be taken in another way, as far as they are simple affections without passion or commotion of the soul, and thus they are acts of the will. And in this sense, too, they are attributed to the angels and to God. But if taken in this sense, they do not belong to different powers, but only to one power, which is called the will.",
         "RP2": "The will itself may be said to irascible, as far as it wills to repel evil, not from any sudden movement of a passion, but from a judgment of the reason. And in the same way the will may be said to be concupiscible on account of its desire for good. And thus in the irascible and concupiscible are charity and hope---that is, in the will as ordered to such acts. And in this way, too, we may understand the words quoted (De Spiritu et Anima); that the irascible and concupiscible powers are in the soul before it is united to the body (as long as we understand priority of nature, and not of time), although there is no need to have faith in what that book says. Whence the answer to the third objection is clear."
       }
-    ]
+    ],
+    "description": "We next consider the will. Under this head there are five points of inquiry:"
   },
   {
     "question": "OF FREE-WILL",
@@ -5108,7 +5190,8 @@
         "RP2": "Choice and will---that is, the act of willing ---are different acts: yet they belong to the same power, as also to understand and to reason, as we have said.",
         "RP3": "The intellect is compared to the will as moving the will. And therefore there is no need to distinguish in the will an active and a passive will."
       }
-    ]
+    ],
+    "description": "We now inquire concerning free-will. Under this head there are four points of inquiry:"
   },
   {
     "question": "HOW THE SOUL WHILE UNITED TO THE BODY UNDERSTANDS CORPOREAL THINGS BENEATH IT",
@@ -5196,7 +5279,8 @@
         "RP1": "Although the intellect is superior to the senses, nevertheless in a manner it receives from the senses, and its first and principal objects are founded in sensible things. And therefore suspension of the senses necessarily involves a hindrance to the judgment of the intellect.",
         "RP2": "The senses are suspended in the sleeper through certain evaporations and the escape of certain exhalations, as we read in De Somn. et Vigil. iii. And, therefore, according to the amount of such evaporation, the senses are more or less suspended. For when the amount is considerable, not only are the senses suspended, but also the imagination, so that there are no phantasms; thus does it happen, especially when a man falls asleep after eating and drinking copiously. If, however, the evaporation be somewhat less, phantasms appear, but distorted and without sequence; thus it happens in a case of fever. And if the evaporation be still more attenuated, the phantasms will have a certain sequence: thus especially does it happen towards the end of sleep in sober men and those who are gifted with a strong imagination. If the evaporation be very slight, not only does the imagination retain its freedom, but also the common sense is partly freed; so that sometimes while asleep a man may judge that what he sees is a dream, discerning, as it were, between things, and their images. Nevertheless, the common sense remains partly suspended; and therefore, although it discriminates some images from the reality, yet is it always deceived in some particular. Therefore, while man is asleep, according as sense and imagination are free, so is the judgment of his intellect unfettered, though not entirely. Consequently, if a man syllogizes while asleep, when he wakes up he invariably recognizes a flaw in some respect."
       }
-    ]
+    ],
+    "description": "We now have to consider the acts of the soul in regard to the intellectual and the appetitive powers: for the other powers of the soul do not come directly under the consideration of the theologian. Furthermore, the acts of the appetitive part of the soul come under the consideration of the science of morals; wherefore we shall treat of them in the second part of this work, to which the consideration of moral matters belongs. But of the acts of the intellectual part we shall treat now.\nIn treating of these acts we shall proceed in the following order: First, we shall inquire how the soul understands when united to the body; secondly, how it understands when separated therefrom.\nThe former of these inquiries will be threefold: (1) How the soul understands bodies which are beneath it; (2) How it understands itself and things contained in itself; (3) How it understands immaterial substances, which are above it.\nIn treating of the knowledge of corporeal things there are three points to be considered: (1) Through what does the soul know them? (2) How and in what order does it know them? (3) What does it know in them?\nUnder the first head there are eight points of inquiry:"
   },
   {
     "question": "OF THE MODE AND ORDER OF UNDERSTANDING",
@@ -5292,7 +5376,8 @@
         "RP2": "A point is not included in the definition of a line in general: for it is manifest that in a line of indefinite length, and in a circular line, there is no point, save potentially. Euclid defines a finite straight line: and therefore he mentions a point in the definition, as the limit in the definition of that which is limited. Unity is the measure of number: wherefore it is included in the definition of a measured number. But it is not included in the definition of the divisible, but rather conversely.",
         "RP3": "The likeness through which we understand is the species of the known in the knower; therefore a thing is known  first, not on account of its natural likeness to the cognitive power, but on account of the power's aptitude for the object: otherwise sight would perceive hearing rather than color."
       }
-    ]
+    ],
+    "description": "We come now to consider the mode and order of understanding. Under this head there are eight points of inquiry:"
   },
   {
     "question": "WHAT OUR INTELLECT KNOWS IN MATERIAL THINGS",
@@ -5340,7 +5425,8 @@
         "RP2": "As Augustine says (Confess. xii [*Gen. ad lit. xii. 13]), the soul has a certain power of forecasting, so that by its very nature it can know the future; hence when withdrawn from corporeal sense, and, as it were, concentrated on itself, it shares in the knowledge of the future. Such an opinion would be reasonable  if we were to admit that the soul receives knowledge by participating the ideas as the Platonists maintained, because in that case the soul by its nature would know the universal causes of all effects, and would only be impeded in its knowledge by the body, and hence when withdrawn from the corporeal senses it would know the future.But since it is connatural to our intellect to know things, not thus, but by receiving its knowledge from the senses; it is not natural for the soul to know the future when withdrawn from the senses: rather does it know the future by the impression of superior spiritual and corporeal causes; of spiritual causes, when by Divine power the human intellect is enlightened through the ministry of angels, and the phantasms are directed to the knowledge of future events; or, by the influence of demons, when the imagination is moved regarding the future known to the demons, as explained above (Question [57], Article [3]). The soul is naturally more inclined to receive these impressions of spiritual causes when it is withdrawn from the senses, as it is then nearer to the spiritual world, and freer from external distractions. The same may also come from superior corporeal causes. For it is clear that superior bodies influence inferior bodies. Hence, in consequence of the sensitive faculties being acts of corporeal organs, the influence of the heavenly bodies causes the imagination to be affected, and so, as the heavenly bodies cause many future events, the imagination receives certain images of some such events. These images are perceived more at night and while we sleep than in the daytime and while we are awake, because, as stated in De Somn. et Vigil. ii [*De Divinat. per somn. ii.], \"impressions made by day are evanescent. The night air is calmer, when silence reigns, hence bodily impressions are made in sleep, when slight internal movements are felt more than in wakefulness, and such movements produce in the imagination images from which the future may be foreseen.\"",
         "RP3": "Brute animals have no power above the imagination wherewith to regulate it, as man has his reason, and therefore their imagination follows entirely the influence of the heavenly bodies. Thus from such animals' movements some future things, such as rain and the like, may be known rather from human movements directed by reason. Hence the Philosopher says (De Somn. et Vig.), that \"some who are most imprudent are most far-seeing; for their intelligence is not burdened with cares, but is as it were barren and bare of all anxiety moving at the caprice of whatever is brought to bear on it.\""
       }
-    ]
+    ],
+    "description": "We now have to consider what our intellect knows in material things. Under this head there are four points of inquiry:"
   },
   {
     "question": "HOW THE INTELLECTUAL SOUL KNOWS ITSELF AND ALL WITHIN ITSELF",
@@ -5389,7 +5475,8 @@
         "RP2": "The \"good\" and the \"true\" which are the objects of the will and of the intellect, differ logically, but one is contained in the other, as we have said above (Question [82], Article [4], ad 1; Question [16], Article [4], ad 1); for the true is good and the good is true. Therefore the objects of the will fall under the intellect, and those of the intellect can fall under the will.",
         "RP3": "The affections of the soul are in the intellect not by similitude only, like bodies; nor by being present in their subject, as the arts; but as the thing caused is in its principle, which contains some notion of the thing caused. And so Augustine says that the soul's affections are in the memory by certain notions."
       }
-    ]
+    ],
+    "description": "We have now to consider how the intellectual soul knows itself and all within itself. Under this head there are four points of inquiry:"
   },
   {
     "question": "HOW THE HUMAN SOUL KNOWS WHAT IS ABOVE ITSELF",
@@ -5432,7 +5519,8 @@
         "RP2": "The axiom, \"Whatever causes a thing to be such is more so,\" must be understood of things belonging to one and the same order, as explained above (Question [81], Article [2], ad 3). Other things than God are known because of God; not as if He were the first known object, but because He is the first cause of our faculty of knowledge.",
         "RP3": "If there existed in our souls a perfect image of God, as the Son is the perfect image of the Father, our mind would know God at once. But the image in our mind is imperfect; hence the argument does not prove."
       }
-    ]
+    ],
+    "description": "We must now consider how the human soul knows what is above itself, viz. immaterial substances. Under this head there are three points of inquiry:"
   },
   {
     "question": "OF THE KNOWLEDGE OF THE SEPARATED SOUL",
@@ -5526,7 +5614,8 @@
         "RP2": "That the dead appear to the living in any way whatever is either by the special dispensation of God; in order that the souls of the dead may interfere in affairs of the living---and this is to be accounted as miraculous. Or else such apparitions occur through the instrumentality of bad or good angels, without the knowledge of the departed; as may likewise happen when the living appear, without their own knowledge, to others living, as Augustine says in the same book. And so it may be said of Samuel that he appeared through Divine revelation; according to Ecclus. 46:23, \"he slept, and told the king the end of his life.\" Or, again, this apparition was procured by the demons; unless, indeed, the authority of Ecclesiasticus be set aside through not being received by the Jews as canonical Scripture.",
         "RP3": "This kind of ignorance does not proceed from the obstacle of local distance, but from the cause mentioned above."
       }
-    ]
+    ],
+    "description": "We must now consider the knowledge of the separated soul. Under this head there are eight points of inquiry:"
   },
   {
     "question": "OF THE FIRST PRODUCTION OF MAN'S SOUL",
@@ -5572,7 +5661,8 @@
         "RP2": "The same observation applies to the second objection. For if the soul had a species of itself it would have something still more in common with the angels. But, as the form of the body, it belongs to the animal genus, as a formal principle.",
         "RP3": "That the soul remains after the body, is due to a defect of the body, namely, death. Which defect was not due when the soul was first created."
       }
-    ]
+    ],
+    "description": "After the foregoing we must consider the first production of man, concerning which there are four subjects of treatment: (1) the production of man himself; (2) the end of this production; (3) the state and condition of the first man; (4) the place of his abode. Concerning the production of man, there are three things to be considered: (1) the production of man's soul; (2) the production of man's body; (3) the production of the woman.\nUnder the first head there are four points of inquiry:"
   },
   {
     "question": "THE PRODUCTION OF THE FIRST MAN'S BODY",
@@ -5627,7 +5717,8 @@
         "RP3": "Some have thought that man's body was formed first in priority of time, and that afterwards the soul was infused into the formed body. But it is inconsistent with the perfection of the production of things, that God should have made either the body without the soul, or the soul without the body, since each is a part of human nature. This is especially unfitting as regards the body, for the body depends on the soul, and not the soul on the body.To remove the difficulty some have said that the words, \"God made man,\" must be understood of the production of the body with the soul; and that the subsequent words, \"and He breathed into his face the breath of life,\" should be understood of the Holy Ghost; as the Lord breathed on His Apostles, saying, \"Receive ye the Holy Ghost\" (Jn. 20:22). But this explanation, as Augustine says (De Civ. Dei xiii, 24), is excluded by the very words of Scripture. For we read farther on, \"And man was made a living soul\"; which words the Apostle (1 Cor. 15:45) refers not to spiritual life, but to animal life. Therefore, by breath of life we must understand the  soul, so that the words, \"He breathed into his face the breath of life,\" are a sort of exposition of what goes before; for the soul is the form of the body.",
         "RP4": "Since vital operations are more clearly seen in man's face, on account of the senses which are there expressed; therefore Scripture says that the breath of life was breathed into man's face."
       }
-    ]
+    ],
+    "description": "We have now to consider the production of the first man's body. Under this head there are four points of inquiry:"
   },
   {
     "question": "THE PRODUCTION OF THE WOMAN",
@@ -5675,7 +5766,8 @@
         "RP2": "As Augustine says (Gen. ad lit. ix, 15), we do not know whether the angels were employed by God in the formation of the woman; but it is certain that, as the body of man was not formed by the angels from the slime of the earth, so neither was the body of the woman formed by them from the man's rib.",
         "RP3": "As Augustine says (Gen. ad lit. ix, 18): \"The first creation of things did not demand that woman should be made thus; it made it possible for her to be thus made.\" Therefore the body of the woman did indeed pre-exist in these causal virtues, in the things first created; not as regards active potentiality, but as regards a potentiality passive in relation to the active potentiality of the Creator."
       }
-    ]
+    ],
+    "description": "We must next consider the production of the woman. Under this head there are four points of inquiry:"
   },
   {
     "question": "THE END OR TERM OF THE PRODUCTION OF MAN",
@@ -5788,7 +5880,8 @@
         "RP3": "Even certain virtues are natural to the soul, at least, in their seeds, by reason of which we may say that a natural \"likeness\" exists in the soul. Nor it is unfitting to us the term \"image\" from one point of view and from another the term \"likeness.\"",
         "RP4": "Love of the word, which is knowledge loved, belongs to the nature of \"image\"; but love of virtue belongs to \"likeness,\" as virtue itself belongs to likeness."
       }
-    ]
+    ],
+    "description": "We now treat of the end or term of man's production, inasmuch as he is said to be made \"to the image and likeness of God.\" There are under this head nine points of inquiry:"
   },
   {
     "question": "OF THE STATE AND CONDITION OF THE FIRST MAN AS REGARDS HIS INTELLECT",
@@ -5839,7 +5932,8 @@
         "RP3": "Were anything presented to the imagination or sense of the first man, not in accordance with the nature of things, he would not have been deceived, for his reason would have enabled him to judge the truth.",
         "RP4": "A man is not accountable for what occurs during sleep; as he has not then the use of his reason, wherein consists man's proper action."
       }
-    ]
+    ],
+    "description": "We next consider the state or condition of the first man; first, as regards his soul; secondly, as regards his body. Concerning the first there are two things to be considered: (1) The condition of man as to his intellect; (2) the condition of man as to his will.\nUnder the first head there are four points of inquiry:"
   },
   {
     "question": "OF THINGS PERTAINING TO THE FIRST MAN'S WILL---NAMELY, GRACE AND RIGHTEOUSNESS",
@@ -5894,7 +5988,8 @@
         "RP2": "Difficulty and struggle belong to the degree of merit according to the proportionate degree of the work done, as above explained. It is also a sign of the will's promptitude striving after what is difficult to itself: and the promptitude of the will is caused by the intensity of charity. Yet it may happen that a person performs an easy deed with as prompt a will as another performs an arduous deed; because he is ready to do even what may be difficult to him. But the actual difficulty, by its penal character, enables the deed to satisfy for sin.",
         "RP3": "The first man would not have gained merit in resisting temptation, according to the opinion of those who say that he did not possess grace; even as now there is no merit to those who have not grace. But in this point there is a difference, inasmuch as in the primitive state there was no interior impulse to evil, as in our present state. Hence man was more able then than now to resist temptation even without grace."
       }
-    ]
+    ],
+    "description": "We next consider what belongs to the will of the first man; concerning which there are two points of treatment: (1) the grace and righteousness of the first man; (2) the use of righteousness as regards his dominion over other things.\nUnder the first head there are four points of inquiry:"
   },
   {
     "question": "OF THE MASTERSHIP BELONGING TO MAN IN THE STATE OF INNOCENCE",
@@ -5939,7 +6034,8 @@
         "CON": "The condition of man in the state of innocence was not more exalted than the condition of the angels. But among the angels some rule over others; and so one order is called that of \"Dominations.\" Therefore it was not beneath the dignity of the state of innocence that one man should be subject to another.",
         "ANS": "Mastership has a twofold meaning. First, as opposed to slavery, in which sense a master means one to whom another is subject as a slave. In another sense mastership is referred in a general sense to any kind of subject; and in this sense even he who has the office of governing and directing free men, can be called a master. In the state of innocence man could have been a master of men, not in the former but in the latter sense. This distinction is founded on the reason that a slave differs from a free man in that the latter has the disposal of himself, as is stated in the beginning of the Metaphysics, whereas a slave is ordered to another. So that one man is master of another as his slave when he refers the one whose master he is, to his own---namely the master's use. And since every man's proper good is desirable to himself, and consequently it is a grievous matter to anyone to yield to another what ought to be one's own, therefore such dominion implies of necessity a pain inflicted on the subject; and consequently in the state of innocence such a mastership could not have existed between man and man.But a man is the master of a free subject, by directing him either towards his proper welfare, or to the common good. Such a kind of mastership would have existed in the state of innocence between man and man, for two reasons. First, because man is naturally a social being, and so in the state of innocence he would have led a social life. Now a social life cannot exist among a number of people unless under the presidency of one to look after the common good; for many, as such, seek many things, whereas one attends only to one. Wherefore the Philosopher says, in the beginning of the Politics, that wherever many things are directed to one, we shall always find one at the head directing them. Secondly, if one man surpassed another in knowledge and virtue, this would not have been fitting unless these gifts conduced to the benefit of others, according to 1 Pt. 4:10, \"As every man hath received grace, ministering the same one to another.\" Wherefore Augustine says (De Civ. Dei xix, 14): \"Just men command not by the love of domineering, but by the service of counsel\": and (De Civ. Dei xix, 15): \"The natural order of things requires this; and thus did God make man.\"From this appear the replies to the objections which are founded on the first-mentioned mode of mastership."
       }
-    ]
+    ],
+    "description": "We next consider the mastership which belonged to man in the state of innocence. Under this head there are four points of inquiry:"
   },
   {
     "question": "OF THE PRESERVATION OF THE INDIVIDUAL IN THE PRIMITIVE STATE",
@@ -5988,7 +6084,8 @@
         "CON": "It is written (Gn. 3:22): \"Lest perhaps he put forth his hand, and take of the tree of life, and eat, and live for ever.\" Further, Augustine says (Questions. Vet. et Nov. Test. qu. 19 [*Work of an anonymous author, among the supposititious works of St. Augustine]): \"A taste of the tree of life warded off corruption of the body; and even after sin man would have remained immortal, had he been allowed to eat of the tree of life.\"",
         "ANS": "The tree of life in a certain degree was the cause of immortality, but not absolutely. To understand this, we must observe that in the primitive state man possessed, for the preservation of life, two remedies, against two defects. One of these defects was the lost of humidity by the action of natural heat, which acts as the soul's instrument: as a remedy against such loss man was provided with food, taken from the other trees of paradise, as now we are provided with the food, which we take for the same purpose. The second defect, as the Philosopher says (De Gener. i, 5), arises from the fact that the humor which is caused from extraneous sources, being added to the humor already existing, lessens the specific active power: as water added to wine takes at first the taste of wine, then, as more water is added, the strength of the wine is diminished, till the wine becomes watery. In like manner, we may observe that at first the active force of the  species is so strong that it is able to transform so much of the food as is required to replace the lost tissue, as well as what suffices for growth; later on, however, the assimilated food does not suffice for growth, but only replaces what is lost. Last of all, in old age, it does not suffice even for this purpose; whereupon the body declines, and finally dies from natural causes. Against this defect man was provided with a remedy in the tree of life; for its effect was to strengthen the force of the species against the weakness resulting from the admixture of extraneous nutriment. Wherefore Augustine says (De Civ. Dei xiv, 26): \"Man had food to appease his hunger, drink to slake his thirst; and the tree of life to banish the breaking up of old age\"; and (Questions. Vet. et Nov. Test. qu. 19 [*Work of an anonymous author, among the supposititious works of St. Augustine]) \"The tree of life, like a drug, warded off all bodily corruption.\"Yet it did not absolutely cause immortality; for neither was the soul's intrinsic power of preserving the body due to the tree of life, nor was it of such efficiency as to give the body a disposition to immortality, whereby it might become indissoluble; which is clear from the fact that every bodily power is finite; so the power of the tree of life could not go so far as to give the body the prerogative of living for an infinite time, but only for a definite time. For it is manifest that the greater a force is, the more durable is its effect; therefore, since the power of the tree of life was finite, man's life was to be preserved for a definite time by partaking of it once; and when that time had elapsed, man was to be either transferred to a spiritual life, or had need to eat once more of the tree of life.From this the replies to the objections clearly appear. For the first proves that the tree of life did not absolutely cause immortality; while the others show that it caused incorruption by warding off corruption, according to the explanation above given."
       }
-    ]
+    ],
+    "description": "We next consider what belongs to the bodily state of the first man: first, as regards the preservation of the individual; secondly, as regards the preservation of the species.\nUnder the first head there are four points of inquiry:"
   },
   {
     "question": "OF THE PRESERVATION OF THE SPECIES",
@@ -6017,7 +6114,8 @@
         "RP3": "Beasts are without reason. In this way man becomes, as it were, like them in coition, because he cannot moderate concupiscence. In the state of innocence nothing of this kind would have happened that was not regulated by reason, not because delight of sense was less, as some say (rather indeed would sensible delight have been the greater in proportion to the greater  purity of nature and the greater sensibility of the body), but because the force of concupiscence would not have so inordinately thrown itself into such pleasure, being curbed by reason, whose place it is not to lessen sensual pleasure, but to prevent the force of concupiscence from cleaving to it immoderately. By \"immoderately\" I mean going beyond the bounds of reason, as a sober person does not take less pleasure in food taken in moderation than the glutton, but his concupiscence lingers less in such pleasures. This is what Augustine means by the words quoted, which do not exclude intensity of pleasure from the state of innocence, but ardor of desire and restlessness of the mind. Therefore continence would not have been praiseworthy in the state of innocence, whereas it is praiseworthy in our present state, not because it removes fecundity, but because it excludes inordinate desire. In that state fecundity would have been without lust.",
         "RP4": "As Augustine says (De Civ. Dei xiv, 26): In that state \"intercourse would have been without prejudice to virginal integrity; this would have remained intact, as it does in the menses. And just as in giving birth the mother was then relieved, not by groans of pain, but by the instigations of maturity; so in conceiving, the union was one, not of lustful desire, but of deliberate action.\""
       }
-    ]
+    ],
+    "description": "We next consider what belongs to the preservation of the species; and, first, of generation; secondly, of the state of the offspring. Under the first head there are two points of inquiry:"
   },
   {
     "question": "OF THE CONDITION OF THE OFFSPRING AS TO THE BODY",
@@ -6046,7 +6144,8 @@
         "RP2": "The generation of woman is not occasioned either by a defect of the active force or by inept matter, as the objection proposes; but sometimes by an extrinsic accidental cause; thus the Philosopher says (De Animal. Histor. vi, 19): \"The northern wind favors the generation of males, and the southern wind that of females\": sometimes also by some impression in the soul (of the parents), which may easily have some effect on the body (of the child). Especially was this the case in the state of innocence, when the body was more subject to the soul; so that by the mere will of the parent the sex of the offspring might be diversified.",
         "RP3": "The offspring would have been begotten to an animal life, as to the use of food and generation. Hence it was fitting that all should generate, and not only the first parents. From this it seems to follow that males and females would have been in equal number."
       }
-    ]
+    ],
+    "description": "We must now consider the condition of the offspring---first, as regards the body; secondly, as regards virtue; thirdly, in knowledge. Under the first head there are two points of inquiry:"
   },
   {
     "question": "OF THE CONDITION OF THE OFFSPRING AS REGARDS RIGHTEOUSNESS",
@@ -6074,7 +6173,8 @@
         "RP3": "This argument is not conclusive, though Anselm seems to have been influenced by it, as appears from his words above quoted. For the necessity of sin incurred by the descendants would not have been such that they could not return to  righteousness, which is the case only with the damned. Wherefore neither would the parents have transmitted to their descendants the necessity of not sinning, which is only in the blessed.",
         "RP4": "There is no comparison between man and the angels; for man's free-will is changeable, both before and after choice; whereas the angel's is not changeable, as we have said above in treating of the angels (Question [64], Article [2])."
       }
-    ]
+    ],
+    "description": "We now have to consider the condition of the offspring as to righteousness. Under this head there are two points of inquiry:"
   },
   {
     "question": "OF THE CONDITION OF THE OFFSPRING AS REGARDS KNOWLEDGE",
@@ -6099,7 +6199,8 @@
         "RP1": "The corruptible body is a load upon the soul, because it hinders the use of reason even in those matters which belong to man at all ages.",
         "RP2": "Even other animals have not at birth such a perfect use of their natural powers as they have later on. This is clear from the fact that birds teach their young to fly; and the like may be observed in other animals. Moreover a special impediment exists in man from the humidity of the brain, as we have said above (Question [99], Article [1])."
       }
-    ]
+    ],
+    "description": "We next consider the condition of the offspring as to knowledge. Under this head there are two points of inquiry:"
   },
   {
     "question": "OF MAN'S ABODE, WHICH IS PARADISE",
@@ -6149,7 +6250,8 @@
         "RP1": "The empyrean heaven was a fitting abode for the angels as regards their nature, and therefore they were created there.In the same way I reply to the second objection, for those places befit those animals in their nature.",
         "RP3": "Woman was made in paradise, not by reason of her own dignity, but on account of the dignity of the principle from which her body was formed. For the same reason the children would have been born in paradise, where their parents were already."
       }
-    ]
+    ],
+    "description": "We next consider man's abode, which is paradise. Under this head there are four points of inquiry:"
   },
   {
     "question": "OF THE GOVERNMENT OF THINGS IN GENERAL",
@@ -6240,7 +6342,8 @@
         "RP2": "is clear from the above.",
         "RP3": "From the fact that one thing opposes another, it follows that some one thing can resist the order of a particular cause; but not that order which depends on the universal cause of all things."
       }
-    ]
+    ],
+    "description": "Having considered the creation of things and their distinction, we now consider in the third place the government thereof, and (1) the government of things in general; (2) in particular, the effects of this government. Under the first head there are eight points of inquiry:"
   },
   {
     "question": "THE SPECIAL EFFECTS OF THE DIVINE GOVERNMENT",
@@ -6291,7 +6394,8 @@
         "RP2": "A creature's potentiality to existence is merely receptive; the active power belongs to God Himself, from Whom existence is derived. Wherefore the infinite duration of things is  a consequence of the infinity of the Divine power. To some things, however, is given a determinate power of duration for a certain time, so far as they may be hindered by some contrary agent from receiving the influx of existence which comes from Him Whom finite power cannot resist, for an infinite, but only for a fixed time. So things which have no contrary, although they have a finite power, continue to exist for ever.",
         "RP3": "Forms and accidents are not complete beings, since they do not subsist: but each one of them is something \"of a being\"; for it is called a being, because something is by it. Yet so far as their mode of existence is concerned, they are not entirely reduced to nothingness; not that any part of them survives, but that they remain in the potentiality of the matter, or of the subject."
       }
-    ]
+    ],
+    "description": "We next consider the effects of the Divine government in particular; concerning which four points of inquiry arise:"
   },
   {
     "question": "OF THE CHANGE OF CREATURES BY GOD",
@@ -6380,7 +6484,8 @@
         "CON": "The Lord says, speaking of miraculous works (Jn. 14:12): \"The works that I do, he also shall do, and greater than these shall he do.\"",
         "ANS": "Nothing is called a miracle by comparison with the Divine Power; because no action is of any account compared with the power of God, according to Is. 40:15: \"Behold the Gentiles are as a drop from a bucket, and are counted as the smallest grain of a balance.\" But a thing is called a miracle by comparison with the power of nature which it surpasses. So the more the power of nature is surpassed, the greater the miracle. Now the power of nature is  surpassed in three ways: firstly, in the substance of the deed, for instance, if two bodies occupy the same place, or if the sun goes backwards; or if a human body is glorified: such things nature is absolutely unable to do; and these hold the highest rank among miracles. Secondly, a thing surpasses the power of nature, not in the deed, but in that wherein it is done; as the raising of the dead, and giving sight to the blind, and the like; for nature can give life, but not to the dead; and such hold the second rank in miracles. Thirdly, a thing surpasses nature's power in the measure and order in which it is done; as when a man is cured of a fever suddenly, without treatment or the usual process of nature; or as when the air is suddenly condensed into rain, by Divine power without a natural cause, as occurred at the prayers of Samuel and Elias; and these hold the lowest place in miracles. Moreover, each of these kinds has various degrees, according to the different ways in which the power of nature is surpassed.From this is clear how to reply to the objections, arguing as they do from the Divine power."
       }
-    ]
+    ],
+    "description": "We now consider the second effect of the Divine government, i.e. the change of creatures; and first, the change of creatures by God; secondly, the change of one creature by another.\nUnder the first head there are eight points of inquiry:"
   },
   {
     "question": "HOW ONE CREATURE MOVES ANOTHER",
@@ -6429,7 +6534,8 @@
         "RP2": "The Master's words are not to be understood as if the inferior angels were entirely ignorant of the Mystery of the Incarnation but that they did not know it as fully as the superior angels; and that they progressed in the knowledge of it afterwards when the Mystery was accomplished.",
         "RP3": "Till the Judgment Day some new things are always being revealed by God to the highest angels, concerning the course of the world, and especially the salvation of the elect. Hence there is always something for the superior angels to make known to the inferior."
       }
-    ]
+    ],
+    "description": "We next consider how one creature moves another. This consideration will be threefold: (1) How the angels move, who are purely spiritual creatures; (2) How bodies move; (3) How man moves, who is composed of a spiritual and a corporeal nature.\nConcerning the first point, there are three things to be considered: (1) How an angel acts on an angel; (2) How an angel acts on a corporeal nature; (3) How an angel acts on man.\nThe first of these raises the question of the enlightenment and speech of the angels; and of their mutual coordination, both of the good and of the bad angels.\nConcerning their enlightenment there are four points of inquiry:"
   },
   {
     "question": "THE SPEECH OF THE ANGELS",
@@ -6481,7 +6587,8 @@
         "ANS": "As above explained (Articles [1],2), the mental concept of one angel can be perceived by another when the angel who possesses the concept refers it by his will to another. Now a thing can be ordered through some cause to one thing and not to another; consequently the concept of one (angel) may be known by one and not by another; and therefore an angel can perceive the speech of one angel to another; whereas others do not, not through the obstacle of local distance, but on account of the will so ordering, as explained above.From this appear the replies to the first and second objections.",
         "RP3": "Enlightenment is of those truths that emanate from the first rule of truth, which is the principle common to all the angels; and in that way all enlightenments are common to all. But speech may be of something ordered to the principle of the created will, which is proper to each angel; and in this way it is not necessary that these speeches should be common to all."
       }
-    ]
+    ],
+    "description": "We next consider the speech of the angels. Here there are five points of inquiry:"
   },
   {
     "question": "OF THE ANGELIC DEGREES OF HIERARCHIES AND ORDERS",
@@ -6574,7 +6681,8 @@
         "RP2": "The angels according to the order of nature are between us and God; and therefore according to the common law not only human affairs are administered by them, but also all corporeal matters. But holy men even after this life are of the same nature with ourselves; and hence according to the common law they do not administer human affairs, \"nor do they interfere in the things of the living,\" as Augustine says (De cura pro mortuis xiii, xvi). Still, by a certain special dispensation it is sometimes granted to some of the saints to exercise these offices; by working miracles, by coercing the demons, or by doing something of that kind, as Augustine says (De cura pro mortuis xvi).",
         "RP3": "It is not erroneous to say that men are transferred to the penalty of demons; but some erroneously stated that the demons are nothing but souls of the dead; and it is this that Chrysostom rejects."
       }
-    ]
+    ],
+    "description": "We next consider the degrees of the angels in their hierarchies and orders; for it was said above (Question [106], Article [3]), that the superior angels enlighten the inferior angels; and not conversely.\nUnder this head there are eight points of inquiry:"
   },
   {
     "question": "THE ORDERING OF THE BAD ANGELS",
@@ -6621,7 +6729,8 @@
         "RP2": "The holy angels are the ministers of the Divine wisdom. Hence as the Divine wisdom permits some evil to be done by bad angels or men, for the sake of the good that follows; so also the good angels do not entirely restrain the bad from inflicting harm.",
         "RP3": "An angel who is inferior in the natural order presides over demons, although these may be naturally superior; because the power of Divine justice to which the good angels cleave, is stronger than the natural power of the angels. Hence likewise among men, \"the spiritual man judgeth all things\" (1 Cor. 2:15), and the Philosopher says (Ethic. iii, 4; x, 5) that \"the virtuous man is the rule and measure of all human acts.\""
       }
-    ]
+    ],
+    "description": "We now consider the ordering of the bad angels; concerning which there are four points of inquiry:"
   },
   {
     "question": "HOW ANGELS ACT ON BODIES",
@@ -6672,7 +6781,8 @@
         "RP3": "Spiritual powers are able to effect whatever  happens in this visible world, by employing corporeal seeds by local movement.",
         "RP4": "Although the angels can do something which is outside the order of corporeal nature, yet they cannot do anything outside the whole created order, which is essential to a miracle, as above explained."
       }
-    ]
+    ],
+    "description": "We now consider how the angels preside over the corporeal creatures. Under this head there are four points of inquiry:"
   },
   {
     "question": "THE ACTION OF THE ANGELS ON MAN",
@@ -6723,7 +6833,8 @@
         "RP2": "By the interior movement of the spirits and humors an angel can do something towards changing the act of the nutritive power, and also of the appetitive and sensitive power, and of any other power using a corporeal organ.",
         "RP3": "An angel can do nothing outside the entire order of creatures; but he can outside some particular order of nature, since he is not subject to that order; thus in some special way an angel can work a change in the senses outside the common mode of  nature."
       }
-    ]
+    ],
+    "description": "We now consider the action of the angels on man, and inquire: (1) How far they can change them by their own natural power; (2) How they are sent by God to the ministry of men; (3) How they guard and protect men.\nUnder the first head there are four points of inquiry:"
   },
   {
     "question": "THE MISSION OF THE ANGELS",
@@ -6773,7 +6884,8 @@
         "RP1": "The Dominations are reckoned among the ministering angels, not as exercising but as disposing and commanding what is to be done by others; thus an architect does not put his hands to the production of his art, but only disposes and orders what others are to do.",
         "RP2": "A twofold reason may be given in assigning the number of the assisting and ministering angels. For Gregory says that those who minister are more numerous than those who assist; because he takes the words (Dan. 7:10) \"thousands of thousands ministered to Him,\" not in a multiple but in a partitive sense, to mean \"thousands out of thousands\"; thus the number of those who minister is indefinite, and signifies excess; while the number of assistants is finite as in the words added, \"and ten thousand times a hundred thousand assisted Him.\" This explanation rests on the opinion of the Platonists, who said that the nearer things are to the one first principle, the smaller they are in number; as the nearer a number is to unity, the lesser it is than multitude. This opinion is verified as regards the number of orders, as six administer and three assist.Dionysius, however, (Coel. Hier. xiv) declares that the multitude of angels surpasses all the multitude of material things; so that, as the superior bodies exceed the inferior in magnitude to an immeasurable degree, so the superior incorporeal natures surpass all corporeal natures in multitude; because whatever is better is more intended and more multiplied by God. Hence, as the assistants are superior to the ministers there will be more assistants than ministers. In this way, the words \"thousands of thousands\" are taken by way of multiplication, to signify \"a thousand times a thousand.\" And because ten times a hundred is a thousand, if it  were said \"ten times a hundred thousand\" it would mean that there are as many assistants as ministers: but since it is written \"ten thousand times a hundred thousand,\" we are given to understand that the assistants are much more numerous than the ministers. Nor is this said to signify that this is the precise number of angels, but rather that it is much greater, in that it exceeds all material multitude. This is signified by the multiplication together of all the greatest numbers, namely ten, a hundred, and a thousand, as Dionysius remarks in the same passage."
       }
-    ]
+    ],
+    "description": "We next consider the mission of the angels. Under this head arise four points of inquiry:"
   },
   {
     "question": "OF THE GUARDIANSHIP OF THE GOOD ANGELS",
@@ -6862,7 +6974,8 @@
         "CON": "It is written (Dan. 10:13): \"The prince of the kingdom of the Persians resisted me one and twenty days.\" But this prince of the Persians was the angel deputed to the guardianship of the kingdom of the Persians. Therefore one good angel resists the others; and thus there is strife among them.",
         "ANS": "The raising of this question is occasioned by this passage of Daniel. Jerome explains it by saying that the prince of the kingdom of the Persians is the angel who opposed the setting free of the people of Israel, for whom Daniel was praying, his prayers being offered to God by Gabriel. And this resistance of his may have been caused by some prince of the demons having led the Jewish captives in Persia into sin; which sin was an impediment to the efficacy of the prayer which Daniel put up for that same people.But according to Gregory (Moral. xvii), the prince of the kingdom of Persia was a good angel appointed to the guardianship of that kingdom. To see therefore how one angel can be said to resist another, we must note that the Divine judgments in regard to various kingdoms and various men are executed by the angels. Now in their actions, the angels are ruled by the Divine decree. But it happens at times in various kingdoms or various men there are contrary merits or demerits, so that one of them is subject to or placed over another. As to what is the ordering of Divine wisdom on such matters, the angels cannot know it unless God reveal it to them: and so they need to consult Divine wisdom thereupon. Wherefore forasmuch as they consult the Divine will concerning various contrary and opposing merits, they are said to resist one another: not that their wills are in opposition, since they are all of one mind as to the fulfilment of the Divine decree; but that the things about which they seek knowledge are in opposition.From this the answers to the objections are clear."
       }
-    ]
+    ],
+    "description": "We next consider the guardianship exercised by the good angels; and their warfare against the bad angels. Under the first head eight points of inquiry arise:"
   },
   {
     "question": "OF THE ASSAULTS OF THE DEMONS",
@@ -6915,7 +7028,8 @@
         "CON": "It is written (Mt. 4:11): \"Then the devil left Him,\" i.e. Christ Who overcame.",
         "ANS": "Some say that when once a demon has been overcome he can no more tempt any man at all, neither to the same nor to any other sin. And others say that he can tempt others, but not the same man. This seems more probable as long as we understand  it to be so for a certain definite time: wherefore (Lk. 4:13) it is written: \"All temptation being ended, the devil departed from Him for a time.\" There are two reasons for this. One is on the part of God's clemency; for as Chrysostom says (Super Matt. Hom. v) [*In the Opus Imperfectum, among his supposititious works], \"the devil does not tempt man for just as long as he likes, but for as long as God allows; for although He allows him to tempt for a short time, He orders him off on account of our weakness.\" The other reason is taken from the astuteness of the devil. As to this, Ambrose says on Lk. 4:13: \"The devil is afraid of persisting, because he shrinks from frequent defeat.\" That the devil does nevertheless sometimes return to the assault, is apparent from Mt. 12:44: \"I will return into my house from whence I came out.\"From what has been said, the objections can easily be solved."
       }
-    ]
+    ],
+    "description": "We now consider the assaults of the demons. Under this head there are five points of inquiry:"
   },
   {
     "question": "OF THE ACTION OF THE CORPOREAL CREATURE",
@@ -6992,7 +7106,8 @@
         "RP2": "The power of a heavenly body is not infinite. Wherefore it requires a determinate disposition in matter, both as to local distance and as to other conditions, in order to produce its effect. Therefore as local distance hinders the effect of a heavenly body (for the sun has not the same effect in heat in Dacia as in Ethiopia); so the grossness of matter, its low or high temperature or other such disposition, can hinder the effect of a heavenly body.",
         "RP3": "Although the cause that hinders the effect of another cause can be reduced to a heavenly body as its cause; nevertheless the clashing of two causes, being accidental, is not reduced to the causality of a heavenly body, as stated above."
       }
-    ]
+    ],
+    "description": "We have now to consider the action of the corporeal creature; and fate, which is ascribed to certain bodies. Concerning corporeal actions there are six points of inquiry:"
   },
   {
     "question": "ON FATE",
@@ -7035,7 +7150,8 @@
         "RP2": "Fate is to be referred to the Divine will and power, as to its first principle. Consequently it does not follow that whatever is subject to the Divine will or power, is subject also to fate, as already stated.",
         "RP3": "Although all creatures are in some way changeable, yet some of them do not proceed from changeable created causes. And these, therefore, are not subject to fate, as stated above."
       }
-    ]
+    ],
+    "description": "We come now to the consideration of fate. Under this head there are four points of inquiry:"
   },
   {
     "question": "OF THINGS PERTAINING TO THE ACTION OF MAN",
@@ -7083,7 +7199,8 @@
         "RP1": "There are certain spiritual substances whose powers are not determinate to certain bodies; such are the angels who are naturally unfettered by a body; consequently various bodies may obey them as to movement. But if the motive power of a separate substance is naturally determinate to move a certain body, that substance will not be able to move a body of higher degree, but only one of lower degree: thus according to philosophers the mover of the lower heaven cannot move the higher heaven. Wherefore, since the soul is by its nature determinate to move the body of which it is the form, it cannot by its natural power move any other body.",
         "RP2": "As Augustine (De Civ. Dei x, 11) and Chrysostom (Hom. xxviii in Matt.) say, the demons often pretend to be the souls of the dead, in order to confirm the error of heathen superstition. It is therefore credible that Simon Magus was deceived by some demon who pretended to be the soul of the child whom the magician had slain."
       }
-    ]
+    ],
+    "description": "We have next to consider those things which pertain to the action of man, who is composed of a created corporeal and spiritual nature. In the first place we shall consider that action (in general) and secondly in regard to the propagation of man from man. As to the first, there are four points of inquiry:"
   },
   {
     "question": "OF THE PRODUCTION OF MAN FROM MAN AS TO THE SOUL",
@@ -7126,7 +7243,8 @@
         "RP2": "Something can be added every day to the perfection of the universe, as to the number of individuals, but not as to the number of species.",
         "RP3": "That the soul remains without the body is due to the corruption of the body, which was a result of sin. Consequently it was not fitting that God should make the soul without the body from the beginning: for as it is written (Wis. 1:13,16): \"God made not death . . . but the wicked with works and words have called it to them.\""
       }
-    ]
+    ],
+    "description": "We next consider the production of man from man: first, as to the soul; secondly, as to the body.\nUnder the first head there are three points of inquiry:"
   },
   {
     "question": "OF THE PROPAGATION OF MAN AS TO THE BODY",
@@ -7157,6 +7275,7 @@
         "RP2": "The likeness of the begetter to the begotten is on account not of the matter, but of the form of the agent that generates its like. Wherefore in order for a man to be like his grandfather, there is no need that the corporeal seminal matter should have been in the grandfather; but that there be in the semen a virtue derived from the soul of the grandfather through the father. In like manner the third objection is answered. For kinship is not in relation to matter, but rather to the derivation of the forms.",
         "RP4": "These words of Augustine are not to be understood as though the immediate seminal virtue, or the corporeal substance from which this individual was formed were actually in Adam: but so that both were in Adam as in principle. For even the corporeal matter, which is supplied by the mother, and which he calls the corporeal substance, is originally derived from Adam: and likewise the active seminal power of the father, which is the immediate seminal virtue (in the production) of this man.But Christ is said to have been in Adam according to the \"corporeal substance,\" not according to the seminal virtue. Because the matter from which His Body was formed, and which was supplied by the Virgin Mother, was derived from Adam; whereas the active virtue was not derived from Adam, because His Body was not formed by the seminal virtue of a man, but by the operation of the Holy Ghost. For \"such a birth was becoming to Him,\" [*Hymn for Vespers at Christmas; Breviary, O. P.], WHO IS ABOVE ALL GOD FOR EVER BLESSED. Amen."
       }
-    ]
+    ],
+    "description": "We now consider the propagation of man, as to the body. Concerning this there are two points of inquiry:"
   }
 ]

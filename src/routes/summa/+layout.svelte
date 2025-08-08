@@ -9,9 +9,8 @@
 	import { goto } from '$app/navigation';
 
 	let { data, children } = $props();
-	const { summaParts, part, treatise, question } = $derived(data);
-	const { treatiseTitle, questionJSON } = $derived(page.data);
-	$inspect('QUESTION JSON', questionJSON);
+	const { summaParts, part, treatise, question, article } = $derived(data);
+	const { treatiseTitle, questionJSON, articleJSON, treatises, treatiseJSON } = $derived(page.data);
 	// let { showBackButton } = data;
 
 	function goBack() {
@@ -56,8 +55,11 @@
 	});
 
 	function handleNav() {
-		console.log(linkDiv, partDiv);
+		// console.log(linkDiv, partDiv);
 		navWidth = 'width: auto; height: auto;';
+		if (article && partDiv) {
+			navWidth = `width: ${partDiv.offsetWidth}px; height: ${partDiv.offsetHeight}px;`;
+		}
 		if (question && partDiv) {
 			navWidth = `width: ${partDiv.offsetWidth}px; height: ${partDiv.offsetHeight}px;`;
 		} else if (treatise && partDiv) {
@@ -93,7 +95,7 @@
 <hr class="bg-background-variant my-2 h-[2px] w-5/6 border-0" />
 
 <!-- Part Navigation -->
-<div class="flex w-screen items-center justify-center">
+<div class="flex w-full items-center justify-center">
 	<div
 		class="bg-background-variant border-background-variant relative flex h-50 items-center overflow-hidden rounded-xl border-1 transition-all duration-500 ease-in-out hover:shadow-sm sm:h-[50px]"
 		style={navWidth}
@@ -141,42 +143,96 @@
 			class="absolute flex h-full w-full items-center justify-center opacity-0"
 			class:opacity-100={treatise}
 		>
+			<!-- Part -->
 			<div class="flex flex-col justify-center gap-1 px-5 py-3" bind:this={partDiv}>
-				<div class="flex items-center justify-between gap-2 rounded-lg p-1">
-					<MaterialSymbolsArrowBackIosNewRounded class="size-6" />
+				<div class="flex items-center justify-center gap-2 rounded-lg p-1">
+					<!-- <MaterialSymbolsArrowBackIosNewRounded class="size-6" /> -->
 					<div class="flex flex-col">
 						<h3 class="text-sm leading-tight">PART</h3>
 						<h3 class="mx-2 text-lg leading-tight font-medium text-nowrap">
 							{summaParts[part].latin}
 						</h3>
 					</div>
-					<MaterialSymbolsArrowForwardIosRounded class="size-6" />
+					<!-- <MaterialSymbolsArrowForwardIosRounded class="size-6" /> -->
 				</div>
 
 				<hr class="opacity-50" />
 
+				<!-- Treatise -->
 				<div class="flex items-center justify-between rounded-lg p-1">
-					<MaterialSymbolsArrowBackIosNewRounded class="size-6" />
+					<a
+						href={`/summa/${part}/${Number(treatise) - 1}`}
+						class:pointer-events-none={Number(treatise) - 1 <= 0}
+						class:opacity-50={Number(treatise) - 1 <= 0}
+					>
+						<MaterialSymbolsArrowBackIosNewRounded class="size-6" />
+					</a>
 					<div class="flex flex-col">
 						<h3 class="text-sm leading-tight">TREATISE</h3>
 						<h3 class="text-md leading-tight font-medium">
 							{treatise}: {treatiseTitle}
 						</h3>
 					</div>
-					<MaterialSymbolsArrowForwardIosRounded class="size-6" />
+					<a
+						href={`/summa/${part}/${Number(treatise) + 1}`}
+						class:pointer-events-none={Number(treatise) + 1 > treatises.treatises.length}
+						class:opacity-50={Number(treatise) + 1 > treatises.treatises.length}
+					>
+						<MaterialSymbolsArrowForwardIosRounded class="size-6" />
+					</a>
 				</div>
 
+				<!-- Question -->
 				{#if question}
 					<hr class="opacity-50" />
 					<div class="flex items-center justify-between rounded-lg p-1">
-						<MaterialSymbolsArrowBackIosNewRounded class="size-6" />
+						<a
+							href={`/summa/${part}/${treatise}/${Number(question) - 1}`}
+							class:pointer-events-none={Number(question) - 1 <= 0}
+							class:opacity-50={Number(question) - 1 <= 0}
+						>
+							<MaterialSymbolsArrowBackIosNewRounded class="size-6" />
+						</a>
 						<div class="flex flex-col">
 							<h3 class="text-sm leading-tight">QUESTION</h3>
 							<h3 class="text-md leading-tight font-medium">
 								{question}: {questionJSON.question}
 							</h3>
 						</div>
-						<MaterialSymbolsArrowForwardIosRounded class="size-6" />
+						<a
+							href={`/summa/${part}/${treatise}/${Number(question) + 1}`}
+							class:pointer-events-none={Number(question) + 1 > treatiseJSON.questions.length}
+							class:opacity-50={Number(question) + 1 > treatiseJSON.questions.length}
+						>
+							<MaterialSymbolsArrowForwardIosRounded class="size-6" />
+						</a>
+					</div>
+				{/if}
+
+				<!-- Article -->
+				{#if article}
+					<hr class="opacity-50" />
+					<div class="flex items-center justify-between rounded-lg p-1">
+						<a
+							href={`/summa/${part}/${treatise}/${question}/${Number(article) - 1}`}
+							class:pointer-events-none={Number(article) - 1 <= 0}
+							class:opacity-50={Number(article) - 1 <= 0}
+						>
+							<MaterialSymbolsArrowBackIosNewRounded class="size-6" />
+						</a>
+						<div class="flex flex-col">
+							<h3 class="text-sm leading-tight">ARTICLE</h3>
+							<h3 class="text-md leading-tight font-medium">
+								{article}: {articleJSON.article}
+							</h3>
+						</div>
+						<a
+							href={`/summa/${part}/${treatise}/${question}/${Number(article) + 1}`}
+							class:pointer-events-none={Number(question) + 1 > questionJSON.articles.length}
+							class:opacity-50={Number(question) + 1 > questionJSON.articles.length}
+						>
+							<MaterialSymbolsArrowForwardIosRounded class="size-6" />
+						</a>
 					</div>
 				{/if}
 			</div>

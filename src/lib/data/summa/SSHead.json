@@ -57,7 +57,8 @@
   },
   {
     "range": {
-      "start": "63"
+      "start": "63",
+      "end": "63"
     },
     "header": "VICES OPPOSED TO DISTRIBUTIVE JUSTICE",
     "title": "sub"
@@ -96,14 +97,16 @@
   },
   {
     "range": {
-      "start": "77"
+      "start": "77",
+      "end": "77"
     },
     "header": "BY SINS COMMITTED IN BUYING AND SELLING",
     "title": "sub"
   },
   {
     "range": {
-      "start": "78"
+      "start": "78",
+      "end": "78"
     },
     "header": "BY SINS COMMITTED IN LOANS",
     "title": "sub"
@@ -134,7 +137,8 @@
   },
   {
     "range": {
-      "start": "84"
+      "start": "84",
+      "end": "84"
     },
     "header": "THE SERVICE OF THE BODY",
     "title": "sub"
@@ -149,7 +153,8 @@
   },
   {
     "range": {
-      "start": "88"
+      "start": "88",
+      "end": "88"
     },
     "header": "SERVICE BY PROMISE",
     "title": "sub"
