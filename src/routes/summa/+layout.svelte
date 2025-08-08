@@ -68,6 +68,19 @@
 			navWidth = `width: ${linkDiv.offsetWidth}px;`;
 		}
 	}
+
+	const aquinasQuotes = [
+		'To one who has faith, no explanation is necessary. To one without faith, no explanation is possible',
+		'Beware the man of a single book',
+		'The things that we love tell us what we are',
+		'There is nothing on this earth more to be prized than true friendship',
+		'Wonder is the desire of knowledge.',
+		'Adorote devote latens deitas',
+		'Altiora te ne quaesieris',
+		'Ex nihilo nihil fit',
+		'Lex mala, lex nulla'
+	];
+	const aquinasQuote = aquinasQuotes[Math.floor(Math.random() * aquinasQuotes.length)];
 </script>
 
 <div class="flex-between flex w-full">
@@ -86,9 +99,11 @@
 
 	<!-- Header -->
 	<div class="flex w-3/5 flex-col">
+		<h2 class="text-xl font-bold">St. Thomas Aquinas</h2>
 		<h1 class="text-3xl font-bold">Summa Theologica</h1>
-		<h3>Written by St. Thomas Aquinas</h3>
-		<h3>Translated by</h3>
+		<p class="mt-1 text-sm leading-tight">
+			"{aquinasQuote}"
+		</p>
 	</div>
 	<div class="w-1/5"></div>
 </div>
@@ -241,6 +256,16 @@
 </div>
 
 {@render children()}
+
+<hr class="text-background-variant h-2 w-full opacity-50" />
+<footer>
+	<p class="text-sm">(Benziger Bros. edition, 1947)</p>
+	<p class="text-sm">Translated by Fathers of the English Dominican Province</p>
+	<p class="text-[10px] opacity-75">
+		The original digital file was produced through the kindness of Sandra K. Perry,<br />
+		Perrysburg, Ohio.
+	</p>
+</footer>
 
 <style>
 	:global(.summaLink:hover) {
