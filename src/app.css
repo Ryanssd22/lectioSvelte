@@ -48,7 +48,7 @@ body {
 	--color-text-variant: var(--text-variant-color);
 }
 
-[data-theme='lectio'] {
+/* [data-theme='lectio'] {
 	--primary-color: #ffc107;
 	--secondary-color: #ffb300;
 	--tertiary-color: #ff7043;
@@ -117,4 +117,4 @@ body {
     --primary-color: #96ceb4;
     --primary-variant-color: #a2dec2;
     --background-variant-color: #f7dc8f;
-}
+} */
