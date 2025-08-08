@@ -1,5 +1,5 @@
 <script>
-    import { themes, currentTheme } from '$lib/stores/themeStore.svelte.js'
+    import { themes, currentTheme } from '$lib/stores/themes.svelte.js'
     import { onMount } from 'svelte'
 
     console.log("themes object: ", themes);

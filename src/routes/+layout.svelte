@@ -3,7 +3,7 @@
 	import '../app.css';
 	import Logo from '$lib/images/Logo.svelte';
 
-	import { currentTheme } from '$lib/stores/themeStore.svelte.js';
+	import { currentTheme, themes } from '$lib/themes/themes.svelte.js';
 
 	import Icon from '@iconify/svelte';
 	import { page } from '$app/state';
@@ -27,9 +27,10 @@
 	let mounted = $state(false);
 	onMount(() => {
 		mounted = true;
-		currentTheme.theme = JSON.parse(localStorage.getItem('currentTheme')).title || {
+		/* currentTheme.theme = JSON.parse(localStorage.getItem('currentTheme')).title || {
 			title: 'lectio'
-		};
+		}; */
+		console.log("current theme, layout.svelte", currentTheme.theme)
 	});
 
 	let menuClick = $state(false);
