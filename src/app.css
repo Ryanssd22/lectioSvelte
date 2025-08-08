@@ -28,6 +28,11 @@ body {
 	@apply absolute top-[5px] size-2 rounded-full transition-all group-data-outside-month:opacity-40 group-data-today:block;
 }
 
+/* Remove scrollbar */
+::-webkit-scrollbar {
+	display: none;
+}
+
 /* THEMES */
 /* Primary color: Main accent color of the page. Mainly the logo and reading bar */
 /* Primary variant color: A lighter or darker primary, to give buttons a subtle hue change */

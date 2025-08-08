@@ -45,6 +45,7 @@
 	"dependencies": {
 		"@iconify/svelte": "^5.0.1",
 		"@internationalized/date": "^3.8.2",
-		"bits-ui": "^2.8.10"
+		"bits-ui": "^2.8.10",
+		"svrollbar": "^0.12.0"
 	}
 }

@@ -1,5 +1,6 @@
 <!--+layout.svelte-->
 <script lang="ts">
+	import { Svrollbar } from 'svrollbar';
 	import '../app.css';
 	import Logo from '$lib/images/Logo.svelte';
 
@@ -25,12 +26,18 @@
 	];
 
 	let mounted = $state(false);
+	// let viewport;
+	// let contents;
 	onMount(() => {
 		mounted = true;
 		/* currentTheme.theme = JSON.parse(localStorage.getItem('currentTheme')).title || {
 			title: 'lectio'
 		}; */
-		console.log("current theme, layout.svelte", currentTheme.theme)
+		console.log('current theme, layout.svelte', currentTheme.theme);
+
+		// For Scrollbar
+		// viewport = document.querySelector('.virtual-list-wrapper');
+		// contents = document.querySelector('.virtual-list-inner');
 	});
 
 	let menuClick = $state(false);
@@ -49,7 +56,10 @@
 	/>
 </svelte:head>
 
-<div class="mx-2 flex flex-col sm:mx-10">
+<div class="scrollbar mx-2 flex flex-col sm:mx-10">
+	<!-- Custom Scrollbar -->
+	<Svrollbar />
+
 	<div class="mt-4 flex h-16 items-center gap-5 p-5 font-[Lexend] font-light">
 		<a href="/" class="">
 			<Logo svgClass="w-32" baseColor="blue" hoverColor="red" />
@@ -94,5 +104,9 @@
 		margin: 0;
 		padding: 0;
 		height: 100%; /* Or min-height: 100vh; */
+	}
+
+	.scrollbar {
+		--svrollbar-thumb-background: var(--text-color);
 	}
 </style>
