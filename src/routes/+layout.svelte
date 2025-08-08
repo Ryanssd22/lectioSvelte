@@ -3,7 +3,7 @@
 	import '../app.css';
 	import Logo from '$lib/images/Logo.svelte';
 
-	import { currentTheme } from '$lib/stores/themeStore.svelte.js';
+	import { currentTheme, themes } from '$lib/themes/themes.svelte.js';
 
 	import Icon from '@iconify/svelte';
 	import { page } from '$app/state';
@@ -16,20 +16,19 @@
 
 	let menuItems = [
 		{ title: 'Martyrology', route: '/martyrology' },
-		{
-			title: 'Themes',
-			route: '/themes',
-			icon: 'material-symbols:brush-sharp'
-		}
+		{ title: 'Themes', route: '/themes', icon: 'material-symbols:brush-sharp' }
 	];
 
 	let mounted = $state(false);
 	onMount(() => {
 		mounted = true;
-		currentTheme.theme = JSON.parse(localStorage.getItem('currentTheme')).title || {
+		/* currentTheme.theme = JSON.parse(localStorage.getItem('currentTheme')).title || {
 			title: 'lectio'
-		};
+		}; */
+		console.log("current theme, layout.svelte", currentTheme.theme)
 	});
+
+
 </script>
 
 <svelte:head>
