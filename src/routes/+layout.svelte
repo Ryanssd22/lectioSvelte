@@ -56,11 +56,11 @@
 	/>
 </svelte:head>
 
-<div class="scrollbar mx-2 flex flex-col sm:mx-10">
+<div class="mx-2 flex flex-col overflow-hidden sm:mx-10">
 	<!-- Custom Scrollbar -->
 	<Svrollbar />
 
-	<div class="mt-4 flex h-16 items-center gap-5 p-5 font-[Lexend] font-light">
+	<div class="mt-4 flex h-16 items-center gap-5 overflow-x-auto p-5 font-[Lexend] font-light">
 		<a href="/" class="">
 			<Logo svgClass="w-32" baseColor="blue" hoverColor="red" />
 		</a>
