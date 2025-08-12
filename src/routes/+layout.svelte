@@ -10,6 +10,7 @@
 	import { page } from '$app/state';
 	import { fade } from 'svelte/transition';
 	import { onMount } from 'svelte';
+	import { afterNavigate } from '$app/navigation';
 
 	let { children } = $props();
 	let pageName = $derived(page.route.id);
@@ -41,6 +42,9 @@
 	});
 
 	let menuClick = $state(false);
+	afterNavigate(() => {
+		menuClick = false;
+	});
 </script>
 
 <svelte:head>
@@ -60,7 +64,9 @@
 	<!-- Custom Scrollbar -->
 	<Svrollbar />
 
-	<div class="mt-4 flex h-16 items-center gap-5 overflow-x-auto p-5 font-[Lexend] font-light">
+	<div
+		class="mt-4 flex h-16 items-center gap-5 overflow-x-auto overflow-y-hidden p-5 font-[Lexend] font-light"
+	>
 		<a href="/" class="">
 			<Logo svgClass="w-32" baseColor="blue" hoverColor="red" />
 		</a>
@@ -87,7 +93,7 @@
 
 	<hr class="bg-background-variant mb-4 h-[2px] border-0" />
 
-	{#key menuClick}
+	{#if !menuClick}
 		<div
 			class="flex flex-col items-center text-center"
 			in:fade={{ duration: 100, delay: 100 }}
@@ -95,7 +101,7 @@
 		>
 			{@render children()}
 		</div>
-	{/key}
+	{/if}
 </div>
 
 <style global>
