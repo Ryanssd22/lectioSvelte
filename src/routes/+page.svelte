@@ -80,7 +80,7 @@
 	let multipleReadings = $derived(liturgy?.length > 1 ? true : false);
 	let loaded = $state(false);
 	$effect(() => {
-		if (mounted && liturgy) {
+		if (liturgy) {
 			loaded = true;
 		}
 	});
@@ -176,7 +176,10 @@
 		<SvgSpinners270RingWithBg class="my-10 size-10 text-primary" />
 	</div>
 {:else}
-	<div in:fly={{ delay: 200 }} class="flex w-full flex-col items-center justify-center">
+	<div
+		in:fly={{ delay: 100, duration: 100 }}
+		class="flex w-full flex-col items-center justify-center"
+	>
 		<div class="flex w-full flex-col items-center md:w-5/6">
 			<!-- Reading Heading -->
 			<DatePicker
@@ -194,27 +197,35 @@
 
 		<!-- Readings -->
 		{#if translationLoaded}
-			{#key liturgy}
-				<div
-					in:fly={{ duration: 100, delay: 100, y: 10 }}
-					out:fly={{ duration: 100, y: -10 }}
-					class="w-full items-center md:w-2/3"
-				>
-					{#if firstReading}
-						<ReadingDisplay title="First Reading" reading={firstReading} {comfortSpacing} />
-					{/if}
+			<div
+				in:fly={{ duration: 100, delay: 100, y: 10 }}
+				out:fly={{ duration: 100, y: -10 }}
+				class="flex-center flex w-full flex-col items-center"
+			>
+				{#key liturgy}
+					<div
+						in:fly={{ duration: 100, delay: 100, y: 10 }}
+						out:fly={{ duration: 100, y: -10 }}
+						class="w-full items-center md:w-2/3"
+					>
+						{#if firstReading}
+							<ReadingDisplay title="First Reading" reading={firstReading} {comfortSpacing} />
+						{/if}
 
-					{#if secondReading}
-						<ReadingDisplay title="Second Reading" reading={secondReading} {comfortSpacing} />
-					{/if}
+						{#if secondReading}
+							<ReadingDisplay title="Second Reading" reading={secondReading} {comfortSpacing} />
+						{/if}
 
-					{#if gospel}
-						<ReadingDisplay title="Gospel" reading={gospel} {comfortSpacing} />
-					{/if}
-				</div>
-			{/key}
+						{#if gospel}
+							<ReadingDisplay title="Gospel" reading={gospel} {comfortSpacing} />
+						{/if}
+					</div>
+				{/key}
+			</div>
 		{:else}
-			<p>Loading Translation...</p>
+			<p in:fly={{ duration: 100, delay: 100 }} out:fly={{ duration: 100 }}>
+				Loading Translation...
+			</p>
 		{/if}
 	</div>
 {/if}

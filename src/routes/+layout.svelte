@@ -10,7 +10,7 @@
 	import { page } from '$app/state';
 	import { fade } from 'svelte/transition';
 	import { onMount } from 'svelte';
-	import { afterNavigate } from '$app/navigation';
+	import { beforeNavigate, afterNavigate } from '$app/navigation';
 
 	let { children } = $props();
 	let pageName = $derived(page.route.id);
@@ -44,6 +44,11 @@
 	let menuClick = $state(false);
 	afterNavigate(() => {
 		menuClick = false;
+	});
+
+	beforeNavigate((navigation) => {
+		console.log('Navigation variable:', navigation);
+		pageName = navigation.to.route.id;
 	});
 </script>
 
