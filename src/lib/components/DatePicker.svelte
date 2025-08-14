@@ -106,7 +106,7 @@
 					<div
 						in:fly={{ duration: 100, delay: 100, y: titleFly }}
 						out:fly={{ duration: 100, y: -titleFly }}
-						class="pointer-events-none flex items-end justify-center px-2 text-center text-3xl leading-tight font-semibold opacity-0"
+						class="flex items-end justify-center px-2 text-center text-3xl leading-tight font-semibold opacity-0"
 						aria-hidden="true"
 					>
 						<h1 class="items-end">
@@ -182,7 +182,7 @@
 				<div class="relative">
 					{#if !onToday}
 						<MaterialSymbolsRefreshRounded
-							class="absolute -top-[9px] -left-5 cursor-pointer opacity-30 transition-colors hover:text-amber-600"
+							class="absolute -top-[9px] -left-5 cursor-pointer opacity-30 transition-colors"
 							onclick={setDateToday}
 						/>
 					{/if}
@@ -205,22 +205,22 @@
 						</DatePicker.Trigger>
 					</DatePicker.Input>
 
-					<DatePicker.Content forceMount sideOffset={8} class="z-[999]">
+					<DatePicker.Content forceMount sideOffset={8} class="z-[10]">
 						{#snippet child({ wrapperProps, props, open })}
 							{#if open}
 								<div {...wrapperProps}>
 									<div {...props} transition:fly={{ y: -5, duration: 100 }}>
-										<DatePicker.Calendar class="rounded-xl bg-amber-100 p-[22px] shadow-xl">
+										<DatePicker.Calendar class="rounded-xl bg-background-variant p-[22px] shadow-xl">
 											{#snippet children({ months, weekdays })}
 												<DatePicker.Header class="flex items-center justify-between">
 													<DatePicker.PrevButton
-														class="inline-flex size-10 items-center justify-center rounded-lg transition-all hover:bg-amber-200 active:scale-[0.98]"
+														class="inline-flex size-10 items-center justify-center rounded-lg transition-all hover:bg-background active:scale-[0.98]"
 													>
 														<MaterialSymbolsArrowLeftAltRounded class="size-7 cursor-pointer" />
 													</DatePicker.PrevButton>
 													<DatePicker.Heading class="text-lg font-medium" />
 													<DatePicker.NextButton
-														class="inline-flex size-10 items-center justify-center rounded-lg transition-all hover:bg-amber-200 active:scale-[0.98]"
+														class="inline-flex size-10 items-center justify-center rounded-lg transition-all hover:bg-background active:scale-[0.98]"
 													>
 														<MaterialSymbolsArrowRightAltRounded class="size-7 cursor-pointer" />
 													</DatePicker.NextButton>
@@ -251,7 +251,7 @@
 																				class="relative size-13 p-0! text-center"
 																			>
 																				<DatePicker.Day
-																					class="data-selected:text-background group relative inline-flex size-13 cursor-pointer items-center justify-center rounded-lg border border-transparent p-0 text-base font-light font-normal whitespace-nowrap transition-all hover:bg-amber-200 data-disabled:pointer-events-none data-outside-month:pointer-events-none data-outside-month:text-black/40 data-selected:bg-amber-400 data-selected:font-medium data-unavailable:line-through data-unavailable:opacity-50"
+																					class="data-selected:text-background group relative inline-flex size-13 cursor-pointer items-center justify-center rounded-lg border border-transparent p-0 text-base font-light font-normal whitespace-nowrap transition-all hover:bg-background data-disabled:pointer-events-none data-outside-month:pointer-events-none data-outside-month:text-black/40 data-selected:bg-amber-400 data-selected:font-medium data-unavailable:line-through data-unavailable:opacity-50"
 																				>
 																					{#if seasons}
 																						{#if seasons[date] == 'Ordinary'}

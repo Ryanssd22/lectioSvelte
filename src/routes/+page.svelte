@@ -172,8 +172,8 @@
 </script>
 
 {#if !loaded}
-	<div out:fly={{ duration: 100 }} class="absolute text-xl">
-		<SvgSpinners270RingWithBg class="my-10 size-10 text-amber-300" />
+	<div out:fly={{ duration: 200 }} class="absolute text-xl">
+		<SvgSpinners270RingWithBg class="my-10 size-10 text-primary" />
 	</div>
 {:else}
 	<div

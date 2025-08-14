@@ -8,7 +8,7 @@
 	}
 </script>
 
-<div class="flex w-full items-end justify-between border-b-2 border-amber-100">
+<div class="flex w-full items-end justify-between border-b-2 border-background-variant">
 	<h2 class="text-3xl font-semibold">{title}</h2>
 	<p>{reading.rawReading}</p>
 </div>

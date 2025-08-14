@@ -3,39 +3,46 @@
 	<head>
 		<meta charset="utf-8" />
 
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<link rel="icon" href="%sveltekit.assets%/greenLectioLogo.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Theme Handler -->
-    <script>
-	//this is for the theme
-      const theme = localStorage.getItem('selectedTheme') || "theme-white";
-      const tab = localStorage.getItem('activeTab') || 'tab-1';
-	document.documentElement.className = `${theme} ${tab}`;
-      console.log(`${theme} loaded`);
-    </script>
+		<title>Lectio</title>
+
+		<!-- Theme Handler -->
+		<script>
+			const currentTheme = JSON.parse(localStorage.getItem('currentTheme'));
+			console.log(`${currentTheme} loaded`);
+			const element = document.documentElement;
+			element.style.setProperty('--primary-color', currentTheme.primary);
+			element.style.setProperty('--primary-variant-color', currentTheme['primary-variant']);
+			element.style.setProperty('--secondary-color', currentTheme.secondary);
+			element.style.setProperty('--background-color', currentTheme.background);
+			element.style.setProperty('--background-variant-color', currentTheme['background-variant']);
+			element.style.setProperty('--text-color', currentTheme.text);
+			element.style.setProperty('--text-variant-color', currentTheme['text-variant']);
+		</script>
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
 		/>
 
-		<style>
-			html,
-			body {
-				overscroll-behavior: none;
-				-webkit-overflow-scrolling: touch;
-				touch-action: manipulation;
-				/* height: 100%; */
-				/* width: 100%; */
-				/* overflow: auto; */
-			}
-
-			#app {
-				overflow: auto;
-				height: 100vh;
-				-webkit-overflow-scrolling: touch;
-			}
-		</style>
+		<!-- <style> -->
+		<!-- 	html, -->
+		<!-- 	body { -->
+		<!-- 		overscroll-behavior: none; -->
+		<!-- 		-webkit-overflow-scrolling: touch; -->
+		<!-- 		touch-action: manipulation; -->
+		<!-- 		/* height: 100%; */ -->
+		<!-- 		/* width: 100%; */ -->
+		<!-- 		/* overflow: auto; */ -->
+		<!-- 	} -->
+		<!---->
+		<!-- 	#app { -->
+		<!-- 		overflow: auto; -->
+		<!-- 		height: 100vh; -->
+		<!-- 		-webkit-overflow-scrolling: touch; -->
+		<!-- 	} -->
+		<!-- </style> -->
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
