@@ -78,10 +78,17 @@
 	});
 
 	let multipleReadings = $derived(liturgy?.length > 1 ? true : false);
-	let loaded = $state(false);
-	$effect(() => {
+	// let loaded = $state(false);
+	// $effect(() => {
+	// 	if (liturgy) {
+	// 		loaded = true;
+	// 	}
+	// });
+	let loaded = $derived.by(() => {
 		if (liturgy) {
-			loaded = true;
+			return true;
+		} else {
+			return false;
 		}
 	});
 	onMount(async () => {
@@ -168,12 +175,13 @@
 		}
 	});
 
-	$inspect(liturgy);
+	$inspect('LITURGY', liturgy);
+	$inspect('TRANSLATION LOADED', translationLoaded);
 </script>
 
 {#if !loaded}
 	<div out:fly={{ duration: 200 }} class="absolute text-xl">
-		<SvgSpinners270RingWithBg class="my-10 size-10 text-primary" />
+		<SvgSpinners270RingWithBg class="text-primary my-10 size-10" />
 	</div>
 {:else}
 	<div
