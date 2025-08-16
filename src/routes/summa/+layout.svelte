@@ -243,8 +243,8 @@
 						</div>
 						<a
 							href={`/summa/${part}/${treatise}/${question}/${Number(article) + 1}`}
-							class:pointer-events-none={Number(question) + 1 > questionJSON.articles.length}
-							class:opacity-50={Number(question) + 1 > questionJSON.articles.length}
+							class:pointer-events-none={Number(article) + 1 > questionJSON.articles.length}
+							class:opacity-50={Number(article) + 1 > questionJSON.articles.length}
 						>
 							<MaterialSymbolsArrowForwardIosRounded class="size-6" />
 						</a>
