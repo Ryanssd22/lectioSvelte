@@ -151,7 +151,7 @@
 													<div {...wrapperProps}>
 														<div
 															{...props}
-															class="flex flex-col overflow-hidden rounded-lg bg-amber-200 text-center shadow-xl"
+															class="flex flex-col overflow-hidden rounded-lg bg-background-variant text-center shadow-xl"
 															transition:fly={{ y: -5, duration: 100 }}
 														>
 															{#each liturgy as reading, i (reading.title)}
@@ -159,7 +159,7 @@
 																	onclick={() => {
 																		selectReading(i);
 																	}}
-																	class="cursor-pointer px-4 py-2 font-medium transition-all hover:bg-amber-500 hover:text-white"
+																	class="cursor-pointer px-4 py-2 font-medium transition-all hover:bg-background hover:text-white"
 																>
 																	{reading.title}
 																</DropdownMenu.Item>
@@ -251,7 +251,7 @@
 																				class="relative size-13 p-0! text-center"
 																			>
 																				<DatePicker.Day
-																					class="data-selected:text-background group relative inline-flex size-13 cursor-pointer items-center justify-center rounded-lg border border-transparent p-0 text-base font-light font-normal whitespace-nowrap transition-all hover:bg-background data-disabled:pointer-events-none data-outside-month:pointer-events-none data-outside-month:text-black/40 data-selected:bg-amber-400 data-selected:font-medium data-unavailable:line-through data-unavailable:opacity-50"
+																					class="data-selected:text-background group relative inline-flex size-13 cursor-pointer items-center justify-center rounded-lg border border-transparent p-0 text-base font-light font-normal whitespace-nowrap transition-all hover:bg-background data-disabled:pointer-events-none data-outside-month:pointer-events-none data-outside-month:text-black/40 data-selected:bg-background-variant data-selected:font-medium data-unavailable:line-through data-unavailable:opacity-50"
 																				>
 																					{#if seasons}
 																						{#if seasons[date] == 'Ordinary'}
