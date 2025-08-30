@@ -27,23 +27,14 @@
 	];
 
 	let mounted = $state(false);
-	// let viewport;
-	// let contents;
 	onMount(() => {
 		mounted = true;
-		/* currentTheme.theme = JSON.parse(localStorage.getItem('currentTheme')).title || {
-			title: 'lectio'
-		}; */
 		console.log('current theme, layout.svelte', currentTheme.theme);
-
-		// For Scrollbar
-		// viewport = document.querySelector('.virtual-list-wrapper');
-		// contents = document.querySelector('.virtual-list-inner');
 	});
 
-	let menuClick = $state(false);
+  import { loading } from '$lib/stores/loading.svelte.js'
 	afterNavigate(() => {
-		menuClick = false;
+    loading.mainNav = false;
 	});
 
 	beforeNavigate((navigation) => {
@@ -83,7 +74,7 @@
 						class="hover:text-primary text-md flex items-center transition-all"
 						class:text-primary={pageName.includes(menuItem.route)}
 						onclick={() => {
-							menuClick = !menuClick;
+							loading.mainNav = true;
 						}}
 					>
 						{#if menuItem.icon}
@@ -98,7 +89,7 @@
 
 	<hr class="bg-background-variant mb-4 h-[2px] border-0" />
 
-	{#if !menuClick}
+	{#if !loading.mainNav}
 		<div
 			class="flex flex-col items-center text-center"
 			in:fade={{ duration: 100, delay: 100 }}
