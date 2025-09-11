@@ -1,9 +1,10 @@
 {
-    "primary": "#7AA89F",
-    "primary-variant": "#A3D4D5",
-    "secondary": "#2B3328",
-    "background": "#2D4F67",
-    "background-variant": "#223249",
-    "text": "#54546D",
-    "text-variant": "#938056"
+  "primary": "#FFD700",
+  "primary-variant": "#E6BE00",
+  "secondary": "#FFD700",
+  "background": "#FFFFFF",
+  "background-variant": "#F0F0F0",
+  "text": "#000000",
+  "text-variant": "#000000",
+  "box-text": "#000000"
 }
