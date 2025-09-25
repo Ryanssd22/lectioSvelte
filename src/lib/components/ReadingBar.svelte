@@ -75,11 +75,11 @@
 							<div {...props} transition:fly={{ y: -5, duration: 100 }}>
 								<Select.Viewport class="bg-background-variant rounded-lg shadow-xl">
 									{#each translations as translation, i (i)}
-										<Select.Item value={i} class="">
+										<Select.Item value={i} class="border-background-variant border-1">
 											{#snippet children({ selected })}
 												<p
-													class="hover:bg-secondary cursor-pointer px-3 py-[4px] text-center font-medium transition-all"
-													class:bg-secondary={selected}
+													class="hover:bg-background cursor-pointer px-3 py-[4px] text-center font-medium transition-all"
+													class:bg-background={selected}
 												>
 													{translations[i].long}
 												</p>
@@ -99,7 +99,7 @@
 	<div class="flex w-full justify-center sm:w-auto">
 		<button
 			class:opacity-40={!comfortSpacing}
-			class="flex cursor-pointer items-center justify-center gap-1 rounded-sm transition-all hover:text-primary hover:opacity-100 active:scale-95"
+			class="hover:text-primary flex cursor-pointer items-center justify-center gap-1 rounded-sm transition-all hover:opacity-100 active:scale-95"
 			onclick={() => {
 				comfortSpacing = !comfortSpacing;
 			}}
