@@ -3,7 +3,7 @@
 	let { data } = $props();
 	let { questionJSON, question } = $derived(data);
 
-	console.log(questionJSON);
+	console.log('questionJSON:', questionJSON);
 </script>
 
 <!-- <h2>{question.question}</h2> -->

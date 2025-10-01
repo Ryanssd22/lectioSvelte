@@ -47,7 +47,7 @@
 	});
 
 	beforeNavigate((navigation) => {
-		console.log('Navigation variable:', navigation);
+		// console.log('Navigation variable:', navigation);
 		pageName = navigation.to.route.id;
 	});
 </script>
