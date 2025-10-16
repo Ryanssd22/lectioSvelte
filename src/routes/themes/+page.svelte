@@ -4,8 +4,13 @@
 	import { onMount, onDestroy } from 'svelte';
 	import { themes, currentTheme } from '$lib/themes/themes.svelte.js';
 
+	/* const customTheme = themes.find(t => t.title === "custom");
+	let customColors = Object.entries(customTheme)
+	    .filter(([key]) => key !== "title")
+	    .map(([name, value]) => ({name, value})); */
+
 	console.log('themes object: ', currentTheme);
-	let theme = currentTheme
+	let theme = currentTheme;
 	console.log(theme);
 
 	function changeTheme(newTheme) {
@@ -106,9 +111,27 @@
     </div>
 {/if}
 
+
+<!-- {
+    "title": "custom"
+    "primary": "#ff0000",
+    "primary-variant": "#cc0000",
+    "secondary": "#000000",
+    "background": "#ffffff",
+    "background-variant": "#f2f2f2",
+    "text": "#000000",
+    "text-variant": "#660000",
+    "box-text": "#ffffff"
+} -->
+
 {#if activeTab == 'custom'}
     <h1 class="text-4xl">Custom Theme</h1>
     <p>Here is some custom content for the second tab.</p>
+	<!-- {#each Object.entries(customTheme) as [name, value]}
+	    <div class="flex items-center">
+		<span class="font-mono"> {name}: {value}</span>
+	    </div>
+	{/each} -->
 {/if}
 </div>
 
