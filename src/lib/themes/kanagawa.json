@@ -5,5 +5,6 @@
     "background": "#f0f0e8",
     "background-variant": "#c5c4c0",
     "text": "#3a5068",
-    "text-variant": "#778da9"
+    "text-variant": "#778da9",
+    "box-text": "#b4a484"
 }

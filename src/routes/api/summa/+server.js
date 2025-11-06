@@ -136,10 +136,13 @@ function verify_question(question, treatise, part) {
 		throw new Error('Need to specify treatise');
 	}
 
-	if (question > SUMMA_TREATISE[part].treatises[treatise - 1]['questions'].length || question < 1) {
-		throw new Error(
-			`Not a valid question (1 - ${SUMMA_TREATISE[part].treatises[treatise - 1]['questions'].length})`
-		);
+	const treatiseInfo = SUMMA_TREATISE[part].treatises[treatise - 1];
+	const treatiseStart = treatiseInfo.start;
+	const treatiseEnd = treatiseInfo.end;
+	console.log('TREATISE:', treatiseInfo);
+
+	if (question < treatiseStart || question > treatiseEnd) {
+		throw new Error(`Not a valid question (${treatiseStart} - ${treatiseEnd})`);
 	}
 }
 
@@ -232,10 +235,14 @@ function get_question(part, treatise, question) {
 
 	let questionObj = {
 		treatise: treatiseDetails.treatise,
-		question: treatiseDetails.questions[question],
+		question: treatiseDetails.questions[question + 1 - treatiseDetails.start],
 		articles: simplifiedArticles,
 		description: description
 	};
+
+	console.log('Question index search:', question);
+	console.log('Questions:', treatiseDetails.questions);
+	console.log('Treatise details:', treatiseDetails);
 	if (treatiseDetails.subs) {
 		for (const sub of treatiseDetails.subs) {
 			if (question + 1 >= sub.start && question + 1 <= sub.end) {

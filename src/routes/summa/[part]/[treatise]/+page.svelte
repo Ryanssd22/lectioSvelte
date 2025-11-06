@@ -19,6 +19,7 @@
 	});
 
   // console.log("TREATISEJSON", treatiseJSON);
+	// $inspect('Treatise JSON:', treatiseJSON);
 </script>
 
 <div class="my-2 flex w-125 flex-col gap-2 text-left">

@@ -203,8 +203,8 @@
 					<div class="flex items-center justify-between rounded-lg p-1">
 						<a
 							href={`/summa/${part}/${treatise}/${Number(question) - 1}`}
-							class:pointer-events-none={Number(question) - 1 <= 0}
-							class:opacity-50={Number(question) - 1 <= 0}
+							class:pointer-events-none={Number(question) <= treatiseJSON.start}
+							class:opacity-50={Number(question) <= treatiseJSON.start}
 						>
 							<MaterialSymbolsArrowBackIosNewRounded class="size-6" />
 						</a>
@@ -216,8 +216,8 @@
 						</div>
 						<a
 							href={`/summa/${part}/${treatise}/${Number(question) + 1}`}
-							class:pointer-events-none={Number(question) + 1 > treatiseJSON.questions.length}
-							class:opacity-50={Number(question) + 1 > treatiseJSON.questions.length}
+							class:pointer-events-none={Number(question) + 1 > treatiseJSON.end}
+							class:opacity-50={Number(question) + 1 > treatiseJSON.end}
 						>
 							<MaterialSymbolsArrowForwardIosRounded class="size-6" />
 						</a>
