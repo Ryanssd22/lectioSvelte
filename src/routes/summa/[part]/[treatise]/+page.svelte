@@ -18,6 +18,7 @@
 		}
 	});
 
+  // console.log("TREATISEJSON", treatiseJSON);
 	// $inspect('Treatise JSON:', treatiseJSON);
 </script>
 

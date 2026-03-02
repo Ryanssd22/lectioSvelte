@@ -147,6 +147,14 @@
 		}
 	});
 
+	let responsal = $derived.by(() => {
+		if (liturgy) {
+			return liturgy[readingIndex].responsal;
+		} else {
+			return null;
+		}
+	});
+
 	let secondReading = $derived.by(() => {
 		if (liturgy) {
 			return liturgy[readingIndex].second;
@@ -177,6 +185,7 @@
 
 	$inspect('LITURGY', liturgy);
 	$inspect('TRANSLATION LOADED', translationLoaded);
+  $inspect('RESPONSAL', responsal);
 </script>
 
 {#if !loaded}
@@ -218,6 +227,10 @@
 					>
 						{#if firstReading}
 							<ReadingDisplay title="First Reading" reading={firstReading} {comfortSpacing} />
+						{/if}
+
+						{#if responsal}
+							<ReadingDisplay title="Responsal" reading={responsal} {comfortSpacing} />
 						{/if}
 
 						{#if secondReading}
